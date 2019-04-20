@@ -105,10 +105,11 @@ namespace CQMacroCreator
                                 "drhawking", "masterlee", "kumusan", "liucheng", "hidoka", "kryton", "dicemaster", "luxuriusmaximus", "pokerface", "taint", "putrid", "defile", "neil",
                                 "mahatma", "jade", "edana", "dybbuk", "ashygu", "athert", "alordkirk", "aneptunius","ahosokawa","atakeda","ahirate","ahattori","doyenne","billy","sanqueen","cliodhna",
                                 "guy","adefile","raiderrose","buccaneerbeatrice","corsaircharles","maraudermagnus","frosty","fir","5-12-6","kedari","raze","ruin","seethe","aseethe",
-                                "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk"
+                                "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
+                                "willow","gizmo","daisy","thumper","bortles","murphy","nerissa"
                                 };
 
-        static string[] servernames = {"adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
+        static string[] servernames = {"nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
                                "doyenne","ahattori","ahirate","atakeda","ahosokawa","aneptunius", "alordkirk", "athert", "ashygu", "dybbuk", "edana", "jade", "mahatma",
                                "neil", "defile", "putrid", "taint", "pokerface", "luxuriusmaximus", "dicemaster", "kryton", "hidoka", "liucheng", "kumusan", "masterlee", "drhawking",
@@ -198,7 +199,9 @@ namespace CQMacroCreator
                                                TransientCount, MaunderCount, WandererCount,
                                                BDayCount,
                                                CloudCount, EmberCount, RiptideCount, SpikeCount,
-                                               AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount
+                                               AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount,
+                                               WillowCount,GizmoCount,DaisyCount,ThumperCount,
+                                               BortlesCount,MurphyCount,NerissaCount
 
             };
 
@@ -255,7 +258,9 @@ namespace CQMacroCreator
                                                TransientCount, MaunderCount, WandererCount,
                                                BDayCount,
                                                CloudCount, EmberCount, RiptideCount, SpikeCount,
-                                               AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount
+                                               AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount,
+                                               WillowCount,GizmoCount,DaisyCount,ThumperCount,
+                                               BortlesCount,MurphyCount,NerissaCount
 
             };
 
@@ -308,7 +313,9 @@ namespace CQMacroCreator
                                                transientPromo, maunderPromo, wandererPromo,
                                                bdayPromo,
                                                cloudPromo, emberPromo, riptidePromo, spikePromo,
-                                               amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo
+                                               amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo,
+                                               willowPromo, gizmoPromo, daisyPromo, thumperPromo,
+                                               bortlesPromo, murphyPromo, nerissaPromo
 
             };
 
@@ -363,7 +370,9 @@ namespace CQMacroCreator
                                                transientPromo, maunderPromo, wandererPromo,
                                                bdayPromo,
                                                cloudPromo, emberPromo, riptidePromo, spikePromo,
-                                               amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo
+                                               amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo,
+                                               willowPromo, gizmoPromo, daisyPromo, thumperPromo,
+                                               bortlesPromo, murphyPromo, nerissaPromo
 
             };
 
@@ -416,7 +425,9 @@ namespace CQMacroCreator
                                                TransientBox, MaunderBox, WandererBox,
                                                BDayBox,
                                                CloudBox, EmberBox, RiptideBox, SpikeBox,
-                                               AMahatmaBox, AJadeBox, AEdanaBox, ADybbukBox
+                                               AMahatmaBox, AJadeBox, AEdanaBox, ADybbukBox,
+                                               WillowBox, GizmoBox, DaisyBox, ThumperBox,
+                                               BortlesBox, MurphyBox, NerissaBox
 
             };
 
@@ -933,6 +944,8 @@ namespace CQMacroCreator
             new Hero(100,40,6,0,0),//BDay
             new Hero(44,22,1,0,0), new Hero(64,32,2,0,0), new Hero(84,42,6,0,0), new Hero(180,90,12,0,0),//AH Dragons
             new Hero(180,60,12,0,0), new Hero(172,68,12,0,0), new Hero(160,80,12,0,0), new Hero(176,66,12,0,0), //aDjinn
+            new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),//Easter 2
+            new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0), //Aquatic
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1444,7 +1457,7 @@ namespace CQMacroCreator
             int maxedCommons = 0;
             int maxedRares = 0;
             int maxedLegs = 0;
-            int[] chestRaresID = new int[] { 2, 5, 8, 11, 14, 17, 20, 23, 26, 63, 78, 94, 111, 141, 150 };
+            int[] chestRaresID = new int[] { 2, 5, 8, 11, 14, 17, 20, 23, 26, 63, 78, 94, 111, 141, 150, 166 };
             foreach (int i in chestRaresID)
             {
                 PGrare += (99 - Math.Max(1, (int)heroCounts[i].Value)) * 3;
