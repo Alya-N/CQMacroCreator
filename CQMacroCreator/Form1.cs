@@ -888,17 +888,17 @@ namespace CQMacroCreator
             }
         }
 
-        List<Hero> heroList = new List<Hero>(new Hero[] {
+        List<Hero> heroList = new List<Hero>(new Hero[] { // MB 20190505 - give higher priority to heroes like geum, ricochet and reflect
             new Hero(50,12,6,1,1.2),
             new Hero(22,14,1,0,0), new Hero(40,20,2,0,0), new Hero(82,22,6,0,10000),            //hunter, shaman, alpha
             new Hero(28,12,1,0,0), new Hero(38,22,2,0,0), new Hero(70,26,6,0,2000),             //carl, nimue, athos
             new Hero(24,16,1,0,0), new Hero(36,24,2,0,0), new Hero(46,40,6,0,2500),             //jet, geron, rei
             new Hero(19,22,1,0,0), new Hero(50,18,2,0,0), new Hero(60,32,6,0,1500),             //ailen, faefyr, auri
             new Hero(28,16,1,0,0), new Hero(46,20,2,0,1000), new Hero(100,20,6,0,50000),        //kairy, taurus, tronix
-            new Hero(58,8,1,0,0), new Hero(30,32,2,0,0), new Hero(75,2,6,0,0),                  //aquortis, aeris, geum
-            new Hero(38,12,1,0,0), new Hero(18,50,2,0,0), new Hero(46,46,6,1,1.3),              //rudean, aural, geror
-            new Hero(30,16,1,0,0), new Hero(48,20,2,0,0), new Hero(62,36,6,1,1.15),             //ourea, erebus, pontus
-            new Hero(36,14,1,0,0), new Hero(32,32,2,0,0), new Hero(76,32,6,1,1.15),             //oymos, xarth, atzar
+            new Hero(58,8,1,0,0), new Hero(30,32,2,0,0), new Hero(75,2,6,1,2),                  //aquortis, aeris, geum
+            new Hero(38,12,1,0,0), new Hero(18,50,2,0,0), new Hero(46,46,6,0,0),              //rudean, aural, geror
+            new Hero(30,16,1,0,0), new Hero(48,20,2,0,0), new Hero(62,36,6,0,0),             //ourea, erebus, pontus
+            new Hero(36,14,1,0,0), new Hero(32,32,2,0,0), new Hero(76,32,6,0,0),             //oymos, xarth, atzar
             new Hero(45,20,1,0,0), new Hero(70,30,2,0,0), new Hero(90,40,6,0,10000),            //lady, tiny, nebra
             new Hero(66,44,6,0,20000), new Hero(72,48,6,0,30000), new Hero(78,52,6,0,40000),    //veildur, bryn, groth
             new Hero(70,42,6,1,1.05), new Hero(76,46,6,1,1.08), new Hero(82,50,6,1,1.10),       //zeth, koth, gurth
@@ -906,46 +906,46 @@ namespace CQMacroCreator
             new Hero(20,10,1,0,0), new Hero(30,8,1,0,0), new Hero(24,12,1,0,0), new Hero(50,6,1,0,0),
             new Hero(22,32,2,0,0), new Hero(46,16,2,0,0), new Hero(32,24,2,0,0), new Hero(58,14,2,0,0),
             new Hero(52,20,2,0,0), new Hero(26,44,2,0,0), new Hero(58,22,2,0,0),
-            new Hero(35,25,1,0,0), new Hero(55,35,2,0,0), new Hero(75,45,6,0,0),
-            new Hero(36,36,2,0,0), new Hero(34,54,6,0,0), new Hero(72,28,6,0,0), new Hero(32,64,6,0,0), new Hero(30,70,6,0,0),
+            new Hero(35,25,1,1,1.5), new Hero(55,35,2,1,1.2), new Hero(75,45,6,1,1.5),                //ww, jack, dull
+            new Hero(36,36,2,0,0), new Hero(34,54,6,0,0), new Hero(72,28,6,0,0), new Hero(32,64,6,0,0), new Hero(30,70,6,0,0),  //odel, shygu, thert, kirk, nep
             new Hero(65,12,6,0,0), new Hero(70,14,6,0,0), new Hero(75,16,6,0,0),               // Sigrun, Koldis, Alvitr
             new Hero(30,18,1,0,0), new Hero(34,34,2,0,0), new Hero(60,42,6,0,0),                //Hama, Halli, Rigr
-            new Hero(174,46,12,0,0), new Hero(162,60,12,0,0), new Hero(120,104,12,0,0), new Hero(148,78,12,0,0),new Hero(190,38,12,0,0),new Hero(222,8,12,0,0),new Hero(116,116,12,0,0),
+            new Hero(174,46,12,0,0), new Hero(162,60,12,0,0), new Hero(120,104,12,0,0), new Hero(148,78,12,0,0),new Hero(190,38,12,0,0),new Hero(222,8,12,1,3),new Hero(116,116,12,0,0),
             null,
-            new Hero(38,24,1,0,0), new Hero(54,36,2,0,0), new Hero(72,48,6,0,0), new Hero(44,44,2,0,0), //xmas
-            new Hero(24,24,1,0,0), new Hero(40,30,2,0,0), new Hero(58,46,6,1,1.15),             //toth, ganah, dagda
+            new Hero(38,24,1,0,0), new Hero(54,36,2,0,0), new Hero(72,48,6,1,2), new Hero(44,44,2,1,5), //xmas
+            new Hero(24,24,1,0,0), new Hero(40,30,2,0,0), new Hero(58,46,6,0,0),             //toth, ganah, dagda
             new Hero(174,46,12,0,0),                                                            //bubbles
-            new Hero(150,86,12,0,0),new Hero(162,81,12,0,0),
-            new Hero(74,36,6,0,0), new Hero(78,40,6,0,0), new Hero(82,44,6,0,0),
-            new Hero(141,99,12,0,0), null,
+            new Hero(150,86,12,0,0),new Hero(162,81,12,0,0),                                    //apon, aatzar
+            new Hero(74,36,6,1,1.8), new Hero(78,40,6,1,1.8), new Hero(82,44,6,1,1.8),                //s4
+            new Hero(141,99,12,0,0), null,                                                      //arigr
             new Hero(42,50,6,0,0), new Hero(32,66,6,0,0), new Hero(38,56,6,0,0), new Hero(44,48,6,0,0),
             new Hero(135,107,12,0,0), //adagda
-            new Hero(30,20,1,0,0), new Hero(36,36,2,0,0), new Hero(52,52,6,0,0), //bavah, boor
-            new Hero(25,75,6,0,0),
-            new Hero(30,30,2,0,0), new Hero(48,42,4,0,0), new Hero(70,48,12,0,0), //sparks, leaf, flynn
-            new Hero(122,122,12,0,0),new Hero(60,66,6,0,0), //bavah , hawking
-            new Hero(150,90,12,0,0), new Hero(70,38,6,0,0), new Hero(78,42,6,0,0), new Hero(86,44,6,0,0),
+            new Hero(30,20,1,0,0), new Hero(36,36,2,0,0), new Hero(52,52,6,0,0),    //bylar, boor, bavah
+            new Hero(25,75,6,1,2),                                                  //lep
+            new Hero(30,30,2,0,0), new Hero(48,42,4,0,0), new Hero(70,48,12,0,0),   //sparks, leaf, flynn
+            new Hero(122,122,12,0,0),new Hero(60,66,6,1,1.3),                       //abavah , hawking
+            new Hero(150,90,12,0,200000), new Hero(70,38,6,0,0), new Hero(78,42,6,0,0), new Hero(86,44,6,0,0),   //lee, s5
             null,
-            new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,0,0),
-            new Hero(25,25,1,0,0), new Hero(48,50,2,0,0), new Hero(52,48,6,0,0),
-            new Hero(150,15,6,0,0),
+            new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,0,0),    //dice, lux, poker
+            new Hero(25,25,1,0,0), new Hero(48,50,2,0,0), new Hero(52,48,6,0,100000),    //taint, putrid, defile
+            new Hero(150,15,6,1,5),                                                 //neil
             new Hero(78,26,6,0,0), new Hero(76,30,6,0,0), new Hero(72,36,6,0,0), new Hero(88,22,6,0,0), //Djinn
             new Hero(85,135,12,0,0), new Hero(180,70,12,0,0), new Hero(80,160,12,0,0), new Hero(75,175,12,0,0), //aQuest
             new Hero(106,124,12,0,0), new Hero(82,164,12,0,0), new Hero(96,144,12,0,0), new Hero(114,126,12,0,0), //aSamurai
             null,
-            new Hero(30,40,1,0,0), new Hero(88,22,2,0,0), new Hero(150,60,6,0,0), //2nd Halloween
-            new Hero(340,64,12,0,0), new Hero(126,114,12,0,0), //Guy, aDefile
-            new Hero(186,62,12,0,0), new Hero(96,30,6,0,0), new Hero(100,32,6,0,0), new Hero(105,34,6,0,0),//S6 Pirates
-            new Hero(46,52,2,0,0), new Hero(50,18,1,0,0), new Hero(78,34,2,0,0), new Hero(170,18,6,0,0),//2nd Christmas
-            new Hero(18,26,1,0,0), new Hero(44,48,2,0,0), new Hero(48,54,6,0,0), new Hero(117,131,12,0,0),//Destructor chest heroes
-            new Hero(54,54,6,0,0), new Hero(56,56,6,0,0), new Hero(58,58,6,0,0), new Hero(130,130,12,0,0),//S7 Fairies
-            new Hero(220,20,6,0,0),//Cupid
-            new Hero(22,22,1,0,0), new Hero(34,34,2,0,0), new Hero(50,50,6,0,0),//Drifter chest heroes
-            new Hero(100,40,6,0,0),//BDay
-            new Hero(44,22,1,0,0), new Hero(64,32,2,0,0), new Hero(84,42,6,0,0), new Hero(180,90,12,0,0),//AH Dragons
+            new Hero(30,40,1,0,100000), new Hero(88,22,2,0,0), new Hero(150,60,6,1,1.5), //2nd Halloween
+            new Hero(340,64,12,1,2), new Hero(126,114,12,0,0), //Guy, aDefile
+            new Hero(186,62,12,1,1.2), new Hero(96,30,6,1,1.2), new Hero(100,32,6,1,1.2), new Hero(105,34,6,1,1.2),     //S6 Pirates
+            new Hero(46,52,2,1,1.5), new Hero(50,18,1,1,7), new Hero(78,34,2,0,0), new Hero(170,18,6,1,2),        //2nd Christmas
+            new Hero(18,26,1,0,0), new Hero(44,48,2,0,0), new Hero(48,54,6,0,0), new Hero(117,131,12,0,0),      //Destructor chest heroes
+            new Hero(54,54,6,0,0), new Hero(56,56,6,0,0), new Hero(58,58,6,0,0), new Hero(130,130,12,0,0),      //S7 Fairies
+            new Hero(220,20,6,0,0),                                                                             //Cupid
+            new Hero(22,22,1,1,1.2), new Hero(34,34,2,1,1.2), new Hero(50,50,6,1,1.2),                                //Drifter chest heroes
+            new Hero(100,40,6,0,0),                                                                             //BDay
+            new Hero(44,22,1,0,0), new Hero(64,32,2,0,0), new Hero(84,42,6,0,0), new Hero(180,90,12,0,0),       //AH Dragons
             new Hero(180,60,12,0,0), new Hero(172,68,12,0,0), new Hero(160,80,12,0,0), new Hero(176,66,12,0,0), //aDjinn
-            new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),//Easter 2
-            new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0), //Aquatic
+            new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),      //Easter 2
+            new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1080,9 +1080,9 @@ namespace CQMacroCreator
                 {
                     dr = MessageBox.Show("You haven't enabled any heroes. Are you sure you want to run the calculator without using any heroes?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 }
-                else if (heroChecked > 20)
+                else if (heroChecked > 25)
                 {
-                    dr = MessageBox.Show("You are using more than 20 heroes, that might considerably slow down the calculations. Are you sure you want to run the calc with so many heroes enabled?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    dr = MessageBox.Show("You are using more than 25 heroes, that might considerably slow down the calculations. Are you sure you want to run the calc with so many heroes enabled?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 }
                 if (lowerCount.Value != -1 && monstersCosts.Count(x => x > lowerCount.Value && x < upperCount.Value) > 50)
                 {
@@ -1354,6 +1354,7 @@ namespace CQMacroCreator
 
         private void chooseHeroes()
         {
+            int maxChecked = 20; // initially 14
             foreach (CheckBox cb in heroBoxes)
                 if (cb != null)
                     cb.Checked = false;
@@ -1361,12 +1362,12 @@ namespace CQMacroCreator
             for (int i = 0; i < heroCounts.Count; i++)
             {
                 if (heroList[i] != null && heroCounts[i] != null && heroCounts[i].Enabled)
-                    strength[i] = heroList[i].getStrength((int)heroCounts[i].Value);
+                    strength[i] = heroList[i].getStrength((int)heroCounts[i].Value + (int)heroPromos[i].Value * 10);
             }
             int index;
             int[] sorted = strength.OrderByDescending(i => i).ToArray();
             int j = 0;
-            while (sorted[j] > (decimal)0.33 * lowerCount.Value && (j < 8 || (j < 14 && sorted[j + 1] > sorted[j] * 0.5)))
+            while (sorted[j] > (decimal)0.1 * lowerCount.Value && (j < 8 || (j < maxChecked && sorted[j + 1] > sorted[j] * 0.3)))
             {
                 index = Array.IndexOf(strength, sorted[j]);
                 heroBoxes[index].Checked = true;
@@ -1757,6 +1758,15 @@ namespace CQMacroCreator
                 mt = new Thread(pf.GetGameData);
                 mt.Start();
                 mt.Join();
+                // MB 20190505 - force relogin
+                if (PFStuff.getResult.Count == 0)
+                {
+                    login();
+                    mt = new Thread(pf.GetGameData);
+                    mt.Start();
+                    mt.Join();
+                }
+                //
                 if (PFStuff.getResult.Count > 0)
                 {
                     if (followers)
@@ -1901,9 +1911,9 @@ namespace CQMacroCreator
             msh.Show();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabelAutomater_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/Wiedmolol/CQAutomater");
+            Process.Start("https://github.com/MatthieuBonne/CQAutomater");
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1971,6 +1981,16 @@ namespace CQMacroCreator
                 proc.Dispose();
             }
             catch { }
+        }
+
+        private void Label57_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LinkLabelMacroCreator_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/Alya-N/CQMacroCreator");
         }
     }
 }
