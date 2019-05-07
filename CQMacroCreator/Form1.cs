@@ -1633,7 +1633,7 @@ namespace CQMacroCreator
             }
             else
             {
-                upperCount.Value = (int)(d * Int32.Parse(followerLabel.Text.Replace(" ", "")));
+                upperCount.Value = (long)(d * Int64.Parse(followerLabel.Text.Replace(" ", "")));
             }
         }
 
@@ -1645,7 +1645,7 @@ namespace CQMacroCreator
             }
             else
             {
-                lowerCount.Value = (int)(d * Int32.Parse(followerLabel.Text.Replace(" ", "")));
+                lowerCount.Value = (long)(d * Int64.Parse(followerLabel.Text.Replace(" ", "")));
             }
         }
 
@@ -1658,7 +1658,7 @@ namespace CQMacroCreator
             }
             else
             {
-                lowerCount.Value = (int)(0.3 * Int32.Parse(followerLabel.Text.Replace(" ", "")));
+                lowerCount.Value = (long)(0.3 * Int64.Parse(followerLabel.Text.Replace(" ", "")));
             }
         }
 

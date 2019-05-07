@@ -29,7 +29,7 @@ namespace CQMacroCreator
         string kongID;
         public static int questID;
         public static List<int[]> getResult;
-        public static int followers;
+        public static long followers;
         public static int[] lineup;
         public static List<int> questList;
         public static int dungeonLvl;
@@ -113,7 +113,7 @@ namespace CQMacroCreator
                         DQlvl = json["data"]["city"]["daily"]["lvl"].ToString();
                         quests = quests.Substring(1, quests.Length - 2);
                         questList = quests.Split(',').Select(Int32.Parse).ToList();
-                        followers = Convert.ToInt32(json["data"]["followers"].ToString());
+                        followers = Convert.ToInt64(json["data"]["followers"].ToString());
                         int[] heroLevels = getArray(levels);
                         int[] enemyLineup = getArray(el);
                         int[] enemyLevels = getArray(elvl);
