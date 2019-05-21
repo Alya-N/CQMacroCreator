@@ -106,10 +106,10 @@ namespace CQMacroCreator
                                 "mahatma", "jade", "edana", "dybbuk", "ashygu", "athert", "alordkirk", "aneptunius","ahosokawa","atakeda","ahirate","ahattori","doyenne","billy","sanqueen","cliodhna",
                                 "guy","adefile","raiderrose","buccaneerbeatrice","corsaircharles","maraudermagnus","frosty","fir","5-12-6","kedari","raze","ruin","seethe","aseethe",
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
-                                "willow","gizmo","daisy","thumper","bortles","murphy","nerissa"
+                                "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother"
                                 };
 
-        static string[] servernames = {"nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
+        static string[] servernames = {"mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
                                "doyenne","ahattori","ahirate","atakeda","ahosokawa","aneptunius", "alordkirk", "athert", "ashygu", "dybbuk", "edana", "jade", "mahatma",
                                "neil", "defile", "putrid", "taint", "pokerface", "luxuriusmaximus", "dicemaster", "kryton", "hidoka", "liucheng", "kumusan", "masterlee", "drhawking",
@@ -201,7 +201,8 @@ namespace CQMacroCreator
                                                CloudCount, EmberCount, RiptideCount, SpikeCount,
                                                AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount,
                                                WillowCount,GizmoCount,DaisyCount,ThumperCount,
-                                               BortlesCount,MurphyCount,NerissaCount
+                                               BortlesCount,MurphyCount,NerissaCount,
+                                               MotherCount
 
             };
 
@@ -260,7 +261,8 @@ namespace CQMacroCreator
                                                CloudCount, EmberCount, RiptideCount, SpikeCount,
                                                AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount,
                                                WillowCount,GizmoCount,DaisyCount,ThumperCount,
-                                               BortlesCount,MurphyCount,NerissaCount
+                                               BortlesCount,MurphyCount,NerissaCount,
+                                               MotherCount
 
             };
 
@@ -315,7 +317,8 @@ namespace CQMacroCreator
                                                cloudPromo, emberPromo, riptidePromo, spikePromo,
                                                amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo,
                                                willowPromo, gizmoPromo, daisyPromo, thumperPromo,
-                                               bortlesPromo, murphyPromo, nerissaPromo
+                                               bortlesPromo, murphyPromo, nerissaPromo,
+                                               motherPromo
 
             };
 
@@ -372,7 +375,8 @@ namespace CQMacroCreator
                                                cloudPromo, emberPromo, riptidePromo, spikePromo,
                                                amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo,
                                                willowPromo, gizmoPromo, daisyPromo, thumperPromo,
-                                               bortlesPromo, murphyPromo, nerissaPromo
+                                               bortlesPromo, murphyPromo, nerissaPromo,
+                                               motherPromo
 
             };
 
@@ -427,7 +431,8 @@ namespace CQMacroCreator
                                                CloudBox, EmberBox, RiptideBox, SpikeBox,
                                                AMahatmaBox, AJadeBox, AEdanaBox, ADybbukBox,
                                                WillowBox, GizmoBox, DaisyBox, ThumperBox,
-                                               BortlesBox, MurphyBox, NerissaBox
+                                               BortlesBox, MurphyBox, NerissaBox,
+                                               MotherBox
 
             };
 
@@ -946,6 +951,7 @@ namespace CQMacroCreator
             new Hero(180,60,12,0,0), new Hero(172,68,12,0,0), new Hero(160,80,12,0,0), new Hero(176,66,12,0,0), //aDjinn
             new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),      //Easter 2
             new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
+            new Hero(112,55,6,1,1.5),                                                                             //Mother
         });
 
         private void button1_Click(object sender, EventArgs e)
