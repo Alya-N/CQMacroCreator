@@ -106,10 +106,10 @@ namespace CQMacroCreator
                                 "mahatma", "jade", "edana", "dybbuk", "ashygu", "athert", "alordkirk", "aneptunius","ahosokawa","atakeda","ahirate","ahattori","doyenne","billy","sanqueen","cliodhna",
                                 "guy","adefile","raiderrose","buccaneerbeatrice","corsaircharles","maraudermagnus","frosty","fir","5-12-6","kedari","raze","ruin","seethe","aseethe",
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
-                                "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother"
+                                "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer"
                                 };
 
-        static string[] servernames = {"mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
+        static string[] servernames = {"awanderer","minerva","helga","ophelia","agatha","anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
                                "doyenne","ahattori","ahirate","atakeda","ahosokawa","aneptunius", "alordkirk", "athert", "ashygu", "dybbuk", "edana", "jade", "mahatma",
                                "neil", "defile", "putrid", "taint", "pokerface", "luxuriusmaximus", "dicemaster", "kryton", "hidoka", "liucheng", "kumusan", "masterlee", "drhawking",
@@ -202,7 +202,9 @@ namespace CQMacroCreator
                                                AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount,
                                                WillowCount,GizmoCount,DaisyCount,ThumperCount,
                                                BortlesCount,MurphyCount,NerissaCount,
-                                               MotherCount
+                                               MotherCount,
+                                               ANerissaCount,AgathaCount,OpheliaCount,HelgaCount,
+                                               MinervaCount,AWandererCount
 
             };
 
@@ -262,7 +264,9 @@ namespace CQMacroCreator
                                                AMahatmaCount, AJadeCount, AEdanaCount, ADybbukCount,
                                                WillowCount,GizmoCount,DaisyCount,ThumperCount,
                                                BortlesCount,MurphyCount,NerissaCount,
-                                               MotherCount
+                                               MotherCount,
+                                               ANerissaCount,AgathaCount,OpheliaCount,HelgaCount,
+                                               MinervaCount,AWandererCount
 
             };
 
@@ -318,7 +322,9 @@ namespace CQMacroCreator
                                                amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo,
                                                willowPromo, gizmoPromo, daisyPromo, thumperPromo,
                                                bortlesPromo, murphyPromo, nerissaPromo,
-                                               motherPromo
+                                               motherPromo,
+                                               anerissaPromo,agathaPromo,opheliaPromo,helgaPromo,
+                                               minervaPromo,awandererPromo
 
             };
 
@@ -376,7 +382,9 @@ namespace CQMacroCreator
                                                amahatmaPromo, ajadePromo, aedanaPromo, adybbukPromo,
                                                willowPromo, gizmoPromo, daisyPromo, thumperPromo,
                                                bortlesPromo, murphyPromo, nerissaPromo,
-                                               motherPromo
+                                               motherPromo,
+                                               anerissaPromo,agathaPromo,opheliaPromo,helgaPromo,
+                                               minervaPromo,awandererPromo
 
             };
 
@@ -432,7 +440,9 @@ namespace CQMacroCreator
                                                AMahatmaBox, AJadeBox, AEdanaBox, ADybbukBox,
                                                WillowBox, GizmoBox, DaisyBox, ThumperBox,
                                                BortlesBox, MurphyBox, NerissaBox,
-                                               MotherBox
+                                               MotherBox,
+                                               ANerissaBox,AgathaBox,OpheliaBox,HelgaBox,
+                                               MinervaBox,AWandererBox
 
             };
 
@@ -951,7 +961,9 @@ namespace CQMacroCreator
             new Hero(180,60,12,0,0), new Hero(172,68,12,0,0), new Hero(160,80,12,0,0), new Hero(176,66,12,0,0), //aDjinn
             new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),      //Easter 2
             new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
-            new Hero(112,55,6,1,1.5),                                                                             //Mother
+            new Hero(112,55,6,1,1.5),                                                                           //Mother
+            new Hero(48,164,12,0,0),new Hero(51,59,6,0,0),new Hero(52,60,6,0,0),new Hero(53,61,6,0,0),          //aNerissa, S8 Witches
+            new Hero(108,124,12,0,0),new Hero(124,124,12,0,0),                                                  //Minerva, aWanderer
         });
 
         private void button1_Click(object sender, EventArgs e)
