@@ -11,6 +11,26 @@ Original repo: https://github.com/Diceycle/C-Hero-Calc
 Just place CQMacroCreator.exe in the same folder as CosmosQuest.exe and run it.
 ![screenshot](https://i.imgur.com/MuTsyGA.png)
 # What's new
+v4.3b - T31+ monsters
+
+v4.3a - Witches, aWanderer, aNerissa
+
+v4.2b - Mother
+
+v4.2 - Easter and aquatic heroes
+
+v4.1g - Adjinns and new quests
+
+v4.1f - B-day and dragons
+
+v4.1e - Drifter chest heroes
+
+v4.1d - Cupid
+
+v4.1c - Fairies (S7)
+
+v4.1a - Destructor chest heroes
+
 v4.0b - Added Promotions
 
 v.3.0.1c - Added Kryton("aboss" works too), added option to get Dungeon lineup from server and solve them. 
