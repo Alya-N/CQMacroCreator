@@ -254,6 +254,26 @@
             this.CSHC = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Heroes = new System.Windows.Forms.TabPage();
+            this.acreiPromo = new System.Windows.Forms.NumericUpDown();
+            this.acreiBox = new System.Windows.Forms.CheckBox();
+            this.label420 = new System.Windows.Forms.Label();
+            this.acreiCount = new System.Windows.Forms.NumericUpDown();
+            this.tetraPromo = new System.Windows.Forms.NumericUpDown();
+            this.TetraCount = new System.Windows.Forms.NumericUpDown();
+            this.TetraBox = new System.Windows.Forms.CheckBox();
+            this.label419 = new System.Windows.Forms.Label();
+            this.creiPromo = new System.Windows.Forms.NumericUpDown();
+            this.catzarPromo = new System.Windows.Forms.NumericUpDown();
+            this.cathosPromo = new System.Windows.Forms.NumericUpDown();
+            this.creiBox = new System.Windows.Forms.CheckBox();
+            this.label416 = new System.Windows.Forms.Label();
+            this.creiCount = new System.Windows.Forms.NumericUpDown();
+            this.catzarBox = new System.Windows.Forms.CheckBox();
+            this.label417 = new System.Windows.Forms.Label();
+            this.catzarCount = new System.Windows.Forms.NumericUpDown();
+            this.cathosBox = new System.Windows.Forms.CheckBox();
+            this.label418 = new System.Windows.Forms.Label();
+            this.cathosCount = new System.Windows.Forms.NumericUpDown();
             this.awandererPromo = new System.Windows.Forms.NumericUpDown();
             this.AWandererBox = new System.Windows.Forms.CheckBox();
             this.label415 = new System.Windows.Forms.Label();
@@ -1804,6 +1824,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.HamaCount)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Heroes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.acreiPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acreiCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetraPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TetraCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.creiPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catzarPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cathosPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.creiCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catzarCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cathosCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.awandererPromo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AWandererCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.anerissaPromo)).BeginInit();
@@ -2095,7 +2125,7 @@
             // 
             // JamesCount
             // 
-            this.JamesCount.Location = new System.Drawing.Point(65, 867);
+            this.JamesCount.Location = new System.Drawing.Point(65, 889);
             this.JamesCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -2108,7 +2138,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 871);
+            this.label1.Location = new System.Drawing.Point(25, 893);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 1;
@@ -2117,7 +2147,7 @@
             // JamesBox
             // 
             this.JamesBox.AutoSize = true;
-            this.JamesBox.Location = new System.Drawing.Point(130, 869);
+            this.JamesBox.Location = new System.Drawing.Point(130, 891);
             this.JamesBox.Name = "JamesBox";
             this.JamesBox.Size = new System.Drawing.Size(33, 17);
             this.JamesBox.TabIndex = 2;
@@ -3050,7 +3080,7 @@
             // NebraBox
             // 
             this.NebraBox.AutoSize = true;
-            this.NebraBox.Location = new System.Drawing.Point(484, 847);
+            this.NebraBox.Location = new System.Drawing.Point(484, 869);
             this.NebraBox.Name = "NebraBox";
             this.NebraBox.Size = new System.Drawing.Size(33, 17);
             this.NebraBox.TabIndex = 92;
@@ -3062,7 +3092,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(382, 849);
+            this.label29.Location = new System.Drawing.Point(382, 871);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(36, 13);
             this.label29.TabIndex = 91;
@@ -3070,7 +3100,7 @@
             // 
             // NebraCount
             // 
-            this.NebraCount.Location = new System.Drawing.Point(419, 845);
+            this.NebraCount.Location = new System.Drawing.Point(419, 867);
             this.NebraCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3083,7 +3113,7 @@
             // TinyBox
             // 
             this.TinyBox.AutoSize = true;
-            this.TinyBox.Location = new System.Drawing.Point(307, 847);
+            this.TinyBox.Location = new System.Drawing.Point(307, 869);
             this.TinyBox.Name = "TinyBox";
             this.TinyBox.Size = new System.Drawing.Size(33, 17);
             this.TinyBox.TabIndex = 89;
@@ -3095,7 +3125,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(213, 849);
+            this.label30.Location = new System.Drawing.Point(213, 871);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(27, 13);
             this.label30.TabIndex = 88;
@@ -3103,7 +3133,7 @@
             // 
             // TinyCount
             // 
-            this.TinyCount.Location = new System.Drawing.Point(242, 845);
+            this.TinyCount.Location = new System.Drawing.Point(242, 867);
             this.TinyCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3116,7 +3146,7 @@
             // LadyBox
             // 
             this.LadyBox.AutoSize = true;
-            this.LadyBox.Location = new System.Drawing.Point(130, 847);
+            this.LadyBox.Location = new System.Drawing.Point(130, 869);
             this.LadyBox.Name = "LadyBox";
             this.LadyBox.Size = new System.Drawing.Size(33, 17);
             this.LadyBox.TabIndex = 86;
@@ -3128,7 +3158,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(36, 849);
+            this.label31.Location = new System.Drawing.Point(36, 871);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(26, 13);
             this.label31.TabIndex = 85;
@@ -3136,7 +3166,7 @@
             // 
             // LadyCount
             // 
-            this.LadyCount.Location = new System.Drawing.Point(65, 845);
+            this.LadyCount.Location = new System.Drawing.Point(65, 867);
             this.LadyCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3149,7 +3179,7 @@
             // label32
             // 
             this.label32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label32.Location = new System.Drawing.Point(9, 365);
+            this.label32.Location = new System.Drawing.Point(9, 387);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(505, 2);
             this.label32.TabIndex = 93;
@@ -3157,7 +3187,7 @@
             // GrothBox
             // 
             this.GrothBox.AutoSize = true;
-            this.GrothBox.Location = new System.Drawing.Point(484, 372);
+            this.GrothBox.Location = new System.Drawing.Point(484, 394);
             this.GrothBox.Name = "GrothBox";
             this.GrothBox.Size = new System.Drawing.Size(33, 17);
             this.GrothBox.TabIndex = 102;
@@ -3169,7 +3199,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(385, 374);
+            this.label33.Location = new System.Drawing.Point(385, 396);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(33, 13);
             this.label33.TabIndex = 101;
@@ -3177,7 +3207,7 @@
             // 
             // GrothCount
             // 
-            this.GrothCount.Location = new System.Drawing.Point(419, 370);
+            this.GrothCount.Location = new System.Drawing.Point(419, 392);
             this.GrothCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3190,7 +3220,7 @@
             // BrynBox
             // 
             this.BrynBox.AutoSize = true;
-            this.BrynBox.Location = new System.Drawing.Point(307, 372);
+            this.BrynBox.Location = new System.Drawing.Point(307, 394);
             this.BrynBox.Name = "BrynBox";
             this.BrynBox.Size = new System.Drawing.Size(33, 17);
             this.BrynBox.TabIndex = 99;
@@ -3202,7 +3232,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(193, 374);
+            this.label34.Location = new System.Drawing.Point(193, 396);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(47, 13);
             this.label34.TabIndex = 98;
@@ -3210,7 +3240,7 @@
             // 
             // BrynCount
             // 
-            this.BrynCount.Location = new System.Drawing.Point(242, 370);
+            this.BrynCount.Location = new System.Drawing.Point(242, 392);
             this.BrynCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3223,7 +3253,7 @@
             // VeildurBox
             // 
             this.VeildurBox.AutoSize = true;
-            this.VeildurBox.Location = new System.Drawing.Point(130, 372);
+            this.VeildurBox.Location = new System.Drawing.Point(130, 394);
             this.VeildurBox.Name = "VeildurBox";
             this.VeildurBox.Size = new System.Drawing.Size(33, 17);
             this.VeildurBox.TabIndex = 96;
@@ -3235,7 +3265,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(23, 374);
+            this.label35.Location = new System.Drawing.Point(23, 396);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(39, 13);
             this.label35.TabIndex = 95;
@@ -3243,7 +3273,7 @@
             // 
             // VeildurCount
             // 
-            this.VeildurCount.Location = new System.Drawing.Point(65, 370);
+            this.VeildurCount.Location = new System.Drawing.Point(65, 392);
             this.VeildurCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3256,7 +3286,7 @@
             // GaiaBox
             // 
             this.GaiaBox.AutoSize = true;
-            this.GaiaBox.Location = new System.Drawing.Point(484, 548);
+            this.GaiaBox.Location = new System.Drawing.Point(484, 570);
             this.GaiaBox.Name = "GaiaBox";
             this.GaiaBox.Size = new System.Drawing.Size(33, 17);
             this.GaiaBox.TabIndex = 111;
@@ -3268,7 +3298,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(369, 550);
+            this.label36.Location = new System.Drawing.Point(369, 572);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(49, 13);
             this.label36.TabIndex = 110;
@@ -3276,7 +3306,7 @@
             // 
             // GaiaCount
             // 
-            this.GaiaCount.Location = new System.Drawing.Point(419, 546);
+            this.GaiaCount.Location = new System.Drawing.Point(419, 568);
             this.GaiaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3289,7 +3319,7 @@
             // AoyukiBox
             // 
             this.AoyukiBox.AutoSize = true;
-            this.AoyukiBox.Location = new System.Drawing.Point(307, 548);
+            this.AoyukiBox.Location = new System.Drawing.Point(307, 570);
             this.AoyukiBox.Name = "AoyukiBox";
             this.AoyukiBox.Size = new System.Drawing.Size(33, 17);
             this.AoyukiBox.TabIndex = 108;
@@ -3301,7 +3331,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(201, 550);
+            this.label37.Location = new System.Drawing.Point(201, 572);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(39, 13);
             this.label37.TabIndex = 107;
@@ -3309,7 +3339,7 @@
             // 
             // AoyukiCount
             // 
-            this.AoyukiCount.Location = new System.Drawing.Point(242, 546);
+            this.AoyukiCount.Location = new System.Drawing.Point(242, 568);
             this.AoyukiCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3322,7 +3352,7 @@
             // SpykeBox
             // 
             this.SpykeBox.AutoSize = true;
-            this.SpykeBox.Location = new System.Drawing.Point(130, 548);
+            this.SpykeBox.Location = new System.Drawing.Point(130, 570);
             this.SpykeBox.Name = "SpykeBox";
             this.SpykeBox.Size = new System.Drawing.Size(33, 17);
             this.SpykeBox.TabIndex = 105;
@@ -3334,7 +3364,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(25, 550);
+            this.label38.Location = new System.Drawing.Point(25, 572);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(37, 13);
             this.label38.TabIndex = 104;
@@ -3342,7 +3372,7 @@
             // 
             // SpykeCount
             // 
-            this.SpykeCount.Location = new System.Drawing.Point(65, 546);
+            this.SpykeCount.Location = new System.Drawing.Point(65, 568);
             this.SpykeCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3355,7 +3385,7 @@
             // label39
             // 
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label39.Location = new System.Drawing.Point(9, 570);
+            this.label39.Location = new System.Drawing.Point(9, 592);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(505, 2);
             this.label39.TabIndex = 112;
@@ -3363,7 +3393,7 @@
             // ChromaBox
             // 
             this.ChromaBox.AutoSize = true;
-            this.ChromaBox.Location = new System.Drawing.Point(484, 621);
+            this.ChromaBox.Location = new System.Drawing.Point(484, 643);
             this.ChromaBox.Name = "ChromaBox";
             this.ChromaBox.Size = new System.Drawing.Size(33, 17);
             this.ChromaBox.TabIndex = 145;
@@ -3375,7 +3405,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(375, 623);
+            this.label41.Location = new System.Drawing.Point(375, 645);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(43, 13);
             this.label41.TabIndex = 144;
@@ -3383,7 +3413,7 @@
             // 
             // ChromaCount
             // 
-            this.ChromaCount.Location = new System.Drawing.Point(419, 619);
+            this.ChromaCount.Location = new System.Drawing.Point(419, 641);
             this.ChromaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3396,7 +3426,7 @@
             // DruidBox
             // 
             this.DruidBox.AutoSize = true;
-            this.DruidBox.Location = new System.Drawing.Point(484, 599);
+            this.DruidBox.Location = new System.Drawing.Point(484, 621);
             this.DruidBox.Name = "DruidBox";
             this.DruidBox.Size = new System.Drawing.Size(33, 17);
             this.DruidBox.TabIndex = 142;
@@ -3408,7 +3438,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(386, 601);
+            this.label42.Location = new System.Drawing.Point(386, 623);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(32, 13);
             this.label42.TabIndex = 141;
@@ -3416,7 +3446,7 @@
             // 
             // DruidCount
             // 
-            this.DruidCount.Location = new System.Drawing.Point(419, 597);
+            this.DruidCount.Location = new System.Drawing.Point(419, 619);
             this.DruidCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3429,7 +3459,7 @@
             // PyroBox
             // 
             this.PyroBox.AutoSize = true;
-            this.PyroBox.Location = new System.Drawing.Point(484, 577);
+            this.PyroBox.Location = new System.Drawing.Point(484, 599);
             this.PyroBox.Name = "PyroBox";
             this.PyroBox.Size = new System.Drawing.Size(33, 17);
             this.PyroBox.TabIndex = 139;
@@ -3441,7 +3471,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(390, 579);
+            this.label43.Location = new System.Drawing.Point(390, 601);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(28, 13);
             this.label43.TabIndex = 138;
@@ -3449,7 +3479,7 @@
             // 
             // PyroCount
             // 
-            this.PyroCount.Location = new System.Drawing.Point(419, 575);
+            this.PyroCount.Location = new System.Drawing.Point(419, 597);
             this.PyroCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3462,7 +3492,7 @@
             // ZaytusBox
             // 
             this.ZaytusBox.AutoSize = true;
-            this.ZaytusBox.Location = new System.Drawing.Point(307, 643);
+            this.ZaytusBox.Location = new System.Drawing.Point(307, 665);
             this.ZaytusBox.Name = "ZaytusBox";
             this.ZaytusBox.Size = new System.Drawing.Size(33, 17);
             this.ZaytusBox.TabIndex = 136;
@@ -3474,7 +3504,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(201, 645);
+            this.label44.Location = new System.Drawing.Point(201, 667);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(39, 13);
             this.label44.TabIndex = 135;
@@ -3482,7 +3512,7 @@
             // 
             // ZaytusCount
             // 
-            this.ZaytusCount.Location = new System.Drawing.Point(242, 641);
+            this.ZaytusCount.Location = new System.Drawing.Point(242, 663);
             this.ZaytusCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3495,7 +3525,7 @@
             // UndineBox
             // 
             this.UndineBox.AutoSize = true;
-            this.UndineBox.Location = new System.Drawing.Point(307, 621);
+            this.UndineBox.Location = new System.Drawing.Point(307, 643);
             this.UndineBox.Name = "UndineBox";
             this.UndineBox.Size = new System.Drawing.Size(33, 17);
             this.UndineBox.TabIndex = 133;
@@ -3507,7 +3537,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(199, 623);
+            this.label45.Location = new System.Drawing.Point(199, 645);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(41, 13);
             this.label45.TabIndex = 132;
@@ -3515,7 +3545,7 @@
             // 
             // UndineCount
             // 
-            this.UndineCount.Location = new System.Drawing.Point(242, 619);
+            this.UndineCount.Location = new System.Drawing.Point(242, 641);
             this.UndineCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3528,7 +3558,7 @@
             // NicteBox
             // 
             this.NicteBox.AutoSize = true;
-            this.NicteBox.Location = new System.Drawing.Point(307, 599);
+            this.NicteBox.Location = new System.Drawing.Point(307, 621);
             this.NicteBox.Name = "NicteBox";
             this.NicteBox.Size = new System.Drawing.Size(33, 17);
             this.NicteBox.TabIndex = 130;
@@ -3540,7 +3570,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(208, 601);
+            this.label46.Location = new System.Drawing.Point(208, 623);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(32, 13);
             this.label46.TabIndex = 129;
@@ -3548,7 +3578,7 @@
             // 
             // NicteCount
             // 
-            this.NicteCount.Location = new System.Drawing.Point(242, 597);
+            this.NicteCount.Location = new System.Drawing.Point(242, 619);
             this.NicteCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3561,7 +3591,7 @@
             // RokkaBox
             // 
             this.RokkaBox.AutoSize = true;
-            this.RokkaBox.Location = new System.Drawing.Point(307, 577);
+            this.RokkaBox.Location = new System.Drawing.Point(307, 599);
             this.RokkaBox.Name = "RokkaBox";
             this.RokkaBox.Size = new System.Drawing.Size(33, 17);
             this.RokkaBox.TabIndex = 127;
@@ -3573,7 +3603,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(201, 579);
+            this.label47.Location = new System.Drawing.Point(201, 601);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(39, 13);
             this.label47.TabIndex = 126;
@@ -3581,7 +3611,7 @@
             // 
             // RokkaCount
             // 
-            this.RokkaCount.Location = new System.Drawing.Point(242, 575);
+            this.RokkaCount.Location = new System.Drawing.Point(242, 597);
             this.RokkaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3594,7 +3624,7 @@
             // PetryBox
             // 
             this.PetryBox.AutoSize = true;
-            this.PetryBox.Location = new System.Drawing.Point(130, 643);
+            this.PetryBox.Location = new System.Drawing.Point(130, 665);
             this.PetryBox.Name = "PetryBox";
             this.PetryBox.Size = new System.Drawing.Size(33, 17);
             this.PetryBox.TabIndex = 124;
@@ -3606,7 +3636,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(31, 645);
+            this.label48.Location = new System.Drawing.Point(31, 667);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(31, 13);
             this.label48.TabIndex = 123;
@@ -3614,7 +3644,7 @@
             // 
             // PetryCount
             // 
-            this.PetryCount.Location = new System.Drawing.Point(65, 641);
+            this.PetryCount.Location = new System.Drawing.Point(65, 663);
             this.PetryCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3627,7 +3657,7 @@
             // IgnitorBox
             // 
             this.IgnitorBox.AutoSize = true;
-            this.IgnitorBox.Location = new System.Drawing.Point(130, 621);
+            this.IgnitorBox.Location = new System.Drawing.Point(130, 643);
             this.IgnitorBox.Name = "IgnitorBox";
             this.IgnitorBox.Size = new System.Drawing.Size(33, 17);
             this.IgnitorBox.TabIndex = 121;
@@ -3639,7 +3669,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(26, 623);
+            this.label49.Location = new System.Drawing.Point(26, 645);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(36, 13);
             this.label49.TabIndex = 120;
@@ -3647,7 +3677,7 @@
             // 
             // IgnitorCount
             // 
-            this.IgnitorCount.Location = new System.Drawing.Point(65, 619);
+            this.IgnitorCount.Location = new System.Drawing.Point(65, 641);
             this.IgnitorCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3660,7 +3690,7 @@
             // BewatBox
             // 
             this.BewatBox.AutoSize = true;
-            this.BewatBox.Location = new System.Drawing.Point(130, 599);
+            this.BewatBox.Location = new System.Drawing.Point(130, 621);
             this.BewatBox.Name = "BewatBox";
             this.BewatBox.Size = new System.Drawing.Size(33, 17);
             this.BewatBox.TabIndex = 118;
@@ -3672,7 +3702,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(25, 601);
+            this.label50.Location = new System.Drawing.Point(25, 623);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(37, 13);
             this.label50.TabIndex = 117;
@@ -3680,7 +3710,7 @@
             // 
             // BewatCount
             // 
-            this.BewatCount.Location = new System.Drawing.Point(65, 597);
+            this.BewatCount.Location = new System.Drawing.Point(65, 619);
             this.BewatCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3693,7 +3723,7 @@
             // ValorBox
             // 
             this.ValorBox.AutoSize = true;
-            this.ValorBox.Location = new System.Drawing.Point(130, 577);
+            this.ValorBox.Location = new System.Drawing.Point(130, 599);
             this.ValorBox.Name = "ValorBox";
             this.ValorBox.Size = new System.Drawing.Size(33, 17);
             this.ValorBox.TabIndex = 115;
@@ -3705,7 +3735,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(31, 579);
+            this.label51.Location = new System.Drawing.Point(31, 601);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(31, 13);
             this.label51.TabIndex = 114;
@@ -3713,7 +3743,7 @@
             // 
             // ValorCount
             // 
-            this.ValorCount.Location = new System.Drawing.Point(65, 575);
+            this.ValorCount.Location = new System.Drawing.Point(65, 597);
             this.ValorCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3847,7 +3877,7 @@
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label56.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label56.Location = new System.Drawing.Point(655, 15);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(176, 13);
@@ -3857,17 +3887,16 @@
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label57.Location = new System.Drawing.Point(794, 41);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(34, 13);
             this.label57.TabIndex = 159;
-            this.label57.Text = "v4.3b";
+            this.label57.Text = "v4.3c";
             // 
             // GurthBox
             // 
             this.GurthBox.AutoSize = true;
-            this.GurthBox.Location = new System.Drawing.Point(484, 394);
+            this.GurthBox.Location = new System.Drawing.Point(484, 416);
             this.GurthBox.Name = "GurthBox";
             this.GurthBox.Size = new System.Drawing.Size(33, 17);
             this.GurthBox.TabIndex = 168;
@@ -3879,7 +3908,7 @@
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(385, 396);
+            this.label58.Location = new System.Drawing.Point(385, 418);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(33, 13);
             this.label58.TabIndex = 167;
@@ -3887,7 +3916,7 @@
             // 
             // GurthCount
             // 
-            this.GurthCount.Location = new System.Drawing.Point(419, 392);
+            this.GurthCount.Location = new System.Drawing.Point(419, 414);
             this.GurthCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3900,7 +3929,7 @@
             // KothBox
             // 
             this.KothBox.AutoSize = true;
-            this.KothBox.Location = new System.Drawing.Point(307, 394);
+            this.KothBox.Location = new System.Drawing.Point(307, 416);
             this.KothBox.Name = "KothBox";
             this.KothBox.Size = new System.Drawing.Size(33, 17);
             this.KothBox.TabIndex = 165;
@@ -3912,7 +3941,7 @@
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(211, 396);
+            this.label59.Location = new System.Drawing.Point(211, 418);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(29, 13);
             this.label59.TabIndex = 164;
@@ -3920,7 +3949,7 @@
             // 
             // KothCount
             // 
-            this.KothCount.Location = new System.Drawing.Point(242, 392);
+            this.KothCount.Location = new System.Drawing.Point(242, 414);
             this.KothCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3933,7 +3962,7 @@
             // ZethBox
             // 
             this.ZethBox.AutoSize = true;
-            this.ZethBox.Location = new System.Drawing.Point(130, 394);
+            this.ZethBox.Location = new System.Drawing.Point(130, 416);
             this.ZethBox.Name = "ZethBox";
             this.ZethBox.Size = new System.Drawing.Size(33, 17);
             this.ZethBox.TabIndex = 162;
@@ -3945,7 +3974,7 @@
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(33, 396);
+            this.label60.Location = new System.Drawing.Point(33, 418);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(29, 13);
             this.label60.TabIndex = 161;
@@ -3953,7 +3982,7 @@
             // 
             // ZethCount
             // 
-            this.ZethCount.Location = new System.Drawing.Point(65, 392);
+            this.ZethCount.Location = new System.Drawing.Point(65, 414);
             this.ZethCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -3986,7 +4015,7 @@
             // label62
             // 
             this.label62.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label62.Location = new System.Drawing.Point(9, 840);
+            this.label62.Location = new System.Drawing.Point(9, 862);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(505, 2);
             this.label62.TabIndex = 172;
@@ -3994,7 +4023,7 @@
             // WerewolfBox
             // 
             this.WerewolfBox.AutoSize = true;
-            this.WerewolfBox.Location = new System.Drawing.Point(130, 891);
+            this.WerewolfBox.Location = new System.Drawing.Point(130, 913);
             this.WerewolfBox.Name = "WerewolfBox";
             this.WerewolfBox.Size = new System.Drawing.Size(33, 17);
             this.WerewolfBox.TabIndex = 175;
@@ -4006,7 +4035,7 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(10, 893);
+            this.label63.Location = new System.Drawing.Point(10, 915);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(52, 13);
             this.label63.TabIndex = 174;
@@ -4014,7 +4043,7 @@
             // 
             // WerewolfCount
             // 
-            this.WerewolfCount.Location = new System.Drawing.Point(65, 889);
+            this.WerewolfCount.Location = new System.Drawing.Point(65, 911);
             this.WerewolfCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4027,7 +4056,7 @@
             // JackBox
             // 
             this.JackBox.AutoSize = true;
-            this.JackBox.Location = new System.Drawing.Point(307, 891);
+            this.JackBox.Location = new System.Drawing.Point(307, 913);
             this.JackBox.Name = "JackBox";
             this.JackBox.Size = new System.Drawing.Size(33, 17);
             this.JackBox.TabIndex = 178;
@@ -4039,7 +4068,7 @@
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(169, 893);
+            this.label64.Location = new System.Drawing.Point(169, 915);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(71, 13);
             this.label64.TabIndex = 177;
@@ -4047,7 +4076,7 @@
             // 
             // JackCount
             // 
-            this.JackCount.Location = new System.Drawing.Point(242, 889);
+            this.JackCount.Location = new System.Drawing.Point(242, 911);
             this.JackCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4060,7 +4089,7 @@
             // DullahanBox
             // 
             this.DullahanBox.AutoSize = true;
-            this.DullahanBox.Location = new System.Drawing.Point(484, 891);
+            this.DullahanBox.Location = new System.Drawing.Point(484, 913);
             this.DullahanBox.Name = "DullahanBox";
             this.DullahanBox.Size = new System.Drawing.Size(33, 17);
             this.DullahanBox.TabIndex = 181;
@@ -4072,7 +4101,7 @@
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(369, 893);
+            this.label65.Location = new System.Drawing.Point(369, 915);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(49, 13);
             this.label65.TabIndex = 180;
@@ -4080,7 +4109,7 @@
             // 
             // DullahanCount
             // 
-            this.DullahanCount.Location = new System.Drawing.Point(419, 889);
+            this.DullahanCount.Location = new System.Drawing.Point(419, 911);
             this.DullahanCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4123,7 +4152,7 @@
             // OdelithBox
             // 
             this.OdelithBox.AutoSize = true;
-            this.OdelithBox.Location = new System.Drawing.Point(484, 643);
+            this.OdelithBox.Location = new System.Drawing.Point(484, 665);
             this.OdelithBox.Name = "OdelithBox";
             this.OdelithBox.Size = new System.Drawing.Size(33, 17);
             this.OdelithBox.TabIndex = 187;
@@ -4135,7 +4164,7 @@
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(378, 645);
+            this.label66.Location = new System.Drawing.Point(378, 667);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(40, 13);
             this.label66.TabIndex = 186;
@@ -4143,7 +4172,7 @@
             // 
             // OdelithCount
             // 
-            this.OdelithCount.Location = new System.Drawing.Point(419, 641);
+            this.OdelithCount.Location = new System.Drawing.Point(419, 663);
             this.OdelithCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4156,7 +4185,7 @@
             // KirkBox
             // 
             this.KirkBox.AutoSize = true;
-            this.KirkBox.Location = new System.Drawing.Point(484, 665);
+            this.KirkBox.Location = new System.Drawing.Point(484, 687);
             this.KirkBox.Name = "KirkBox";
             this.KirkBox.Size = new System.Drawing.Size(33, 17);
             this.KirkBox.TabIndex = 196;
@@ -4168,7 +4197,7 @@
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(369, 667);
+            this.label67.Location = new System.Drawing.Point(369, 689);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(49, 13);
             this.label67.TabIndex = 195;
@@ -4176,7 +4205,7 @@
             // 
             // KirkCount
             // 
-            this.KirkCount.Location = new System.Drawing.Point(419, 663);
+            this.KirkCount.Location = new System.Drawing.Point(419, 685);
             this.KirkCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4189,7 +4218,7 @@
             // ThertBox
             // 
             this.ThertBox.AutoSize = true;
-            this.ThertBox.Location = new System.Drawing.Point(307, 665);
+            this.ThertBox.Location = new System.Drawing.Point(307, 687);
             this.ThertBox.Name = "ThertBox";
             this.ThertBox.Size = new System.Drawing.Size(33, 17);
             this.ThertBox.TabIndex = 193;
@@ -4201,7 +4230,7 @@
             // Thert
             // 
             this.Thert.AutoSize = true;
-            this.Thert.Location = new System.Drawing.Point(208, 667);
+            this.Thert.Location = new System.Drawing.Point(208, 689);
             this.Thert.Name = "Thert";
             this.Thert.Size = new System.Drawing.Size(32, 13);
             this.Thert.TabIndex = 192;
@@ -4209,7 +4238,7 @@
             // 
             // ThertCount
             // 
-            this.ThertCount.Location = new System.Drawing.Point(242, 663);
+            this.ThertCount.Location = new System.Drawing.Point(242, 685);
             this.ThertCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4222,7 +4251,7 @@
             // ShyguBox
             // 
             this.ShyguBox.AutoSize = true;
-            this.ShyguBox.Location = new System.Drawing.Point(130, 665);
+            this.ShyguBox.Location = new System.Drawing.Point(130, 687);
             this.ShyguBox.Name = "ShyguBox";
             this.ShyguBox.Size = new System.Drawing.Size(33, 17);
             this.ShyguBox.TabIndex = 190;
@@ -4234,7 +4263,7 @@
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(25, 667);
+            this.label69.Location = new System.Drawing.Point(25, 689);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(37, 13);
             this.label69.TabIndex = 189;
@@ -4242,7 +4271,7 @@
             // 
             // ShyguCount
             // 
-            this.ShyguCount.Location = new System.Drawing.Point(65, 663);
+            this.ShyguCount.Location = new System.Drawing.Point(65, 685);
             this.ShyguCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4255,7 +4284,7 @@
             // NeptuniusBox
             // 
             this.NeptuniusBox.AutoSize = true;
-            this.NeptuniusBox.Location = new System.Drawing.Point(130, 687);
+            this.NeptuniusBox.Location = new System.Drawing.Point(130, 709);
             this.NeptuniusBox.Name = "NeptuniusBox";
             this.NeptuniusBox.Size = new System.Drawing.Size(33, 17);
             this.NeptuniusBox.TabIndex = 199;
@@ -4267,7 +4296,7 @@
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(7, 689);
+            this.label68.Location = new System.Drawing.Point(7, 711);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(55, 13);
             this.label68.TabIndex = 198;
@@ -4275,7 +4304,7 @@
             // 
             // NeptuniusCount
             // 
-            this.NeptuniusCount.Location = new System.Drawing.Point(65, 685);
+            this.NeptuniusCount.Location = new System.Drawing.Point(65, 707);
             this.NeptuniusCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4288,7 +4317,7 @@
             // AlvitrBox
             // 
             this.AlvitrBox.AutoSize = true;
-            this.AlvitrBox.Location = new System.Drawing.Point(484, 416);
+            this.AlvitrBox.Location = new System.Drawing.Point(484, 438);
             this.AlvitrBox.Name = "AlvitrBox";
             this.AlvitrBox.Size = new System.Drawing.Size(33, 17);
             this.AlvitrBox.TabIndex = 208;
@@ -4300,7 +4329,7 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(388, 418);
+            this.label70.Location = new System.Drawing.Point(388, 440);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(30, 13);
             this.label70.TabIndex = 207;
@@ -4308,7 +4337,7 @@
             // 
             // AlvitrCount
             // 
-            this.AlvitrCount.Location = new System.Drawing.Point(419, 414);
+            this.AlvitrCount.Location = new System.Drawing.Point(419, 436);
             this.AlvitrCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4321,7 +4350,7 @@
             // KoldisBox
             // 
             this.KoldisBox.AutoSize = true;
-            this.KoldisBox.Location = new System.Drawing.Point(307, 416);
+            this.KoldisBox.Location = new System.Drawing.Point(307, 438);
             this.KoldisBox.Name = "KoldisBox";
             this.KoldisBox.Size = new System.Drawing.Size(33, 17);
             this.KoldisBox.TabIndex = 205;
@@ -4333,7 +4362,7 @@
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(205, 418);
+            this.label71.Location = new System.Drawing.Point(205, 440);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(35, 13);
             this.label71.TabIndex = 204;
@@ -4341,7 +4370,7 @@
             // 
             // KoldisCount
             // 
-            this.KoldisCount.Location = new System.Drawing.Point(242, 414);
+            this.KoldisCount.Location = new System.Drawing.Point(242, 436);
             this.KoldisCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4354,7 +4383,7 @@
             // SigrunBox
             // 
             this.SigrunBox.AutoSize = true;
-            this.SigrunBox.Location = new System.Drawing.Point(130, 416);
+            this.SigrunBox.Location = new System.Drawing.Point(130, 438);
             this.SigrunBox.Name = "SigrunBox";
             this.SigrunBox.Size = new System.Drawing.Size(33, 17);
             this.SigrunBox.TabIndex = 202;
@@ -4366,7 +4395,7 @@
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(25, 418);
+            this.label72.Location = new System.Drawing.Point(25, 440);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(37, 13);
             this.label72.TabIndex = 201;
@@ -4374,7 +4403,7 @@
             // 
             // SigrunCount
             // 
-            this.SigrunCount.Location = new System.Drawing.Point(65, 414);
+            this.SigrunCount.Location = new System.Drawing.Point(65, 436);
             this.SigrunCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -4561,6 +4590,26 @@
             // Heroes
             // 
             this.Heroes.AutoScroll = true;
+            this.Heroes.Controls.Add(this.acreiPromo);
+            this.Heroes.Controls.Add(this.acreiBox);
+            this.Heroes.Controls.Add(this.label420);
+            this.Heroes.Controls.Add(this.acreiCount);
+            this.Heroes.Controls.Add(this.tetraPromo);
+            this.Heroes.Controls.Add(this.TetraCount);
+            this.Heroes.Controls.Add(this.TetraBox);
+            this.Heroes.Controls.Add(this.label419);
+            this.Heroes.Controls.Add(this.creiPromo);
+            this.Heroes.Controls.Add(this.catzarPromo);
+            this.Heroes.Controls.Add(this.cathosPromo);
+            this.Heroes.Controls.Add(this.creiBox);
+            this.Heroes.Controls.Add(this.label416);
+            this.Heroes.Controls.Add(this.creiCount);
+            this.Heroes.Controls.Add(this.catzarBox);
+            this.Heroes.Controls.Add(this.label417);
+            this.Heroes.Controls.Add(this.catzarCount);
+            this.Heroes.Controls.Add(this.cathosBox);
+            this.Heroes.Controls.Add(this.label418);
+            this.Heroes.Controls.Add(this.cathosCount);
             this.Heroes.Controls.Add(this.awandererPromo);
             this.Heroes.Controls.Add(this.AWandererBox);
             this.Heroes.Controls.Add(this.label415);
@@ -5258,9 +5307,237 @@
             this.Heroes.Text = "Heroes";
             this.Heroes.UseVisualStyleBackColor = true;
             // 
+            // acreiPromo
+            // 
+            this.acreiPromo.Location = new System.Drawing.Point(277, 1269);
+            this.acreiPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.acreiPromo.Name = "acreiPromo";
+            this.acreiPromo.Size = new System.Drawing.Size(26, 20);
+            this.acreiPromo.TabIndex = 733;
+            // 
+            // acreiBox
+            // 
+            this.acreiBox.AutoSize = true;
+            this.acreiBox.Location = new System.Drawing.Point(307, 1271);
+            this.acreiBox.Name = "acreiBox";
+            this.acreiBox.Size = new System.Drawing.Size(33, 17);
+            this.acreiBox.TabIndex = 732;
+            this.acreiBox.TabStop = false;
+            this.acreiBox.Text = "E";
+            this.acreiBox.UseVisualStyleBackColor = true;
+            this.acreiBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label420
+            // 
+            this.label420.AutoSize = true;
+            this.label420.Location = new System.Drawing.Point(188, 1273);
+            this.label420.Name = "label420";
+            this.label420.Size = new System.Drawing.Size(51, 13);
+            this.label420.TabIndex = 731;
+            this.label420.Text = "Asc. R31";
+            // 
+            // acreiCount
+            // 
+            this.acreiCount.Location = new System.Drawing.Point(242, 1269);
+            this.acreiCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.acreiCount.Name = "acreiCount";
+            this.acreiCount.Size = new System.Drawing.Size(33, 20);
+            this.acreiCount.TabIndex = 730;
+            // 
+            // tetraPromo
+            // 
+            this.tetraPromo.Location = new System.Drawing.Point(100, 1131);
+            this.tetraPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.tetraPromo.Name = "tetraPromo";
+            this.tetraPromo.Size = new System.Drawing.Size(26, 20);
+            this.tetraPromo.TabIndex = 729;
+            // 
+            // TetraCount
+            // 
+            this.TetraCount.Location = new System.Drawing.Point(65, 1131);
+            this.TetraCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.TetraCount.Name = "TetraCount";
+            this.TetraCount.Size = new System.Drawing.Size(33, 20);
+            this.TetraCount.TabIndex = 726;
+            // 
+            // TetraBox
+            // 
+            this.TetraBox.AutoSize = true;
+            this.TetraBox.Location = new System.Drawing.Point(130, 1133);
+            this.TetraBox.Name = "TetraBox";
+            this.TetraBox.Size = new System.Drawing.Size(33, 17);
+            this.TetraBox.TabIndex = 728;
+            this.TetraBox.TabStop = false;
+            this.TetraBox.Text = "E";
+            this.TetraBox.UseVisualStyleBackColor = true;
+            this.TetraBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label419
+            // 
+            this.label419.AutoSize = true;
+            this.label419.Location = new System.Drawing.Point(23, 1135);
+            this.label419.Name = "label419";
+            this.label419.Size = new System.Drawing.Size(32, 13);
+            this.label419.TabIndex = 727;
+            this.label419.Text = "Tetra";
+            // 
+            // creiPromo
+            // 
+            this.creiPromo.Location = new System.Drawing.Point(454, 364);
+            this.creiPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.creiPromo.Name = "creiPromo";
+            this.creiPromo.Size = new System.Drawing.Size(26, 20);
+            this.creiPromo.TabIndex = 725;
+            // 
+            // catzarPromo
+            // 
+            this.catzarPromo.Location = new System.Drawing.Point(277, 364);
+            this.catzarPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.catzarPromo.Name = "catzarPromo";
+            this.catzarPromo.Size = new System.Drawing.Size(26, 20);
+            this.catzarPromo.TabIndex = 724;
+            // 
+            // cathosPromo
+            // 
+            this.cathosPromo.Location = new System.Drawing.Point(100, 364);
+            this.cathosPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.cathosPromo.Name = "cathosPromo";
+            this.cathosPromo.Size = new System.Drawing.Size(26, 20);
+            this.cathosPromo.TabIndex = 723;
+            // 
+            // creiBox
+            // 
+            this.creiBox.AutoSize = true;
+            this.creiBox.Location = new System.Drawing.Point(484, 366);
+            this.creiBox.Name = "creiBox";
+            this.creiBox.Size = new System.Drawing.Size(33, 17);
+            this.creiBox.TabIndex = 722;
+            this.creiBox.TabStop = false;
+            this.creiBox.Text = "E";
+            this.creiBox.UseVisualStyleBackColor = true;
+            this.creiBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label416
+            // 
+            this.label416.AutoSize = true;
+            this.label416.Location = new System.Drawing.Point(390, 367);
+            this.label416.Name = "label416";
+            this.label416.Size = new System.Drawing.Size(27, 13);
+            this.label416.TabIndex = 721;
+            this.label416.Text = "R31";
+            // 
+            // creiCount
+            // 
+            this.creiCount.Location = new System.Drawing.Point(419, 364);
+            this.creiCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.creiCount.Name = "creiCount";
+            this.creiCount.Size = new System.Drawing.Size(33, 20);
+            this.creiCount.TabIndex = 716;
+            this.creiCount.ValueChanged += new System.EventHandler(this.chestHeroLevel_ValueChanged);
+            // 
+            // catzarBox
+            // 
+            this.catzarBox.AutoSize = true;
+            this.catzarBox.Location = new System.Drawing.Point(307, 367);
+            this.catzarBox.Name = "catzarBox";
+            this.catzarBox.Size = new System.Drawing.Size(33, 17);
+            this.catzarBox.TabIndex = 720;
+            this.catzarBox.TabStop = false;
+            this.catzarBox.Text = "E";
+            this.catzarBox.UseVisualStyleBackColor = true;
+            this.catzarBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label417
+            // 
+            this.label417.AutoSize = true;
+            this.label417.Location = new System.Drawing.Point(198, 367);
+            this.label417.Name = "label417";
+            this.label417.Size = new System.Drawing.Size(41, 13);
+            this.label417.TabIndex = 719;
+            this.label417.Text = "4TZ4R";
+            // 
+            // catzarCount
+            // 
+            this.catzarCount.Location = new System.Drawing.Point(242, 364);
+            this.catzarCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.catzarCount.Name = "catzarCount";
+            this.catzarCount.Size = new System.Drawing.Size(33, 20);
+            this.catzarCount.TabIndex = 715;
+            this.catzarCount.ValueChanged += new System.EventHandler(this.chestHeroLevel_ValueChanged);
+            // 
+            // cathosBox
+            // 
+            this.cathosBox.AutoSize = true;
+            this.cathosBox.Location = new System.Drawing.Point(130, 366);
+            this.cathosBox.Name = "cathosBox";
+            this.cathosBox.Size = new System.Drawing.Size(33, 17);
+            this.cathosBox.TabIndex = 718;
+            this.cathosBox.TabStop = false;
+            this.cathosBox.Text = "E";
+            this.cathosBox.UseVisualStyleBackColor = true;
+            this.cathosBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label418
+            // 
+            this.label418.AutoSize = true;
+            this.label418.Location = new System.Drawing.Point(20, 368);
+            this.label418.Name = "label418";
+            this.label418.Size = new System.Drawing.Size(41, 13);
+            this.label418.TabIndex = 717;
+            this.label418.Text = "4TH0S";
+            // 
+            // cathosCount
+            // 
+            this.cathosCount.Location = new System.Drawing.Point(65, 364);
+            this.cathosCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.cathosCount.Name = "cathosCount";
+            this.cathosCount.Size = new System.Drawing.Size(33, 20);
+            this.cathosCount.TabIndex = 714;
+            this.cathosCount.ValueChanged += new System.EventHandler(this.chestHeroLevel_ValueChanged);
+            // 
             // awandererPromo
             // 
-            this.awandererPromo.Location = new System.Drawing.Point(454, 1204);
+            this.awandererPromo.Location = new System.Drawing.Point(454, 1247);
             this.awandererPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5273,7 +5550,7 @@
             // AWandererBox
             // 
             this.AWandererBox.AutoSize = true;
-            this.AWandererBox.Location = new System.Drawing.Point(484, 1206);
+            this.AWandererBox.Location = new System.Drawing.Point(484, 1249);
             this.AWandererBox.Name = "AWandererBox";
             this.AWandererBox.Size = new System.Drawing.Size(33, 17);
             this.AWandererBox.TabIndex = 712;
@@ -5285,7 +5562,7 @@
             // label415
             // 
             this.label415.AutoSize = true;
-            this.label415.Location = new System.Drawing.Point(340, 1208);
+            this.label415.Location = new System.Drawing.Point(340, 1251);
             this.label415.Name = "label415";
             this.label415.Size = new System.Drawing.Size(78, 13);
             this.label415.TabIndex = 711;
@@ -5293,7 +5570,7 @@
             // 
             // AWandererCount
             // 
-            this.AWandererCount.Location = new System.Drawing.Point(419, 1204);
+            this.AWandererCount.Location = new System.Drawing.Point(419, 1247);
             this.AWandererCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5305,7 +5582,7 @@
             // 
             // anerissaPromo
             // 
-            this.anerissaPromo.Location = new System.Drawing.Point(100, 1226);
+            this.anerissaPromo.Location = new System.Drawing.Point(100, 1269);
             this.anerissaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5318,7 +5595,7 @@
             // ANerissaBox
             // 
             this.ANerissaBox.AutoSize = true;
-            this.ANerissaBox.Location = new System.Drawing.Point(130, 1228);
+            this.ANerissaBox.Location = new System.Drawing.Point(130, 1271);
             this.ANerissaBox.Name = "ANerissaBox";
             this.ANerissaBox.Size = new System.Drawing.Size(33, 17);
             this.ANerissaBox.TabIndex = 708;
@@ -5330,7 +5607,7 @@
             // label414
             // 
             this.label414.AutoSize = true;
-            this.label414.Location = new System.Drawing.Point(-2, 1230);
+            this.label414.Location = new System.Drawing.Point(-2, 1273);
             this.label414.Name = "label414";
             this.label414.Size = new System.Drawing.Size(66, 13);
             this.label414.TabIndex = 707;
@@ -5338,7 +5615,7 @@
             // 
             // ANerissaCount
             // 
-            this.ANerissaCount.Location = new System.Drawing.Point(65, 1226);
+            this.ANerissaCount.Location = new System.Drawing.Point(65, 1269);
             this.ANerissaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5350,7 +5627,7 @@
             // 
             // minervaPromo
             // 
-            this.minervaPromo.Location = new System.Drawing.Point(277, 1248);
+            this.minervaPromo.Location = new System.Drawing.Point(454, 1291);
             this.minervaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5363,7 +5640,7 @@
             // MinervaBox
             // 
             this.MinervaBox.AutoSize = true;
-            this.MinervaBox.Location = new System.Drawing.Point(307, 1250);
+            this.MinervaBox.Location = new System.Drawing.Point(484, 1293);
             this.MinervaBox.Name = "MinervaBox";
             this.MinervaBox.Size = new System.Drawing.Size(33, 17);
             this.MinervaBox.TabIndex = 704;
@@ -5375,7 +5652,7 @@
             // label413
             // 
             this.label413.AutoSize = true;
-            this.label413.Location = new System.Drawing.Point(193, 1252);
+            this.label413.Location = new System.Drawing.Point(370, 1295);
             this.label413.Name = "label413";
             this.label413.Size = new System.Drawing.Size(45, 13);
             this.label413.TabIndex = 703;
@@ -5383,7 +5660,7 @@
             // 
             // MinervaCount
             // 
-            this.MinervaCount.Location = new System.Drawing.Point(242, 1248);
+            this.MinervaCount.Location = new System.Drawing.Point(419, 1291);
             this.MinervaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5395,7 +5672,7 @@
             // 
             // helgaPromo
             // 
-            this.helgaPromo.Location = new System.Drawing.Point(454, 524);
+            this.helgaPromo.Location = new System.Drawing.Point(454, 546);
             this.helgaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5407,7 +5684,7 @@
             // 
             // opheliaPromo
             // 
-            this.opheliaPromo.Location = new System.Drawing.Point(277, 524);
+            this.opheliaPromo.Location = new System.Drawing.Point(277, 546);
             this.opheliaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5419,7 +5696,7 @@
             // 
             // agathaPromo
             // 
-            this.agathaPromo.Location = new System.Drawing.Point(100, 524);
+            this.agathaPromo.Location = new System.Drawing.Point(100, 546);
             this.agathaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5432,7 +5709,7 @@
             // HelgaBox
             // 
             this.HelgaBox.AutoSize = true;
-            this.HelgaBox.Location = new System.Drawing.Point(484, 526);
+            this.HelgaBox.Location = new System.Drawing.Point(484, 548);
             this.HelgaBox.Name = "HelgaBox";
             this.HelgaBox.Size = new System.Drawing.Size(33, 17);
             this.HelgaBox.TabIndex = 698;
@@ -5444,7 +5721,7 @@
             // label410
             // 
             this.label410.AutoSize = true;
-            this.label410.Location = new System.Drawing.Point(382, 528);
+            this.label410.Location = new System.Drawing.Point(382, 550);
             this.label410.Name = "label410";
             this.label410.Size = new System.Drawing.Size(35, 13);
             this.label410.TabIndex = 697;
@@ -5452,7 +5729,7 @@
             // 
             // HelgaCount
             // 
-            this.HelgaCount.Location = new System.Drawing.Point(419, 524);
+            this.HelgaCount.Location = new System.Drawing.Point(419, 546);
             this.HelgaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5465,7 +5742,7 @@
             // OpheliaBox
             // 
             this.OpheliaBox.AutoSize = true;
-            this.OpheliaBox.Location = new System.Drawing.Point(307, 526);
+            this.OpheliaBox.Location = new System.Drawing.Point(307, 548);
             this.OpheliaBox.Name = "OpheliaBox";
             this.OpheliaBox.Size = new System.Drawing.Size(33, 17);
             this.OpheliaBox.TabIndex = 696;
@@ -5477,7 +5754,7 @@
             // label411
             // 
             this.label411.AutoSize = true;
-            this.label411.Location = new System.Drawing.Point(197, 528);
+            this.label411.Location = new System.Drawing.Point(197, 550);
             this.label411.Name = "label411";
             this.label411.Size = new System.Drawing.Size(43, 13);
             this.label411.TabIndex = 695;
@@ -5485,7 +5762,7 @@
             // 
             // OpheliaCount
             // 
-            this.OpheliaCount.Location = new System.Drawing.Point(242, 524);
+            this.OpheliaCount.Location = new System.Drawing.Point(242, 546);
             this.OpheliaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5498,7 +5775,7 @@
             // AgathaBox
             // 
             this.AgathaBox.AutoSize = true;
-            this.AgathaBox.Location = new System.Drawing.Point(130, 526);
+            this.AgathaBox.Location = new System.Drawing.Point(130, 548);
             this.AgathaBox.Name = "AgathaBox";
             this.AgathaBox.Size = new System.Drawing.Size(33, 17);
             this.AgathaBox.TabIndex = 694;
@@ -5510,7 +5787,7 @@
             // label412
             // 
             this.label412.AutoSize = true;
-            this.label412.Location = new System.Drawing.Point(19, 528);
+            this.label412.Location = new System.Drawing.Point(19, 550);
             this.label412.Name = "label412";
             this.label412.Size = new System.Drawing.Size(41, 13);
             this.label412.TabIndex = 693;
@@ -5518,7 +5795,7 @@
             // 
             // AgathaCount
             // 
-            this.AgathaCount.Location = new System.Drawing.Point(65, 524);
+            this.AgathaCount.Location = new System.Drawing.Point(65, 546);
             this.AgathaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5530,7 +5807,7 @@
             // 
             // motherPromo
             // 
-            this.motherPromo.Location = new System.Drawing.Point(277, 867);
+            this.motherPromo.Location = new System.Drawing.Point(277, 889);
             this.motherPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5542,7 +5819,7 @@
             // 
             // MotherCount
             // 
-            this.MotherCount.Location = new System.Drawing.Point(242, 867);
+            this.MotherCount.Location = new System.Drawing.Point(242, 889);
             this.MotherCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5555,7 +5832,7 @@
             // MotherBox
             // 
             this.MotherBox.AutoSize = true;
-            this.MotherBox.Location = new System.Drawing.Point(307, 869);
+            this.MotherBox.Location = new System.Drawing.Point(307, 891);
             this.MotherBox.Name = "MotherBox";
             this.MotherBox.Size = new System.Drawing.Size(33, 17);
             this.MotherBox.TabIndex = 688;
@@ -5567,7 +5844,7 @@
             // label409
             // 
             this.label409.AutoSize = true;
-            this.label409.Location = new System.Drawing.Point(198, 871);
+            this.label409.Location = new System.Drawing.Point(198, 893);
             this.label409.Name = "label409";
             this.label409.Size = new System.Drawing.Size(40, 13);
             this.label409.TabIndex = 687;
@@ -5575,7 +5852,7 @@
             // 
             // thumperPromo
             // 
-            this.thumperPromo.Location = new System.Drawing.Point(277, 1270);
+            this.thumperPromo.Location = new System.Drawing.Point(454, 1313);
             this.thumperPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5588,7 +5865,7 @@
             // ThumperBox
             // 
             this.ThumperBox.AutoSize = true;
-            this.ThumperBox.Location = new System.Drawing.Point(307, 1272);
+            this.ThumperBox.Location = new System.Drawing.Point(484, 1315);
             this.ThumperBox.Name = "ThumperBox";
             this.ThumperBox.Size = new System.Drawing.Size(33, 17);
             this.ThumperBox.TabIndex = 684;
@@ -5600,7 +5877,7 @@
             // label408
             // 
             this.label408.AutoSize = true;
-            this.label408.Location = new System.Drawing.Point(188, 1273);
+            this.label408.Location = new System.Drawing.Point(365, 1316);
             this.label408.Name = "label408";
             this.label408.Size = new System.Drawing.Size(49, 13);
             this.label408.TabIndex = 683;
@@ -5608,7 +5885,7 @@
             // 
             // ThumperCount
             // 
-            this.ThumperCount.Location = new System.Drawing.Point(242, 1270);
+            this.ThumperCount.Location = new System.Drawing.Point(419, 1313);
             this.ThumperCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5620,7 +5897,7 @@
             // 
             // daisyPromo
             // 
-            this.daisyPromo.Location = new System.Drawing.Point(454, 1087);
+            this.daisyPromo.Location = new System.Drawing.Point(454, 1109);
             this.daisyPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5633,7 +5910,7 @@
             // DaisyBox
             // 
             this.DaisyBox.AutoSize = true;
-            this.DaisyBox.Location = new System.Drawing.Point(484, 1089);
+            this.DaisyBox.Location = new System.Drawing.Point(484, 1111);
             this.DaisyBox.Name = "DaisyBox";
             this.DaisyBox.Size = new System.Drawing.Size(33, 17);
             this.DaisyBox.TabIndex = 680;
@@ -5645,7 +5922,7 @@
             // label405
             // 
             this.label405.AutoSize = true;
-            this.label405.Location = new System.Drawing.Point(383, 1091);
+            this.label405.Location = new System.Drawing.Point(383, 1113);
             this.label405.Name = "label405";
             this.label405.Size = new System.Drawing.Size(33, 13);
             this.label405.TabIndex = 679;
@@ -5653,7 +5930,7 @@
             // 
             // DaisyCount
             // 
-            this.DaisyCount.Location = new System.Drawing.Point(419, 1087);
+            this.DaisyCount.Location = new System.Drawing.Point(419, 1109);
             this.DaisyCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5665,7 +5942,7 @@
             // 
             // gizmoPromo
             // 
-            this.gizmoPromo.Location = new System.Drawing.Point(277, 1087);
+            this.gizmoPromo.Location = new System.Drawing.Point(277, 1109);
             this.gizmoPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5677,7 +5954,7 @@
             // 
             // GizmoCount
             // 
-            this.GizmoCount.Location = new System.Drawing.Point(242, 1087);
+            this.GizmoCount.Location = new System.Drawing.Point(242, 1109);
             this.GizmoCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5690,7 +5967,7 @@
             // label406
             // 
             this.label406.AutoSize = true;
-            this.label406.Location = new System.Drawing.Point(202, 1091);
+            this.label406.Location = new System.Drawing.Point(202, 1113);
             this.label406.Name = "label406";
             this.label406.Size = new System.Drawing.Size(36, 13);
             this.label406.TabIndex = 675;
@@ -5699,7 +5976,7 @@
             // GizmoBox
             // 
             this.GizmoBox.AutoSize = true;
-            this.GizmoBox.Location = new System.Drawing.Point(307, 1089);
+            this.GizmoBox.Location = new System.Drawing.Point(307, 1111);
             this.GizmoBox.Name = "GizmoBox";
             this.GizmoBox.Size = new System.Drawing.Size(33, 17);
             this.GizmoBox.TabIndex = 676;
@@ -5710,7 +5987,7 @@
             // 
             // willowPromo
             // 
-            this.willowPromo.Location = new System.Drawing.Point(100, 1087);
+            this.willowPromo.Location = new System.Drawing.Point(100, 1109);
             this.willowPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5722,7 +5999,7 @@
             // 
             // WillowCount
             // 
-            this.WillowCount.Location = new System.Drawing.Point(65, 1087);
+            this.WillowCount.Location = new System.Drawing.Point(65, 1109);
             this.WillowCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5735,7 +6012,7 @@
             // WillowBox
             // 
             this.WillowBox.AutoSize = true;
-            this.WillowBox.Location = new System.Drawing.Point(130, 1089);
+            this.WillowBox.Location = new System.Drawing.Point(130, 1111);
             this.WillowBox.Name = "WillowBox";
             this.WillowBox.Size = new System.Drawing.Size(33, 17);
             this.WillowBox.TabIndex = 672;
@@ -5747,7 +6024,7 @@
             // label407
             // 
             this.label407.AutoSize = true;
-            this.label407.Location = new System.Drawing.Point(23, 1091);
+            this.label407.Location = new System.Drawing.Point(23, 1113);
             this.label407.Name = "label407";
             this.label407.Size = new System.Drawing.Size(38, 13);
             this.label407.TabIndex = 671;
@@ -5893,7 +6170,7 @@
             // 
             // amahatmaPromo
             // 
-            this.amahatmaPromo.Location = new System.Drawing.Point(454, 795);
+            this.amahatmaPromo.Location = new System.Drawing.Point(454, 817);
             this.amahatmaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5906,7 +6183,7 @@
             // AMahatmaBox
             // 
             this.AMahatmaBox.AutoSize = true;
-            this.AMahatmaBox.Location = new System.Drawing.Point(484, 797);
+            this.AMahatmaBox.Location = new System.Drawing.Point(484, 819);
             this.AMahatmaBox.Name = "AMahatmaBox";
             this.AMahatmaBox.Size = new System.Drawing.Size(33, 17);
             this.AMahatmaBox.TabIndex = 656;
@@ -5918,7 +6195,7 @@
             // label401
             // 
             this.label401.AutoSize = true;
-            this.label401.Location = new System.Drawing.Point(343, 799);
+            this.label401.Location = new System.Drawing.Point(343, 821);
             this.label401.Name = "label401";
             this.label401.Size = new System.Drawing.Size(75, 13);
             this.label401.TabIndex = 655;
@@ -5926,7 +6203,7 @@
             // 
             // AMahatmaCount
             // 
-            this.AMahatmaCount.Location = new System.Drawing.Point(419, 795);
+            this.AMahatmaCount.Location = new System.Drawing.Point(419, 817);
             this.AMahatmaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -5938,7 +6215,7 @@
             // 
             // adybbukPromo
             // 
-            this.adybbukPromo.Location = new System.Drawing.Point(454, 817);
+            this.adybbukPromo.Location = new System.Drawing.Point(454, 839);
             this.adybbukPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5950,7 +6227,7 @@
             // 
             // aedanaPromo
             // 
-            this.aedanaPromo.Location = new System.Drawing.Point(277, 817);
+            this.aedanaPromo.Location = new System.Drawing.Point(277, 839);
             this.aedanaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5962,7 +6239,7 @@
             // 
             // ajadePromo
             // 
-            this.ajadePromo.Location = new System.Drawing.Point(100, 817);
+            this.ajadePromo.Location = new System.Drawing.Point(100, 839);
             this.ajadePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -5975,7 +6252,7 @@
             // ADybbukBox
             // 
             this.ADybbukBox.AutoSize = true;
-            this.ADybbukBox.Location = new System.Drawing.Point(484, 819);
+            this.ADybbukBox.Location = new System.Drawing.Point(484, 841);
             this.ADybbukBox.Name = "ADybbukBox";
             this.ADybbukBox.Size = new System.Drawing.Size(33, 17);
             this.ADybbukBox.TabIndex = 650;
@@ -5987,7 +6264,7 @@
             // label398
             // 
             this.label398.AutoSize = true;
-            this.label398.Location = new System.Drawing.Point(350, 821);
+            this.label398.Location = new System.Drawing.Point(350, 843);
             this.label398.Name = "label398";
             this.label398.Size = new System.Drawing.Size(68, 13);
             this.label398.TabIndex = 649;
@@ -5995,7 +6272,7 @@
             // 
             // ADybbukCount
             // 
-            this.ADybbukCount.Location = new System.Drawing.Point(419, 817);
+            this.ADybbukCount.Location = new System.Drawing.Point(419, 839);
             this.ADybbukCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6008,7 +6285,7 @@
             // AEdanaBox
             // 
             this.AEdanaBox.AutoSize = true;
-            this.AEdanaBox.Location = new System.Drawing.Point(307, 819);
+            this.AEdanaBox.Location = new System.Drawing.Point(307, 841);
             this.AEdanaBox.Name = "AEdanaBox";
             this.AEdanaBox.Size = new System.Drawing.Size(33, 17);
             this.AEdanaBox.TabIndex = 648;
@@ -6020,7 +6297,7 @@
             // label399
             // 
             this.label399.AutoSize = true;
-            this.label399.Location = new System.Drawing.Point(178, 821);
+            this.label399.Location = new System.Drawing.Point(178, 843);
             this.label399.Name = "label399";
             this.label399.Size = new System.Drawing.Size(62, 13);
             this.label399.TabIndex = 647;
@@ -6028,7 +6305,7 @@
             // 
             // AEdanaCount
             // 
-            this.AEdanaCount.Location = new System.Drawing.Point(242, 817);
+            this.AEdanaCount.Location = new System.Drawing.Point(242, 839);
             this.AEdanaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6041,7 +6318,7 @@
             // AJadeBox
             // 
             this.AJadeBox.AutoSize = true;
-            this.AJadeBox.Location = new System.Drawing.Point(130, 819);
+            this.AJadeBox.Location = new System.Drawing.Point(130, 841);
             this.AJadeBox.Name = "AJadeBox";
             this.AJadeBox.Size = new System.Drawing.Size(33, 17);
             this.AJadeBox.TabIndex = 644;
@@ -6053,7 +6330,7 @@
             // label400
             // 
             this.label400.AutoSize = true;
-            this.label400.Location = new System.Drawing.Point(7, 821);
+            this.label400.Location = new System.Drawing.Point(7, 843);
             this.label400.Name = "label400";
             this.label400.Size = new System.Drawing.Size(54, 13);
             this.label400.TabIndex = 643;
@@ -6061,7 +6338,7 @@
             // 
             // AJadeCount
             // 
-            this.AJadeCount.Location = new System.Drawing.Point(65, 817);
+            this.AJadeCount.Location = new System.Drawing.Point(65, 839);
             this.AJadeCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6073,7 +6350,7 @@
             // 
             // spikePromo
             // 
-            this.spikePromo.Location = new System.Drawing.Point(100, 1270);
+            this.spikePromo.Location = new System.Drawing.Point(277, 1313);
             this.spikePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6086,7 +6363,7 @@
             // SpikeBox
             // 
             this.SpikeBox.AutoSize = true;
-            this.SpikeBox.Location = new System.Drawing.Point(130, 1272);
+            this.SpikeBox.Location = new System.Drawing.Point(307, 1315);
             this.SpikeBox.Name = "SpikeBox";
             this.SpikeBox.Size = new System.Drawing.Size(33, 17);
             this.SpikeBox.TabIndex = 640;
@@ -6098,7 +6375,7 @@
             // label373
             // 
             this.label373.AutoSize = true;
-            this.label373.Location = new System.Drawing.Point(29, 1273);
+            this.label373.Location = new System.Drawing.Point(206, 1316);
             this.label373.Name = "label373";
             this.label373.Size = new System.Drawing.Size(34, 13);
             this.label373.TabIndex = 639;
@@ -6106,7 +6383,7 @@
             // 
             // SpikeCount
             // 
-            this.SpikeCount.Location = new System.Drawing.Point(65, 1270);
+            this.SpikeCount.Location = new System.Drawing.Point(242, 1313);
             this.SpikeCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6118,7 +6395,7 @@
             // 
             // riptidePromo
             // 
-            this.riptidePromo.Location = new System.Drawing.Point(454, 1065);
+            this.riptidePromo.Location = new System.Drawing.Point(454, 1087);
             this.riptidePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6131,7 +6408,7 @@
             // RiptideBox
             // 
             this.RiptideBox.AutoSize = true;
-            this.RiptideBox.Location = new System.Drawing.Point(484, 1067);
+            this.RiptideBox.Location = new System.Drawing.Point(484, 1089);
             this.RiptideBox.Name = "RiptideBox";
             this.RiptideBox.Size = new System.Drawing.Size(33, 17);
             this.RiptideBox.TabIndex = 636;
@@ -6143,7 +6420,7 @@
             // label370
             // 
             this.label370.AutoSize = true;
-            this.label370.Location = new System.Drawing.Point(377, 1069);
+            this.label370.Location = new System.Drawing.Point(377, 1091);
             this.label370.Name = "label370";
             this.label370.Size = new System.Drawing.Size(40, 13);
             this.label370.TabIndex = 635;
@@ -6151,7 +6428,7 @@
             // 
             // RiptideCount
             // 
-            this.RiptideCount.Location = new System.Drawing.Point(419, 1065);
+            this.RiptideCount.Location = new System.Drawing.Point(419, 1087);
             this.RiptideCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6163,7 +6440,7 @@
             // 
             // emberPromo
             // 
-            this.emberPromo.Location = new System.Drawing.Point(277, 1065);
+            this.emberPromo.Location = new System.Drawing.Point(277, 1087);
             this.emberPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6175,7 +6452,7 @@
             // 
             // EmberCount
             // 
-            this.EmberCount.Location = new System.Drawing.Point(242, 1065);
+            this.EmberCount.Location = new System.Drawing.Point(242, 1087);
             this.EmberCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6188,7 +6465,7 @@
             // label371
             // 
             this.label371.AutoSize = true;
-            this.label371.Location = new System.Drawing.Point(200, 1069);
+            this.label371.Location = new System.Drawing.Point(200, 1091);
             this.label371.Name = "label371";
             this.label371.Size = new System.Drawing.Size(37, 13);
             this.label371.TabIndex = 631;
@@ -6197,7 +6474,7 @@
             // EmberBox
             // 
             this.EmberBox.AutoSize = true;
-            this.EmberBox.Location = new System.Drawing.Point(307, 1067);
+            this.EmberBox.Location = new System.Drawing.Point(307, 1089);
             this.EmberBox.Name = "EmberBox";
             this.EmberBox.Size = new System.Drawing.Size(33, 17);
             this.EmberBox.TabIndex = 632;
@@ -6208,7 +6485,7 @@
             // 
             // cloudPromo
             // 
-            this.cloudPromo.Location = new System.Drawing.Point(100, 1065);
+            this.cloudPromo.Location = new System.Drawing.Point(100, 1087);
             this.cloudPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6220,7 +6497,7 @@
             // 
             // CloudCount
             // 
-            this.CloudCount.Location = new System.Drawing.Point(65, 1065);
+            this.CloudCount.Location = new System.Drawing.Point(65, 1087);
             this.CloudCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6233,7 +6510,7 @@
             // CloudBox
             // 
             this.CloudBox.AutoSize = true;
-            this.CloudBox.Location = new System.Drawing.Point(130, 1067);
+            this.CloudBox.Location = new System.Drawing.Point(130, 1089);
             this.CloudBox.Name = "CloudBox";
             this.CloudBox.Size = new System.Drawing.Size(33, 17);
             this.CloudBox.TabIndex = 628;
@@ -6245,7 +6522,7 @@
             // label372
             // 
             this.label372.AutoSize = true;
-            this.label372.Location = new System.Drawing.Point(26, 1069);
+            this.label372.Location = new System.Drawing.Point(26, 1091);
             this.label372.Name = "label372";
             this.label372.Size = new System.Drawing.Size(34, 13);
             this.label372.TabIndex = 627;
@@ -6253,7 +6530,7 @@
             // 
             // bdayPromo
             // 
-            this.bdayPromo.Location = new System.Drawing.Point(454, 1043);
+            this.bdayPromo.Location = new System.Drawing.Point(454, 1065);
             this.bdayPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6266,7 +6543,7 @@
             // BDayBox
             // 
             this.BDayBox.AutoSize = true;
-            this.BDayBox.Location = new System.Drawing.Point(484, 1045);
+            this.BDayBox.Location = new System.Drawing.Point(484, 1067);
             this.BDayBox.Name = "BDayBox";
             this.BDayBox.Size = new System.Drawing.Size(33, 17);
             this.BDayBox.TabIndex = 624;
@@ -6278,7 +6555,7 @@
             // label369
             // 
             this.label369.AutoSize = true;
-            this.label369.Location = new System.Drawing.Point(381, 1047);
+            this.label369.Location = new System.Drawing.Point(381, 1069);
             this.label369.Name = "label369";
             this.label369.Size = new System.Drawing.Size(36, 13);
             this.label369.TabIndex = 623;
@@ -6286,7 +6563,7 @@
             // 
             // BDayCount
             // 
-            this.BDayCount.Location = new System.Drawing.Point(419, 1043);
+            this.BDayCount.Location = new System.Drawing.Point(419, 1065);
             this.BDayCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6436,7 +6713,7 @@
             // 
             // cupidPromo
             // 
-            this.cupidPromo.Location = new System.Drawing.Point(277, 1043);
+            this.cupidPromo.Location = new System.Drawing.Point(277, 1065);
             this.cupidPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6448,7 +6725,7 @@
             // 
             // CupidCount
             // 
-            this.CupidCount.Location = new System.Drawing.Point(242, 1043);
+            this.CupidCount.Location = new System.Drawing.Point(242, 1065);
             this.CupidCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6461,7 +6738,7 @@
             // label365
             // 
             this.label365.AutoSize = true;
-            this.label365.Location = new System.Drawing.Point(203, 1047);
+            this.label365.Location = new System.Drawing.Point(203, 1069);
             this.label365.Name = "label365";
             this.label365.Size = new System.Drawing.Size(34, 13);
             this.label365.TabIndex = 607;
@@ -6470,7 +6747,7 @@
             // CupidBox
             // 
             this.CupidBox.AutoSize = true;
-            this.CupidBox.Location = new System.Drawing.Point(307, 1045);
+            this.CupidBox.Location = new System.Drawing.Point(307, 1067);
             this.CupidBox.Name = "CupidBox";
             this.CupidBox.Size = new System.Drawing.Size(33, 17);
             this.CupidBox.TabIndex = 608;
@@ -6481,7 +6758,7 @@
             // 
             // auroraPromo
             // 
-            this.auroraPromo.Location = new System.Drawing.Point(100, 1248);
+            this.auroraPromo.Location = new System.Drawing.Point(277, 1291);
             this.auroraPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6494,7 +6771,7 @@
             // AuroraBox
             // 
             this.AuroraBox.AutoSize = true;
-            this.AuroraBox.Location = new System.Drawing.Point(130, 1250);
+            this.AuroraBox.Location = new System.Drawing.Point(307, 1293);
             this.AuroraBox.Name = "AuroraBox";
             this.AuroraBox.Size = new System.Drawing.Size(33, 17);
             this.AuroraBox.TabIndex = 604;
@@ -6506,7 +6783,7 @@
             // label364
             // 
             this.label364.AutoSize = true;
-            this.label364.Location = new System.Drawing.Point(24, 1251);
+            this.label364.Location = new System.Drawing.Point(201, 1294);
             this.label364.Name = "label364";
             this.label364.Size = new System.Drawing.Size(38, 13);
             this.label364.TabIndex = 603;
@@ -6514,7 +6791,7 @@
             // 
             // AuroraCount
             // 
-            this.AuroraCount.Location = new System.Drawing.Point(65, 1248);
+            this.AuroraCount.Location = new System.Drawing.Point(242, 1291);
             this.AuroraCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6526,7 +6803,7 @@
             // 
             // orinPromo
             // 
-            this.orinPromo.Location = new System.Drawing.Point(454, 502);
+            this.orinPromo.Location = new System.Drawing.Point(454, 524);
             this.orinPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6538,7 +6815,7 @@
             // 
             // flintPromo
             // 
-            this.flintPromo.Location = new System.Drawing.Point(277, 502);
+            this.flintPromo.Location = new System.Drawing.Point(277, 524);
             this.flintPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6550,7 +6827,7 @@
             // 
             // blossomPromo
             // 
-            this.blossomPromo.Location = new System.Drawing.Point(100, 502);
+            this.blossomPromo.Location = new System.Drawing.Point(100, 524);
             this.blossomPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6563,7 +6840,7 @@
             // OrinBox
             // 
             this.OrinBox.AutoSize = true;
-            this.OrinBox.Location = new System.Drawing.Point(484, 504);
+            this.OrinBox.Location = new System.Drawing.Point(484, 526);
             this.OrinBox.Name = "OrinBox";
             this.OrinBox.Size = new System.Drawing.Size(33, 17);
             this.OrinBox.TabIndex = 598;
@@ -6575,7 +6852,7 @@
             // label361
             // 
             this.label361.AutoSize = true;
-            this.label361.Location = new System.Drawing.Point(390, 506);
+            this.label361.Location = new System.Drawing.Point(390, 528);
             this.label361.Name = "label361";
             this.label361.Size = new System.Drawing.Size(26, 13);
             this.label361.TabIndex = 597;
@@ -6583,7 +6860,7 @@
             // 
             // OrinCount
             // 
-            this.OrinCount.Location = new System.Drawing.Point(419, 502);
+            this.OrinCount.Location = new System.Drawing.Point(419, 524);
             this.OrinCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6596,7 +6873,7 @@
             // FlintBox
             // 
             this.FlintBox.AutoSize = true;
-            this.FlintBox.Location = new System.Drawing.Point(307, 504);
+            this.FlintBox.Location = new System.Drawing.Point(307, 526);
             this.FlintBox.Name = "FlintBox";
             this.FlintBox.Size = new System.Drawing.Size(33, 17);
             this.FlintBox.TabIndex = 596;
@@ -6608,7 +6885,7 @@
             // label362
             // 
             this.label362.AutoSize = true;
-            this.label362.Location = new System.Drawing.Point(213, 506);
+            this.label362.Location = new System.Drawing.Point(213, 528);
             this.label362.Name = "label362";
             this.label362.Size = new System.Drawing.Size(26, 13);
             this.label362.TabIndex = 595;
@@ -6616,7 +6893,7 @@
             // 
             // FlintCount
             // 
-            this.FlintCount.Location = new System.Drawing.Point(242, 502);
+            this.FlintCount.Location = new System.Drawing.Point(242, 524);
             this.FlintCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6629,7 +6906,7 @@
             // BlossomBox
             // 
             this.BlossomBox.AutoSize = true;
-            this.BlossomBox.Location = new System.Drawing.Point(130, 504);
+            this.BlossomBox.Location = new System.Drawing.Point(130, 526);
             this.BlossomBox.Name = "BlossomBox";
             this.BlossomBox.Size = new System.Drawing.Size(33, 17);
             this.BlossomBox.TabIndex = 594;
@@ -6641,7 +6918,7 @@
             // label363
             // 
             this.label363.AutoSize = true;
-            this.label363.Location = new System.Drawing.Point(16, 506);
+            this.label363.Location = new System.Drawing.Point(16, 528);
             this.label363.Name = "label363";
             this.label363.Size = new System.Drawing.Size(46, 13);
             this.label363.TabIndex = 593;
@@ -6649,7 +6926,7 @@
             // 
             // BlossomCount
             // 
-            this.BlossomCount.Location = new System.Drawing.Point(65, 502);
+            this.BlossomCount.Location = new System.Drawing.Point(65, 524);
             this.BlossomCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6661,7 +6938,7 @@
             // 
             // aseethePromo
             // 
-            this.aseethePromo.Location = new System.Drawing.Point(277, 1204);
+            this.aseethePromo.Location = new System.Drawing.Point(277, 1247);
             this.aseethePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6674,7 +6951,7 @@
             // ASeetheBox
             // 
             this.ASeetheBox.AutoSize = true;
-            this.ASeetheBox.Location = new System.Drawing.Point(307, 1206);
+            this.ASeetheBox.Location = new System.Drawing.Point(307, 1249);
             this.ASeetheBox.Name = "ASeetheBox";
             this.ASeetheBox.Size = new System.Drawing.Size(33, 17);
             this.ASeetheBox.TabIndex = 588;
@@ -6686,7 +6963,7 @@
             // label360
             // 
             this.label360.AutoSize = true;
-            this.label360.Location = new System.Drawing.Point(175, 1208);
+            this.label360.Location = new System.Drawing.Point(175, 1251);
             this.label360.Name = "label360";
             this.label360.Size = new System.Drawing.Size(65, 13);
             this.label360.TabIndex = 587;
@@ -6694,7 +6971,7 @@
             // 
             // ASeetheCount
             // 
-            this.ASeetheCount.Location = new System.Drawing.Point(242, 1204);
+            this.ASeetheCount.Location = new System.Drawing.Point(242, 1247);
             this.ASeetheCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -6844,7 +7121,7 @@
             // 
             // guyPromo
             // 
-            this.guyPromo.Location = new System.Drawing.Point(454, 1248);
+            this.guyPromo.Location = new System.Drawing.Point(100, 1313);
             this.guyPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6856,7 +7133,7 @@
             // 
             // abavahPromo
             // 
-            this.abavahPromo.Location = new System.Drawing.Point(454, 1182);
+            this.abavahPromo.Location = new System.Drawing.Point(454, 1225);
             this.abavahPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6868,7 +7145,7 @@
             // 
             // aatzarPromo
             // 
-            this.aatzarPromo.Location = new System.Drawing.Point(454, 1160);
+            this.aatzarPromo.Location = new System.Drawing.Point(454, 1203);
             this.aatzarPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6880,7 +7157,7 @@
             // 
             // ageumPromo
             // 
-            this.ageumPromo.Location = new System.Drawing.Point(454, 1138);
+            this.ageumPromo.Location = new System.Drawing.Point(454, 1181);
             this.ageumPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6892,7 +7169,7 @@
             // 
             // areiPromo
             // 
-            this.areiPromo.Location = new System.Drawing.Point(454, 1116);
+            this.areiPromo.Location = new System.Drawing.Point(454, 1159);
             this.areiPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6904,7 +7181,7 @@
             // 
             // leePromo
             // 
-            this.leePromo.Location = new System.Drawing.Point(277, 1226);
+            this.leePromo.Location = new System.Drawing.Point(454, 1269);
             this.leePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6916,7 +7193,7 @@
             // 
             // adagdaPromo
             // 
-            this.adagdaPromo.Location = new System.Drawing.Point(277, 1182);
+            this.adagdaPromo.Location = new System.Drawing.Point(277, 1225);
             this.adagdaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6928,7 +7205,7 @@
             // 
             // apontusPromo
             // 
-            this.apontusPromo.Location = new System.Drawing.Point(277, 1160);
+            this.apontusPromo.Location = new System.Drawing.Point(277, 1203);
             this.apontusPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6940,7 +7217,7 @@
             // 
             // atronixPromo
             // 
-            this.atronixPromo.Location = new System.Drawing.Point(277, 1138);
+            this.atronixPromo.Location = new System.Drawing.Point(277, 1181);
             this.atronixPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6952,7 +7229,7 @@
             // 
             // aathosPromo
             // 
-            this.aathosPromo.Location = new System.Drawing.Point(277, 1116);
+            this.aathosPromo.Location = new System.Drawing.Point(277, 1159);
             this.aathosPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6964,7 +7241,7 @@
             // 
             // rosePromo
             // 
-            this.rosePromo.Location = new System.Drawing.Point(454, 1226);
+            this.rosePromo.Location = new System.Drawing.Point(100, 1291);
             this.rosePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6976,7 +7253,7 @@
             // 
             // adefilePromo
             // 
-            this.adefilePromo.Location = new System.Drawing.Point(100, 1204);
+            this.adefilePromo.Location = new System.Drawing.Point(100, 1247);
             this.adefilePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6988,7 +7265,7 @@
             // 
             // arigrPromo
             // 
-            this.arigrPromo.Location = new System.Drawing.Point(100, 1182);
+            this.arigrPromo.Location = new System.Drawing.Point(100, 1225);
             this.arigrPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7000,7 +7277,7 @@
             // 
             // agerorPromo
             // 
-            this.agerorPromo.Location = new System.Drawing.Point(100, 1160);
+            this.agerorPromo.Location = new System.Drawing.Point(100, 1203);
             this.agerorPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7012,7 +7289,7 @@
             // 
             // aauriPromo
             // 
-            this.aauriPromo.Location = new System.Drawing.Point(100, 1138);
+            this.aauriPromo.Location = new System.Drawing.Point(100, 1181);
             this.aauriPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7024,7 +7301,7 @@
             // 
             // aalphaPromo
             // 
-            this.aalphaPromo.Location = new System.Drawing.Point(100, 1116);
+            this.aalphaPromo.Location = new System.Drawing.Point(100, 1159);
             this.aalphaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7036,7 +7313,7 @@
             // 
             // kedariPromo
             // 
-            this.kedariPromo.Location = new System.Drawing.Point(454, 1021);
+            this.kedariPromo.Location = new System.Drawing.Point(454, 1043);
             this.kedariPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7048,7 +7325,7 @@
             // 
             // cliodhnaPromo
             // 
-            this.cliodhnaPromo.Location = new System.Drawing.Point(454, 999);
+            this.cliodhnaPromo.Location = new System.Drawing.Point(454, 1021);
             this.cliodhnaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7060,7 +7337,7 @@
             // 
             // neilPromo
             // 
-            this.neilPromo.Location = new System.Drawing.Point(454, 977);
+            this.neilPromo.Location = new System.Drawing.Point(454, 999);
             this.neilPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7072,7 +7349,7 @@
             // 
             // pokerPromo
             // 
-            this.pokerPromo.Location = new System.Drawing.Point(454, 955);
+            this.pokerPromo.Location = new System.Drawing.Point(454, 977);
             this.pokerPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7084,7 +7361,7 @@
             // 
             // flynnPromo
             // 
-            this.flynnPromo.Location = new System.Drawing.Point(454, 933);
+            this.flynnPromo.Location = new System.Drawing.Point(454, 955);
             this.flynnPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7096,7 +7373,7 @@
             // 
             // santaPromo
             // 
-            this.santaPromo.Location = new System.Drawing.Point(454, 911);
+            this.santaPromo.Location = new System.Drawing.Point(454, 933);
             this.santaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7108,7 +7385,7 @@
             // 
             // dullahanPromo
             // 
-            this.dullahanPromo.Location = new System.Drawing.Point(454, 889);
+            this.dullahanPromo.Location = new System.Drawing.Point(454, 911);
             this.dullahanPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7120,7 +7397,7 @@
             // 
             // hawkingPromo
             // 
-            this.hawkingPromo.Location = new System.Drawing.Point(454, 867);
+            this.hawkingPromo.Location = new System.Drawing.Point(454, 889);
             this.hawkingPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7132,7 +7409,7 @@
             // 
             // nebraPromo
             // 
-            this.nebraPromo.Location = new System.Drawing.Point(454, 845);
+            this.nebraPromo.Location = new System.Drawing.Point(454, 867);
             this.nebraPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7144,7 +7421,7 @@
             // 
             // elfmechPromo
             // 
-            this.elfmechPromo.Location = new System.Drawing.Point(277, 1021);
+            this.elfmechPromo.Location = new System.Drawing.Point(277, 1043);
             this.elfmechPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7156,7 +7433,7 @@
             // 
             // sanqueenPromo
             // 
-            this.sanqueenPromo.Location = new System.Drawing.Point(277, 999);
+            this.sanqueenPromo.Location = new System.Drawing.Point(277, 1021);
             this.sanqueenPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7168,7 +7445,7 @@
             // 
             // leprPromo
             // 
-            this.leprPromo.Location = new System.Drawing.Point(277, 977);
+            this.leprPromo.Location = new System.Drawing.Point(277, 999);
             this.leprPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7180,7 +7457,7 @@
             // 
             // luxPromo
             // 
-            this.luxPromo.Location = new System.Drawing.Point(277, 955);
+            this.luxPromo.Location = new System.Drawing.Point(277, 977);
             this.luxPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7192,7 +7469,7 @@
             // 
             // leafPromo
             // 
-            this.leafPromo.Location = new System.Drawing.Point(277, 933);
+            this.leafPromo.Location = new System.Drawing.Point(277, 955);
             this.leafPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7204,7 +7481,7 @@
             // 
             // deerPromo
             // 
-            this.deerPromo.Location = new System.Drawing.Point(277, 911);
+            this.deerPromo.Location = new System.Drawing.Point(277, 933);
             this.deerPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7216,7 +7493,7 @@
             // 
             // jackPromo
             // 
-            this.jackPromo.Location = new System.Drawing.Point(277, 889);
+            this.jackPromo.Location = new System.Drawing.Point(277, 911);
             this.jackPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7228,7 +7505,7 @@
             // 
             // bubblesPromo
             // 
-            this.bubblesPromo.Location = new System.Drawing.Point(454, 1270);
+            this.bubblesPromo.Location = new System.Drawing.Point(100, 1335);
             this.bubblesPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7240,7 +7517,7 @@
             // 
             // tinyPromo
             // 
-            this.tinyPromo.Location = new System.Drawing.Point(277, 845);
+            this.tinyPromo.Location = new System.Drawing.Point(277, 867);
             this.tinyPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7252,7 +7529,7 @@
             // 
             // frostyPromo
             // 
-            this.frostyPromo.Location = new System.Drawing.Point(100, 1043);
+            this.frostyPromo.Location = new System.Drawing.Point(100, 1065);
             this.frostyPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7264,7 +7541,7 @@
             // 
             // firPromo
             // 
-            this.firPromo.Location = new System.Drawing.Point(100, 1021);
+            this.firPromo.Location = new System.Drawing.Point(100, 1043);
             this.firPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7276,7 +7553,7 @@
             // 
             // billyPromo
             // 
-            this.billyPromo.Location = new System.Drawing.Point(100, 999);
+            this.billyPromo.Location = new System.Drawing.Point(100, 1021);
             this.billyPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7288,7 +7565,7 @@
             // 
             // maryPromo
             // 
-            this.maryPromo.Location = new System.Drawing.Point(100, 977);
+            this.maryPromo.Location = new System.Drawing.Point(100, 999);
             this.maryPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7300,7 +7577,7 @@
             // 
             // dicemasterPromo
             // 
-            this.dicemasterPromo.Location = new System.Drawing.Point(100, 955);
+            this.dicemasterPromo.Location = new System.Drawing.Point(100, 977);
             this.dicemasterPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7312,7 +7589,7 @@
             // 
             // sparksPromo
             // 
-            this.sparksPromo.Location = new System.Drawing.Point(100, 933);
+            this.sparksPromo.Location = new System.Drawing.Point(100, 955);
             this.sparksPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7324,7 +7601,7 @@
             // 
             // elfPromo
             // 
-            this.elfPromo.Location = new System.Drawing.Point(100, 911);
+            this.elfPromo.Location = new System.Drawing.Point(100, 933);
             this.elfPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7336,7 +7613,7 @@
             // 
             // werewolfPromo
             // 
-            this.werewolfPromo.Location = new System.Drawing.Point(100, 889);
+            this.werewolfPromo.Location = new System.Drawing.Point(100, 911);
             this.werewolfPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7348,7 +7625,7 @@
             // 
             // jamesPromo
             // 
-            this.jamesPromo.Location = new System.Drawing.Point(100, 867);
+            this.jamesPromo.Location = new System.Drawing.Point(100, 889);
             this.jamesPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7360,7 +7637,7 @@
             // 
             // ladyPromo
             // 
-            this.ladyPromo.Location = new System.Drawing.Point(100, 845);
+            this.ladyPromo.Location = new System.Drawing.Point(100, 867);
             this.ladyPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7372,7 +7649,7 @@
             // 
             // atakedaPromo
             // 
-            this.atakedaPromo.Location = new System.Drawing.Point(454, 773);
+            this.atakedaPromo.Location = new System.Drawing.Point(454, 795);
             this.atakedaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7384,7 +7661,7 @@
             // 
             // akirkPromo
             // 
-            this.akirkPromo.Location = new System.Drawing.Point(454, 751);
+            this.akirkPromo.Location = new System.Drawing.Point(454, 773);
             this.akirkPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7396,7 +7673,7 @@
             // 
             // dybbukPromo
             // 
-            this.dybbukPromo.Location = new System.Drawing.Point(454, 729);
+            this.dybbukPromo.Location = new System.Drawing.Point(454, 751);
             this.dybbukPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7408,7 +7685,7 @@
             // 
             // mahatmaPromo
             // 
-            this.mahatmaPromo.Location = new System.Drawing.Point(454, 707);
+            this.mahatmaPromo.Location = new System.Drawing.Point(454, 729);
             this.mahatmaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7420,7 +7697,7 @@
             // 
             // takedaPromo
             // 
-            this.takedaPromo.Location = new System.Drawing.Point(454, 685);
+            this.takedaPromo.Location = new System.Drawing.Point(454, 707);
             this.takedaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7432,7 +7709,7 @@
             // 
             // kirkPromo
             // 
-            this.kirkPromo.Location = new System.Drawing.Point(454, 663);
+            this.kirkPromo.Location = new System.Drawing.Point(454, 685);
             this.kirkPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7444,7 +7721,7 @@
             // 
             // odelithPromo
             // 
-            this.odelithPromo.Location = new System.Drawing.Point(454, 641);
+            this.odelithPromo.Location = new System.Drawing.Point(454, 663);
             this.odelithPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7456,7 +7733,7 @@
             // 
             // chromaPromo
             // 
-            this.chromaPromo.Location = new System.Drawing.Point(454, 619);
+            this.chromaPromo.Location = new System.Drawing.Point(454, 641);
             this.chromaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7468,7 +7745,7 @@
             // 
             // druidPromo
             // 
-            this.druidPromo.Location = new System.Drawing.Point(454, 597);
+            this.druidPromo.Location = new System.Drawing.Point(454, 619);
             this.druidPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7480,7 +7757,7 @@
             // 
             // pyroPromo
             // 
-            this.pyroPromo.Location = new System.Drawing.Point(454, 575);
+            this.pyroPromo.Location = new System.Drawing.Point(454, 597);
             this.pyroPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7492,7 +7769,7 @@
             // 
             // ahattoriPromo
             // 
-            this.ahattoriPromo.Location = new System.Drawing.Point(277, 795);
+            this.ahattoriPromo.Location = new System.Drawing.Point(277, 817);
             this.ahattoriPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7504,7 +7781,7 @@
             // 
             // ahosokawaPromo
             // 
-            this.ahosokawaPromo.Location = new System.Drawing.Point(277, 773);
+            this.ahosokawaPromo.Location = new System.Drawing.Point(277, 795);
             this.ahosokawaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7516,7 +7793,7 @@
             // 
             // athertPromo
             // 
-            this.athertPromo.Location = new System.Drawing.Point(277, 751);
+            this.athertPromo.Location = new System.Drawing.Point(277, 773);
             this.athertPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7528,7 +7805,7 @@
             // 
             // edanaPromo
             // 
-            this.edanaPromo.Location = new System.Drawing.Point(277, 729);
+            this.edanaPromo.Location = new System.Drawing.Point(277, 751);
             this.edanaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7540,7 +7817,7 @@
             // 
             // hattoriPromo
             // 
-            this.hattoriPromo.Location = new System.Drawing.Point(277, 707);
+            this.hattoriPromo.Location = new System.Drawing.Point(277, 729);
             this.hattoriPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7552,7 +7829,7 @@
             // 
             // hosokawaPromo
             // 
-            this.hosokawaPromo.Location = new System.Drawing.Point(277, 685);
+            this.hosokawaPromo.Location = new System.Drawing.Point(277, 707);
             this.hosokawaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7564,7 +7841,7 @@
             // 
             // thertPromo
             // 
-            this.thertPromo.Location = new System.Drawing.Point(277, 663);
+            this.thertPromo.Location = new System.Drawing.Point(277, 685);
             this.thertPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7576,7 +7853,7 @@
             // 
             // zaytusPromo
             // 
-            this.zaytusPromo.Location = new System.Drawing.Point(277, 641);
+            this.zaytusPromo.Location = new System.Drawing.Point(277, 663);
             this.zaytusPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7588,7 +7865,7 @@
             // 
             // undinePromo
             // 
-            this.undinePromo.Location = new System.Drawing.Point(277, 619);
+            this.undinePromo.Location = new System.Drawing.Point(277, 641);
             this.undinePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7600,7 +7877,7 @@
             // 
             // nictePromo
             // 
-            this.nictePromo.Location = new System.Drawing.Point(277, 597);
+            this.nictePromo.Location = new System.Drawing.Point(277, 619);
             this.nictePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7612,7 +7889,7 @@
             // 
             // rokkaPromo
             // 
-            this.rokkaPromo.Location = new System.Drawing.Point(277, 575);
+            this.rokkaPromo.Location = new System.Drawing.Point(277, 597);
             this.rokkaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7624,7 +7901,7 @@
             // 
             // ahiratePromo
             // 
-            this.ahiratePromo.Location = new System.Drawing.Point(100, 795);
+            this.ahiratePromo.Location = new System.Drawing.Point(100, 817);
             this.ahiratePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7636,7 +7913,7 @@
             // 
             // anepPromo
             // 
-            this.anepPromo.Location = new System.Drawing.Point(100, 773);
+            this.anepPromo.Location = new System.Drawing.Point(100, 795);
             this.anepPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7648,7 +7925,7 @@
             // 
             // ashyguPromo
             // 
-            this.ashyguPromo.Location = new System.Drawing.Point(100, 751);
+            this.ashyguPromo.Location = new System.Drawing.Point(100, 773);
             this.ashyguPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7660,7 +7937,7 @@
             // 
             // jadePromo
             // 
-            this.jadePromo.Location = new System.Drawing.Point(100, 729);
+            this.jadePromo.Location = new System.Drawing.Point(100, 751);
             this.jadePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7672,7 +7949,7 @@
             // 
             // hiratePromo
             // 
-            this.hiratePromo.Location = new System.Drawing.Point(100, 707);
+            this.hiratePromo.Location = new System.Drawing.Point(100, 729);
             this.hiratePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7684,7 +7961,7 @@
             // 
             // neptuniusPromo
             // 
-            this.neptuniusPromo.Location = new System.Drawing.Point(100, 685);
+            this.neptuniusPromo.Location = new System.Drawing.Point(100, 707);
             this.neptuniusPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7696,7 +7973,7 @@
             // 
             // shyguPromo
             // 
-            this.shyguPromo.Location = new System.Drawing.Point(100, 663);
+            this.shyguPromo.Location = new System.Drawing.Point(100, 685);
             this.shyguPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7708,7 +7985,7 @@
             // 
             // petryPromo
             // 
-            this.petryPromo.Location = new System.Drawing.Point(100, 641);
+            this.petryPromo.Location = new System.Drawing.Point(100, 663);
             this.petryPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7720,7 +7997,7 @@
             // 
             // ignitorPromo
             // 
-            this.ignitorPromo.Location = new System.Drawing.Point(100, 619);
+            this.ignitorPromo.Location = new System.Drawing.Point(100, 641);
             this.ignitorPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7732,7 +8009,7 @@
             // 
             // bewatPromo
             // 
-            this.bewatPromo.Location = new System.Drawing.Point(100, 597);
+            this.bewatPromo.Location = new System.Drawing.Point(100, 619);
             this.bewatPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7744,7 +8021,7 @@
             // 
             // valorPromo
             // 
-            this.valorPromo.Location = new System.Drawing.Point(100, 575);
+            this.valorPromo.Location = new System.Drawing.Point(100, 597);
             this.valorPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7756,7 +8033,7 @@
             // 
             // gaiaPromo
             // 
-            this.gaiaPromo.Location = new System.Drawing.Point(454, 546);
+            this.gaiaPromo.Location = new System.Drawing.Point(454, 568);
             this.gaiaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7768,7 +8045,7 @@
             // 
             // magnusPromo
             // 
-            this.magnusPromo.Location = new System.Drawing.Point(454, 480);
+            this.magnusPromo.Location = new System.Drawing.Point(454, 502);
             this.magnusPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7780,7 +8057,7 @@
             // 
             // hidokaPromo
             // 
-            this.hidokaPromo.Location = new System.Drawing.Point(454, 458);
+            this.hidokaPromo.Location = new System.Drawing.Point(454, 480);
             this.hidokaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7792,7 +8069,7 @@
             // 
             // dorthPromo
             // 
-            this.dorthPromo.Location = new System.Drawing.Point(454, 436);
+            this.dorthPromo.Location = new System.Drawing.Point(454, 458);
             this.dorthPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7804,7 +8081,7 @@
             // 
             // alvitrPromo
             // 
-            this.alvitrPromo.Location = new System.Drawing.Point(454, 414);
+            this.alvitrPromo.Location = new System.Drawing.Point(454, 436);
             this.alvitrPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7816,7 +8093,7 @@
             // 
             // gurthPromo
             // 
-            this.gurthPromo.Location = new System.Drawing.Point(454, 392);
+            this.gurthPromo.Location = new System.Drawing.Point(454, 414);
             this.gurthPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7828,7 +8105,7 @@
             // 
             // grothPromo
             // 
-            this.grothPromo.Location = new System.Drawing.Point(454, 370);
+            this.grothPromo.Location = new System.Drawing.Point(454, 392);
             this.grothPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7840,7 +8117,7 @@
             // 
             // aoyukiPromo
             // 
-            this.aoyukiPromo.Location = new System.Drawing.Point(277, 546);
+            this.aoyukiPromo.Location = new System.Drawing.Point(277, 568);
             this.aoyukiPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7852,7 +8129,7 @@
             // 
             // charlesPromo
             // 
-            this.charlesPromo.Location = new System.Drawing.Point(277, 480);
+            this.charlesPromo.Location = new System.Drawing.Point(277, 502);
             this.charlesPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7864,7 +8141,7 @@
             // 
             // chengPromo
             // 
-            this.chengPromo.Location = new System.Drawing.Point(277, 458);
+            this.chengPromo.Location = new System.Drawing.Point(277, 480);
             this.chengPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7876,7 +8153,7 @@
             // 
             // ruaPromo
             // 
-            this.ruaPromo.Location = new System.Drawing.Point(277, 436);
+            this.ruaPromo.Location = new System.Drawing.Point(277, 458);
             this.ruaPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7888,7 +8165,7 @@
             // 
             // koldisPromo
             // 
-            this.koldisPromo.Location = new System.Drawing.Point(277, 414);
+            this.koldisPromo.Location = new System.Drawing.Point(277, 436);
             this.koldisPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7900,7 +8177,7 @@
             // 
             // kothPromo
             // 
-            this.kothPromo.Location = new System.Drawing.Point(277, 392);
+            this.kothPromo.Location = new System.Drawing.Point(277, 414);
             this.kothPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7912,7 +8189,7 @@
             // 
             // brynPromo
             // 
-            this.brynPromo.Location = new System.Drawing.Point(277, 370);
+            this.brynPromo.Location = new System.Drawing.Point(277, 392);
             this.brynPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7924,7 +8201,7 @@
             // 
             // spykePromo
             // 
-            this.spykePromo.Location = new System.Drawing.Point(100, 546);
+            this.spykePromo.Location = new System.Drawing.Point(100, 568);
             this.spykePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7936,7 +8213,7 @@
             // 
             // beatricePromo
             // 
-            this.beatricePromo.Location = new System.Drawing.Point(100, 480);
+            this.beatricePromo.Location = new System.Drawing.Point(100, 502);
             this.beatricePromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7948,7 +8225,7 @@
             // 
             // kumuPromo
             // 
-            this.kumuPromo.Location = new System.Drawing.Point(100, 458);
+            this.kumuPromo.Location = new System.Drawing.Point(100, 480);
             this.kumuPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7960,7 +8237,7 @@
             // 
             // arshenPromo
             // 
-            this.arshenPromo.Location = new System.Drawing.Point(100, 436);
+            this.arshenPromo.Location = new System.Drawing.Point(100, 458);
             this.arshenPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7972,7 +8249,7 @@
             // 
             // sigrunPromo
             // 
-            this.sigrunPromo.Location = new System.Drawing.Point(100, 414);
+            this.sigrunPromo.Location = new System.Drawing.Point(100, 436);
             this.sigrunPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7984,7 +8261,7 @@
             // 
             // zethPromo
             // 
-            this.zethPromo.Location = new System.Drawing.Point(100, 392);
+            this.zethPromo.Location = new System.Drawing.Point(100, 414);
             this.zethPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -7996,7 +8273,7 @@
             // 
             // veildurPromo
             // 
-            this.veildurPromo.Location = new System.Drawing.Point(100, 370);
+            this.veildurPromo.Location = new System.Drawing.Point(100, 392);
             this.veildurPromo.Maximum = new decimal(new int[] {
             5,
             0,
@@ -8476,7 +8753,7 @@
             // 
             // FrostyCount
             // 
-            this.FrostyCount.Location = new System.Drawing.Point(65, 1043);
+            this.FrostyCount.Location = new System.Drawing.Point(65, 1065);
             this.FrostyCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8489,7 +8766,7 @@
             // FrostyBox
             // 
             this.FrostyBox.AutoSize = true;
-            this.FrostyBox.Location = new System.Drawing.Point(130, 1045);
+            this.FrostyBox.Location = new System.Drawing.Point(130, 1067);
             this.FrostyBox.Name = "FrostyBox";
             this.FrostyBox.Size = new System.Drawing.Size(33, 17);
             this.FrostyBox.TabIndex = 436;
@@ -8501,7 +8778,7 @@
             // label355
             // 
             this.label355.AutoSize = true;
-            this.label355.Location = new System.Drawing.Point(25, 1047);
+            this.label355.Location = new System.Drawing.Point(25, 1069);
             this.label355.Name = "label355";
             this.label355.Size = new System.Drawing.Size(35, 13);
             this.label355.TabIndex = 435;
@@ -8510,7 +8787,7 @@
             // KedariBox
             // 
             this.KedariBox.AutoSize = true;
-            this.KedariBox.Location = new System.Drawing.Point(484, 1023);
+            this.KedariBox.Location = new System.Drawing.Point(484, 1045);
             this.KedariBox.Name = "KedariBox";
             this.KedariBox.Size = new System.Drawing.Size(33, 17);
             this.KedariBox.TabIndex = 433;
@@ -8522,7 +8799,7 @@
             // label352
             // 
             this.label352.AutoSize = true;
-            this.label352.Location = new System.Drawing.Point(380, 1025);
+            this.label352.Location = new System.Drawing.Point(380, 1047);
             this.label352.Name = "label352";
             this.label352.Size = new System.Drawing.Size(37, 13);
             this.label352.TabIndex = 432;
@@ -8530,7 +8807,7 @@
             // 
             // KedariCount
             // 
-            this.KedariCount.Location = new System.Drawing.Point(419, 1021);
+            this.KedariCount.Location = new System.Drawing.Point(419, 1043);
             this.KedariCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8542,7 +8819,7 @@
             // 
             // ElfmechCount
             // 
-            this.ElfmechCount.Location = new System.Drawing.Point(242, 1021);
+            this.ElfmechCount.Location = new System.Drawing.Point(242, 1043);
             this.ElfmechCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8555,7 +8832,7 @@
             // label353
             // 
             this.label353.AutoSize = true;
-            this.label353.Location = new System.Drawing.Point(200, 1025);
+            this.label353.Location = new System.Drawing.Point(200, 1047);
             this.label353.Name = "label353";
             this.label353.Size = new System.Drawing.Size(37, 13);
             this.label353.TabIndex = 429;
@@ -8564,7 +8841,7 @@
             // ElfmechBox
             // 
             this.ElfmechBox.AutoSize = true;
-            this.ElfmechBox.Location = new System.Drawing.Point(307, 1023);
+            this.ElfmechBox.Location = new System.Drawing.Point(307, 1045);
             this.ElfmechBox.Name = "ElfmechBox";
             this.ElfmechBox.Size = new System.Drawing.Size(33, 17);
             this.ElfmechBox.TabIndex = 430;
@@ -8575,7 +8852,7 @@
             // 
             // FirCount
             // 
-            this.FirCount.Location = new System.Drawing.Point(65, 1021);
+            this.FirCount.Location = new System.Drawing.Point(65, 1043);
             this.FirCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8588,7 +8865,7 @@
             // FirBox
             // 
             this.FirBox.AutoSize = true;
-            this.FirBox.Location = new System.Drawing.Point(130, 1023);
+            this.FirBox.Location = new System.Drawing.Point(130, 1045);
             this.FirBox.Name = "FirBox";
             this.FirBox.Size = new System.Drawing.Size(33, 17);
             this.FirBox.TabIndex = 427;
@@ -8600,7 +8877,7 @@
             // label354
             // 
             this.label354.AutoSize = true;
-            this.label354.Location = new System.Drawing.Point(41, 1025);
+            this.label354.Location = new System.Drawing.Point(41, 1047);
             this.label354.Name = "label354";
             this.label354.Size = new System.Drawing.Size(18, 13);
             this.label354.TabIndex = 426;
@@ -8609,7 +8886,7 @@
             // RoseBox
             // 
             this.RoseBox.AutoSize = true;
-            this.RoseBox.Location = new System.Drawing.Point(484, 1228);
+            this.RoseBox.Location = new System.Drawing.Point(130, 1293);
             this.RoseBox.Name = "RoseBox";
             this.RoseBox.Size = new System.Drawing.Size(33, 17);
             this.RoseBox.TabIndex = 424;
@@ -8621,7 +8898,7 @@
             // label351
             // 
             this.label351.AutoSize = true;
-            this.label351.Location = new System.Drawing.Point(352, 1230);
+            this.label351.Location = new System.Drawing.Point(-2, 1295);
             this.label351.Name = "label351";
             this.label351.Size = new System.Drawing.Size(66, 13);
             this.label351.TabIndex = 423;
@@ -8629,7 +8906,7 @@
             // 
             // RoseCount
             // 
-            this.RoseCount.Location = new System.Drawing.Point(419, 1226);
+            this.RoseCount.Location = new System.Drawing.Point(65, 1291);
             this.RoseCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8642,7 +8919,7 @@
             // MagnusBox
             // 
             this.MagnusBox.AutoSize = true;
-            this.MagnusBox.Location = new System.Drawing.Point(484, 482);
+            this.MagnusBox.Location = new System.Drawing.Point(484, 504);
             this.MagnusBox.Name = "MagnusBox";
             this.MagnusBox.Size = new System.Drawing.Size(33, 17);
             this.MagnusBox.TabIndex = 421;
@@ -8654,7 +8931,7 @@
             // label348
             // 
             this.label348.AutoSize = true;
-            this.label348.Location = new System.Drawing.Point(373, 484);
+            this.label348.Location = new System.Drawing.Point(373, 506);
             this.label348.Name = "label348";
             this.label348.Size = new System.Drawing.Size(45, 13);
             this.label348.TabIndex = 420;
@@ -8662,7 +8939,7 @@
             // 
             // MagnusCount
             // 
-            this.MagnusCount.Location = new System.Drawing.Point(419, 480);
+            this.MagnusCount.Location = new System.Drawing.Point(419, 502);
             this.MagnusCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8675,7 +8952,7 @@
             // CharlesBox
             // 
             this.CharlesBox.AutoSize = true;
-            this.CharlesBox.Location = new System.Drawing.Point(307, 482);
+            this.CharlesBox.Location = new System.Drawing.Point(307, 504);
             this.CharlesBox.Name = "CharlesBox";
             this.CharlesBox.Size = new System.Drawing.Size(33, 17);
             this.CharlesBox.TabIndex = 419;
@@ -8687,7 +8964,7 @@
             // label349
             // 
             this.label349.AutoSize = true;
-            this.label349.Location = new System.Drawing.Point(198, 484);
+            this.label349.Location = new System.Drawing.Point(198, 506);
             this.label349.Name = "label349";
             this.label349.Size = new System.Drawing.Size(42, 13);
             this.label349.TabIndex = 418;
@@ -8695,7 +8972,7 @@
             // 
             // CharlesCount
             // 
-            this.CharlesCount.Location = new System.Drawing.Point(242, 480);
+            this.CharlesCount.Location = new System.Drawing.Point(242, 502);
             this.CharlesCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8708,7 +8985,7 @@
             // BeatriceBox
             // 
             this.BeatriceBox.AutoSize = true;
-            this.BeatriceBox.Location = new System.Drawing.Point(130, 482);
+            this.BeatriceBox.Location = new System.Drawing.Point(130, 504);
             this.BeatriceBox.Name = "BeatriceBox";
             this.BeatriceBox.Size = new System.Drawing.Size(33, 17);
             this.BeatriceBox.TabIndex = 417;
@@ -8720,7 +8997,7 @@
             // label350
             // 
             this.label350.AutoSize = true;
-            this.label350.Location = new System.Drawing.Point(16, 484);
+            this.label350.Location = new System.Drawing.Point(16, 506);
             this.label350.Name = "label350";
             this.label350.Size = new System.Drawing.Size(46, 13);
             this.label350.TabIndex = 416;
@@ -8728,7 +9005,7 @@
             // 
             // BeatriceCount
             // 
-            this.BeatriceCount.Location = new System.Drawing.Point(65, 480);
+            this.BeatriceCount.Location = new System.Drawing.Point(65, 502);
             this.BeatriceCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8741,7 +9018,7 @@
             // GuyBox
             // 
             this.GuyBox.AutoSize = true;
-            this.GuyBox.Location = new System.Drawing.Point(484, 1250);
+            this.GuyBox.Location = new System.Drawing.Point(130, 1315);
             this.GuyBox.Name = "GuyBox";
             this.GuyBox.Size = new System.Drawing.Size(33, 17);
             this.GuyBox.TabIndex = 412;
@@ -8753,7 +9030,7 @@
             // label347
             // 
             this.label347.AutoSize = true;
-            this.label347.Location = new System.Drawing.Point(390, 1252);
+            this.label347.Location = new System.Drawing.Point(36, 1317);
             this.label347.Name = "label347";
             this.label347.Size = new System.Drawing.Size(26, 13);
             this.label347.TabIndex = 411;
@@ -8761,7 +9038,7 @@
             // 
             // GuyCount
             // 
-            this.GuyCount.Location = new System.Drawing.Point(419, 1248);
+            this.GuyCount.Location = new System.Drawing.Point(65, 1313);
             this.GuyCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8774,7 +9051,7 @@
             // ADefileBox
             // 
             this.ADefileBox.AutoSize = true;
-            this.ADefileBox.Location = new System.Drawing.Point(130, 1206);
+            this.ADefileBox.Location = new System.Drawing.Point(130, 1249);
             this.ADefileBox.Name = "ADefileBox";
             this.ADefileBox.Size = new System.Drawing.Size(33, 17);
             this.ADefileBox.TabIndex = 409;
@@ -8786,7 +9063,7 @@
             // label346
             // 
             this.label346.AutoSize = true;
-            this.label346.Location = new System.Drawing.Point(5, 1208);
+            this.label346.Location = new System.Drawing.Point(5, 1251);
             this.label346.Name = "label346";
             this.label346.Size = new System.Drawing.Size(58, 13);
             this.label346.TabIndex = 408;
@@ -8794,7 +9071,7 @@
             // 
             // ADefileCount
             // 
-            this.ADefileCount.Location = new System.Drawing.Point(65, 1204);
+            this.ADefileCount.Location = new System.Drawing.Point(65, 1247);
             this.ADefileCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8807,7 +9084,7 @@
             // CliodhnaBox
             // 
             this.CliodhnaBox.AutoSize = true;
-            this.CliodhnaBox.Location = new System.Drawing.Point(484, 1001);
+            this.CliodhnaBox.Location = new System.Drawing.Point(484, 1023);
             this.CliodhnaBox.Name = "CliodhnaBox";
             this.CliodhnaBox.Size = new System.Drawing.Size(33, 17);
             this.CliodhnaBox.TabIndex = 406;
@@ -8819,7 +9096,7 @@
             // label317
             // 
             this.label317.AutoSize = true;
-            this.label317.Location = new System.Drawing.Point(370, 1003);
+            this.label317.Location = new System.Drawing.Point(370, 1025);
             this.label317.Name = "label317";
             this.label317.Size = new System.Drawing.Size(48, 13);
             this.label317.TabIndex = 405;
@@ -8827,7 +9104,7 @@
             // 
             // CliodhnaCount
             // 
-            this.CliodhnaCount.Location = new System.Drawing.Point(419, 999);
+            this.CliodhnaCount.Location = new System.Drawing.Point(419, 1021);
             this.CliodhnaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8839,7 +9116,7 @@
             // 
             // SanqueenCount
             // 
-            this.SanqueenCount.Location = new System.Drawing.Point(242, 999);
+            this.SanqueenCount.Location = new System.Drawing.Point(242, 1021);
             this.SanqueenCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8852,7 +9129,7 @@
             // label320
             // 
             this.label320.AutoSize = true;
-            this.label320.Location = new System.Drawing.Point(182, 1003);
+            this.label320.Location = new System.Drawing.Point(182, 1025);
             this.label320.Name = "label320";
             this.label320.Size = new System.Drawing.Size(56, 13);
             this.label320.TabIndex = 402;
@@ -8861,7 +9138,7 @@
             // SanqueenBox
             // 
             this.SanqueenBox.AutoSize = true;
-            this.SanqueenBox.Location = new System.Drawing.Point(307, 1001);
+            this.SanqueenBox.Location = new System.Drawing.Point(307, 1023);
             this.SanqueenBox.Name = "SanqueenBox";
             this.SanqueenBox.Size = new System.Drawing.Size(33, 17);
             this.SanqueenBox.TabIndex = 403;
@@ -8872,7 +9149,7 @@
             // 
             // BillyCount
             // 
-            this.BillyCount.Location = new System.Drawing.Point(65, 999);
+            this.BillyCount.Location = new System.Drawing.Point(65, 1021);
             this.BillyCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8885,7 +9162,7 @@
             // BillyBox
             // 
             this.BillyBox.AutoSize = true;
-            this.BillyBox.Location = new System.Drawing.Point(130, 1001);
+            this.BillyBox.Location = new System.Drawing.Point(130, 1023);
             this.BillyBox.Name = "BillyBox";
             this.BillyBox.Size = new System.Drawing.Size(33, 17);
             this.BillyBox.TabIndex = 400;
@@ -8897,7 +9174,7 @@
             // label321
             // 
             this.label321.AutoSize = true;
-            this.label321.Location = new System.Drawing.Point(35, 1003);
+            this.label321.Location = new System.Drawing.Point(35, 1025);
             this.label321.Name = "label321";
             this.label321.Size = new System.Drawing.Size(25, 13);
             this.label321.TabIndex = 399;
@@ -8906,7 +9183,7 @@
             // AHattoriBox
             // 
             this.AHattoriBox.AutoSize = true;
-            this.AHattoriBox.Location = new System.Drawing.Point(307, 797);
+            this.AHattoriBox.Location = new System.Drawing.Point(307, 819);
             this.AHattoriBox.Name = "AHattoriBox";
             this.AHattoriBox.Size = new System.Drawing.Size(33, 17);
             this.AHattoriBox.TabIndex = 397;
@@ -8918,7 +9195,7 @@
             // label318
             // 
             this.label318.AutoSize = true;
-            this.label318.Location = new System.Drawing.Point(178, 799);
+            this.label318.Location = new System.Drawing.Point(178, 821);
             this.label318.Name = "label318";
             this.label318.Size = new System.Drawing.Size(62, 13);
             this.label318.TabIndex = 396;
@@ -8926,7 +9203,7 @@
             // 
             // AHattoriCount
             // 
-            this.AHattoriCount.Location = new System.Drawing.Point(242, 795);
+            this.AHattoriCount.Location = new System.Drawing.Point(242, 817);
             this.AHattoriCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8939,7 +9216,7 @@
             // AHirateBox
             // 
             this.AHirateBox.AutoSize = true;
-            this.AHirateBox.Location = new System.Drawing.Point(130, 797);
+            this.AHirateBox.Location = new System.Drawing.Point(130, 819);
             this.AHirateBox.Name = "AHirateBox";
             this.AHirateBox.Size = new System.Drawing.Size(33, 17);
             this.AHirateBox.TabIndex = 393;
@@ -8951,7 +9228,7 @@
             // label319
             // 
             this.label319.AutoSize = true;
-            this.label319.Location = new System.Drawing.Point(3, 799);
+            this.label319.Location = new System.Drawing.Point(3, 821);
             this.label319.Name = "label319";
             this.label319.Size = new System.Drawing.Size(59, 13);
             this.label319.TabIndex = 392;
@@ -8959,7 +9236,7 @@
             // 
             // AHirateCount
             // 
-            this.AHirateCount.Location = new System.Drawing.Point(65, 795);
+            this.AHirateCount.Location = new System.Drawing.Point(65, 817);
             this.AHirateCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -8972,7 +9249,7 @@
             // ATakedaBox
             // 
             this.ATakedaBox.AutoSize = true;
-            this.ATakedaBox.Location = new System.Drawing.Point(484, 775);
+            this.ATakedaBox.Location = new System.Drawing.Point(484, 797);
             this.ATakedaBox.Name = "ATakedaBox";
             this.ATakedaBox.Size = new System.Drawing.Size(33, 17);
             this.ATakedaBox.TabIndex = 390;
@@ -8984,7 +9261,7 @@
             // label315
             // 
             this.label315.AutoSize = true;
-            this.label315.Location = new System.Drawing.Point(350, 778);
+            this.label315.Location = new System.Drawing.Point(350, 800);
             this.label315.Name = "label315";
             this.label315.Size = new System.Drawing.Size(68, 13);
             this.label315.TabIndex = 389;
@@ -8992,7 +9269,7 @@
             // 
             // ATakedaCount
             // 
-            this.ATakedaCount.Location = new System.Drawing.Point(419, 773);
+            this.ATakedaCount.Location = new System.Drawing.Point(419, 795);
             this.ATakedaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9005,7 +9282,7 @@
             // AHosokawaBox
             // 
             this.AHosokawaBox.AutoSize = true;
-            this.AHosokawaBox.Location = new System.Drawing.Point(307, 775);
+            this.AHosokawaBox.Location = new System.Drawing.Point(307, 797);
             this.AHosokawaBox.Name = "AHosokawaBox";
             this.AHosokawaBox.Size = new System.Drawing.Size(33, 17);
             this.AHosokawaBox.TabIndex = 388;
@@ -9017,7 +9294,7 @@
             // label316
             // 
             this.label316.AutoSize = true;
-            this.label316.Location = new System.Drawing.Point(184, 777);
+            this.label316.Location = new System.Drawing.Point(184, 799);
             this.label316.Name = "label316";
             this.label316.Size = new System.Drawing.Size(56, 13);
             this.label316.TabIndex = 387;
@@ -9025,7 +9302,7 @@
             // 
             // AHosokawaCount
             // 
-            this.AHosokawaCount.Location = new System.Drawing.Point(242, 773);
+            this.AHosokawaCount.Location = new System.Drawing.Point(242, 795);
             this.AHosokawaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9038,7 +9315,7 @@
             // ANepBox
             // 
             this.ANepBox.AutoSize = true;
-            this.ANepBox.Location = new System.Drawing.Point(130, 775);
+            this.ANepBox.Location = new System.Drawing.Point(130, 797);
             this.ANepBox.Name = "ANepBox";
             this.ANepBox.Size = new System.Drawing.Size(33, 17);
             this.ANepBox.TabIndex = 384;
@@ -9050,7 +9327,7 @@
             // label265
             // 
             this.label265.AutoSize = true;
-            this.label265.Location = new System.Drawing.Point(11, 777);
+            this.label265.Location = new System.Drawing.Point(11, 799);
             this.label265.Name = "label265";
             this.label265.Size = new System.Drawing.Size(51, 13);
             this.label265.TabIndex = 383;
@@ -9058,7 +9335,7 @@
             // 
             // ANepCount
             // 
-            this.ANepCount.Location = new System.Drawing.Point(65, 773);
+            this.ANepCount.Location = new System.Drawing.Point(65, 795);
             this.ANepCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9071,7 +9348,7 @@
             // AKirkBox
             // 
             this.AKirkBox.AutoSize = true;
-            this.AKirkBox.Location = new System.Drawing.Point(484, 753);
+            this.AKirkBox.Location = new System.Drawing.Point(484, 775);
             this.AKirkBox.Name = "AKirkBox";
             this.AKirkBox.Size = new System.Drawing.Size(33, 17);
             this.AKirkBox.TabIndex = 381;
@@ -9083,7 +9360,7 @@
             // label262
             // 
             this.label262.AutoSize = true;
-            this.label262.Location = new System.Drawing.Point(369, 755);
+            this.label262.Location = new System.Drawing.Point(369, 777);
             this.label262.Name = "label262";
             this.label262.Size = new System.Drawing.Size(49, 13);
             this.label262.TabIndex = 380;
@@ -9091,7 +9368,7 @@
             // 
             // AKirkCount
             // 
-            this.AKirkCount.Location = new System.Drawing.Point(419, 751);
+            this.AKirkCount.Location = new System.Drawing.Point(419, 773);
             this.AKirkCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9104,7 +9381,7 @@
             // AThertBox
             // 
             this.AThertBox.AutoSize = true;
-            this.AThertBox.Location = new System.Drawing.Point(307, 753);
+            this.AThertBox.Location = new System.Drawing.Point(307, 775);
             this.AThertBox.Name = "AThertBox";
             this.AThertBox.Size = new System.Drawing.Size(33, 17);
             this.AThertBox.TabIndex = 379;
@@ -9116,7 +9393,7 @@
             // label263
             // 
             this.label263.AutoSize = true;
-            this.label263.Location = new System.Drawing.Point(184, 755);
+            this.label263.Location = new System.Drawing.Point(184, 777);
             this.label263.Name = "label263";
             this.label263.Size = new System.Drawing.Size(56, 13);
             this.label263.TabIndex = 378;
@@ -9124,7 +9401,7 @@
             // 
             // AThertCount
             // 
-            this.AThertCount.Location = new System.Drawing.Point(242, 751);
+            this.AThertCount.Location = new System.Drawing.Point(242, 773);
             this.AThertCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9137,7 +9414,7 @@
             // AShyguBox
             // 
             this.AShyguBox.AutoSize = true;
-            this.AShyguBox.Location = new System.Drawing.Point(130, 753);
+            this.AShyguBox.Location = new System.Drawing.Point(130, 775);
             this.AShyguBox.Name = "AShyguBox";
             this.AShyguBox.Size = new System.Drawing.Size(33, 17);
             this.AShyguBox.TabIndex = 377;
@@ -9149,7 +9426,7 @@
             // label264
             // 
             this.label264.AutoSize = true;
-            this.label264.Location = new System.Drawing.Point(1, 755);
+            this.label264.Location = new System.Drawing.Point(1, 777);
             this.label264.Name = "label264";
             this.label264.Size = new System.Drawing.Size(61, 13);
             this.label264.TabIndex = 376;
@@ -9157,7 +9434,7 @@
             // 
             // AShyguCount
             // 
-            this.AShyguCount.Location = new System.Drawing.Point(65, 751);
+            this.AShyguCount.Location = new System.Drawing.Point(65, 773);
             this.AShyguCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9170,7 +9447,7 @@
             // MahatmaBox
             // 
             this.MahatmaBox.AutoSize = true;
-            this.MahatmaBox.Location = new System.Drawing.Point(484, 709);
+            this.MahatmaBox.Location = new System.Drawing.Point(484, 731);
             this.MahatmaBox.Name = "MahatmaBox";
             this.MahatmaBox.Size = new System.Drawing.Size(33, 17);
             this.MahatmaBox.TabIndex = 372;
@@ -9182,7 +9459,7 @@
             // label261
             // 
             this.label261.AutoSize = true;
-            this.label261.Location = new System.Drawing.Point(367, 711);
+            this.label261.Location = new System.Drawing.Point(367, 733);
             this.label261.Name = "label261";
             this.label261.Size = new System.Drawing.Size(51, 13);
             this.label261.TabIndex = 371;
@@ -9190,7 +9467,7 @@
             // 
             // MahatmaCount
             // 
-            this.MahatmaCount.Location = new System.Drawing.Point(419, 707);
+            this.MahatmaCount.Location = new System.Drawing.Point(419, 729);
             this.MahatmaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9203,7 +9480,7 @@
             // DybbukBox
             // 
             this.DybbukBox.AutoSize = true;
-            this.DybbukBox.Location = new System.Drawing.Point(484, 731);
+            this.DybbukBox.Location = new System.Drawing.Point(484, 753);
             this.DybbukBox.Name = "DybbukBox";
             this.DybbukBox.Size = new System.Drawing.Size(33, 17);
             this.DybbukBox.TabIndex = 369;
@@ -9215,7 +9492,7 @@
             // label258
             // 
             this.label258.AutoSize = true;
-            this.label258.Location = new System.Drawing.Point(374, 733);
+            this.label258.Location = new System.Drawing.Point(374, 755);
             this.label258.Name = "label258";
             this.label258.Size = new System.Drawing.Size(44, 13);
             this.label258.TabIndex = 368;
@@ -9223,7 +9500,7 @@
             // 
             // DybbukCount
             // 
-            this.DybbukCount.Location = new System.Drawing.Point(419, 729);
+            this.DybbukCount.Location = new System.Drawing.Point(419, 751);
             this.DybbukCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9236,7 +9513,7 @@
             // EdanaBox
             // 
             this.EdanaBox.AutoSize = true;
-            this.EdanaBox.Location = new System.Drawing.Point(307, 731);
+            this.EdanaBox.Location = new System.Drawing.Point(307, 753);
             this.EdanaBox.Name = "EdanaBox";
             this.EdanaBox.Size = new System.Drawing.Size(33, 17);
             this.EdanaBox.TabIndex = 367;
@@ -9248,7 +9525,7 @@
             // label259
             // 
             this.label259.AutoSize = true;
-            this.label259.Location = new System.Drawing.Point(202, 733);
+            this.label259.Location = new System.Drawing.Point(202, 755);
             this.label259.Name = "label259";
             this.label259.Size = new System.Drawing.Size(38, 13);
             this.label259.TabIndex = 366;
@@ -9256,7 +9533,7 @@
             // 
             // EdanaCount
             // 
-            this.EdanaCount.Location = new System.Drawing.Point(242, 729);
+            this.EdanaCount.Location = new System.Drawing.Point(242, 751);
             this.EdanaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9269,7 +9546,7 @@
             // JadeBox
             // 
             this.JadeBox.AutoSize = true;
-            this.JadeBox.Location = new System.Drawing.Point(130, 731);
+            this.JadeBox.Location = new System.Drawing.Point(130, 753);
             this.JadeBox.Name = "JadeBox";
             this.JadeBox.Size = new System.Drawing.Size(33, 17);
             this.JadeBox.TabIndex = 365;
@@ -9281,7 +9558,7 @@
             // label260
             // 
             this.label260.AutoSize = true;
-            this.label260.Location = new System.Drawing.Point(32, 733);
+            this.label260.Location = new System.Drawing.Point(32, 755);
             this.label260.Name = "label260";
             this.label260.Size = new System.Drawing.Size(30, 13);
             this.label260.TabIndex = 364;
@@ -9289,7 +9566,7 @@
             // 
             // JadeCount
             // 
-            this.JadeCount.Location = new System.Drawing.Point(65, 729);
+            this.JadeCount.Location = new System.Drawing.Point(65, 751);
             this.JadeCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9404,7 +9681,7 @@
             // NeilBox
             // 
             this.NeilBox.AutoSize = true;
-            this.NeilBox.Location = new System.Drawing.Point(484, 979);
+            this.NeilBox.Location = new System.Drawing.Point(484, 1001);
             this.NeilBox.Name = "NeilBox";
             this.NeilBox.Size = new System.Drawing.Size(33, 17);
             this.NeilBox.TabIndex = 351;
@@ -9416,7 +9693,7 @@
             // label253
             // 
             this.label253.AutoSize = true;
-            this.label253.Location = new System.Drawing.Point(393, 981);
+            this.label253.Location = new System.Drawing.Point(393, 1003);
             this.label253.Name = "label253";
             this.label253.Size = new System.Drawing.Size(25, 13);
             this.label253.TabIndex = 350;
@@ -9424,7 +9701,7 @@
             // 
             // NeilCount
             // 
-            this.NeilCount.Location = new System.Drawing.Point(419, 977);
+            this.NeilCount.Location = new System.Drawing.Point(419, 999);
             this.NeilCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9437,7 +9714,7 @@
             // PokerBox
             // 
             this.PokerBox.AutoSize = true;
-            this.PokerBox.Location = new System.Drawing.Point(484, 957);
+            this.PokerBox.Location = new System.Drawing.Point(484, 979);
             this.PokerBox.Name = "PokerBox";
             this.PokerBox.Size = new System.Drawing.Size(33, 17);
             this.PokerBox.TabIndex = 348;
@@ -9449,7 +9726,7 @@
             // label252
             // 
             this.label252.AutoSize = true;
-            this.label252.Location = new System.Drawing.Point(362, 959);
+            this.label252.Location = new System.Drawing.Point(362, 981);
             this.label252.Name = "label252";
             this.label252.Size = new System.Drawing.Size(56, 13);
             this.label252.TabIndex = 347;
@@ -9457,7 +9734,7 @@
             // 
             // PokerCount
             // 
-            this.PokerCount.Location = new System.Drawing.Point(419, 955);
+            this.PokerCount.Location = new System.Drawing.Point(419, 977);
             this.PokerCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9470,7 +9747,7 @@
             // LuxBox
             // 
             this.LuxBox.AutoSize = true;
-            this.LuxBox.Location = new System.Drawing.Point(307, 957);
+            this.LuxBox.Location = new System.Drawing.Point(307, 979);
             this.LuxBox.Name = "LuxBox";
             this.LuxBox.Size = new System.Drawing.Size(33, 17);
             this.LuxBox.TabIndex = 346;
@@ -9482,7 +9759,7 @@
             // Luxurious
             // 
             this.Luxurious.AutoSize = true;
-            this.Luxurious.Location = new System.Drawing.Point(188, 959);
+            this.Luxurious.Location = new System.Drawing.Point(188, 981);
             this.Luxurious.Name = "Luxurious";
             this.Luxurious.Size = new System.Drawing.Size(52, 13);
             this.Luxurious.TabIndex = 345;
@@ -9490,7 +9767,7 @@
             // 
             // LuxCount
             // 
-            this.LuxCount.Location = new System.Drawing.Point(242, 955);
+            this.LuxCount.Location = new System.Drawing.Point(242, 977);
             this.LuxCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9503,7 +9780,7 @@
             // DicemasterBox
             // 
             this.DicemasterBox.AutoSize = true;
-            this.DicemasterBox.Location = new System.Drawing.Point(130, 957);
+            this.DicemasterBox.Location = new System.Drawing.Point(130, 979);
             this.DicemasterBox.Name = "DicemasterBox";
             this.DicemasterBox.Size = new System.Drawing.Size(33, 17);
             this.DicemasterBox.TabIndex = 344;
@@ -9515,7 +9792,7 @@
             // label254
             // 
             this.label254.AutoSize = true;
-            this.label254.Location = new System.Drawing.Point(2, 959);
+            this.label254.Location = new System.Drawing.Point(2, 981);
             this.label254.Name = "label254";
             this.label254.Size = new System.Drawing.Size(60, 13);
             this.label254.TabIndex = 343;
@@ -9523,7 +9800,7 @@
             // 
             // DicemasterCount
             // 
-            this.DicemasterCount.Location = new System.Drawing.Point(65, 955);
+            this.DicemasterCount.Location = new System.Drawing.Point(65, 977);
             this.DicemasterCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9536,7 +9813,7 @@
             // LeeBox
             // 
             this.LeeBox.AutoSize = true;
-            this.LeeBox.Location = new System.Drawing.Point(307, 1228);
+            this.LeeBox.Location = new System.Drawing.Point(484, 1271);
             this.LeeBox.Name = "LeeBox";
             this.LeeBox.Size = new System.Drawing.Size(33, 17);
             this.LeeBox.TabIndex = 339;
@@ -9548,7 +9825,7 @@
             // label246
             // 
             this.label246.AutoSize = true;
-            this.label246.Location = new System.Drawing.Point(179, 1230);
+            this.label246.Location = new System.Drawing.Point(356, 1273);
             this.label246.Name = "label246";
             this.label246.Size = new System.Drawing.Size(60, 13);
             this.label246.TabIndex = 338;
@@ -9556,7 +9833,7 @@
             // 
             // LeeCount
             // 
-            this.LeeCount.Location = new System.Drawing.Point(242, 1226);
+            this.LeeCount.Location = new System.Drawing.Point(419, 1269);
             this.LeeCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9569,7 +9846,7 @@
             // aBavahBox
             // 
             this.aBavahBox.AutoSize = true;
-            this.aBavahBox.Location = new System.Drawing.Point(484, 1184);
+            this.aBavahBox.Location = new System.Drawing.Point(484, 1227);
             this.aBavahBox.Name = "aBavahBox";
             this.aBavahBox.Size = new System.Drawing.Size(33, 17);
             this.aBavahBox.TabIndex = 336;
@@ -9581,7 +9858,7 @@
             // label245
             // 
             this.label245.AutoSize = true;
-            this.label245.Location = new System.Drawing.Point(356, 1186);
+            this.label245.Location = new System.Drawing.Point(356, 1229);
             this.label245.Name = "label245";
             this.label245.Size = new System.Drawing.Size(62, 13);
             this.label245.TabIndex = 335;
@@ -9589,7 +9866,7 @@
             // 
             // aBavahCount
             // 
-            this.aBavahCount.Location = new System.Drawing.Point(419, 1182);
+            this.aBavahCount.Location = new System.Drawing.Point(419, 1225);
             this.aBavahCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9601,7 +9878,7 @@
             // 
             // HawkingCount
             // 
-            this.HawkingCount.Location = new System.Drawing.Point(419, 867);
+            this.HawkingCount.Location = new System.Drawing.Point(419, 889);
             this.HawkingCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9614,7 +9891,7 @@
             // label244
             // 
             this.label244.AutoSize = true;
-            this.label244.Location = new System.Drawing.Point(352, 871);
+            this.label244.Location = new System.Drawing.Point(352, 893);
             this.label244.Name = "label244";
             this.label244.Size = new System.Drawing.Size(66, 13);
             this.label244.TabIndex = 332;
@@ -9623,7 +9900,7 @@
             // HawkingBox
             // 
             this.HawkingBox.AutoSize = true;
-            this.HawkingBox.Location = new System.Drawing.Point(484, 869);
+            this.HawkingBox.Location = new System.Drawing.Point(484, 891);
             this.HawkingBox.Name = "HawkingBox";
             this.HawkingBox.Size = new System.Drawing.Size(33, 17);
             this.HawkingBox.TabIndex = 333;
@@ -9635,7 +9912,7 @@
             // HidokaBox
             // 
             this.HidokaBox.AutoSize = true;
-            this.HidokaBox.Location = new System.Drawing.Point(484, 460);
+            this.HidokaBox.Location = new System.Drawing.Point(484, 482);
             this.HidokaBox.Name = "HidokaBox";
             this.HidokaBox.Size = new System.Drawing.Size(33, 17);
             this.HidokaBox.TabIndex = 330;
@@ -9647,7 +9924,7 @@
             // label241
             // 
             this.label241.AutoSize = true;
-            this.label241.Location = new System.Drawing.Point(377, 462);
+            this.label241.Location = new System.Drawing.Point(377, 484);
             this.label241.Name = "label241";
             this.label241.Size = new System.Drawing.Size(41, 13);
             this.label241.TabIndex = 329;
@@ -9655,7 +9932,7 @@
             // 
             // HidokaCount
             // 
-            this.HidokaCount.Location = new System.Drawing.Point(419, 458);
+            this.HidokaCount.Location = new System.Drawing.Point(419, 480);
             this.HidokaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9668,7 +9945,7 @@
             // ChengBox
             // 
             this.ChengBox.AutoSize = true;
-            this.ChengBox.Location = new System.Drawing.Point(307, 460);
+            this.ChengBox.Location = new System.Drawing.Point(307, 482);
             this.ChengBox.Name = "ChengBox";
             this.ChengBox.Size = new System.Drawing.Size(33, 17);
             this.ChengBox.TabIndex = 328;
@@ -9680,7 +9957,7 @@
             // label242
             // 
             this.label242.AutoSize = true;
-            this.label242.Location = new System.Drawing.Point(185, 462);
+            this.label242.Location = new System.Drawing.Point(185, 484);
             this.label242.Name = "label242";
             this.label242.Size = new System.Drawing.Size(55, 13);
             this.label242.TabIndex = 327;
@@ -9688,7 +9965,7 @@
             // 
             // ChengCount
             // 
-            this.ChengCount.Location = new System.Drawing.Point(242, 458);
+            this.ChengCount.Location = new System.Drawing.Point(242, 480);
             this.ChengCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9701,7 +9978,7 @@
             // KumuBox
             // 
             this.KumuBox.AutoSize = true;
-            this.KumuBox.Location = new System.Drawing.Point(130, 460);
+            this.KumuBox.Location = new System.Drawing.Point(130, 482);
             this.KumuBox.Name = "KumuBox";
             this.KumuBox.Size = new System.Drawing.Size(33, 17);
             this.KumuBox.TabIndex = 326;
@@ -9713,7 +9990,7 @@
             // label243
             // 
             this.label243.AutoSize = true;
-            this.label243.Location = new System.Drawing.Point(6, 462);
+            this.label243.Location = new System.Drawing.Point(6, 484);
             this.label243.Name = "label243";
             this.label243.Size = new System.Drawing.Size(56, 13);
             this.label243.TabIndex = 325;
@@ -9721,7 +9998,7 @@
             // 
             // KumuCount
             // 
-            this.KumuCount.Location = new System.Drawing.Point(65, 458);
+            this.KumuCount.Location = new System.Drawing.Point(65, 480);
             this.KumuCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9734,7 +10011,7 @@
             // FlynnBox
             // 
             this.FlynnBox.AutoSize = true;
-            this.FlynnBox.Location = new System.Drawing.Point(484, 935);
+            this.FlynnBox.Location = new System.Drawing.Point(484, 957);
             this.FlynnBox.Name = "FlynnBox";
             this.FlynnBox.Size = new System.Drawing.Size(33, 17);
             this.FlynnBox.TabIndex = 321;
@@ -9746,7 +10023,7 @@
             // label231
             // 
             this.label231.AutoSize = true;
-            this.label231.Location = new System.Drawing.Point(386, 937);
+            this.label231.Location = new System.Drawing.Point(386, 959);
             this.label231.Name = "label231";
             this.label231.Size = new System.Drawing.Size(32, 13);
             this.label231.TabIndex = 320;
@@ -9754,7 +10031,7 @@
             // 
             // FlynnCount
             // 
-            this.FlynnCount.Location = new System.Drawing.Point(419, 933);
+            this.FlynnCount.Location = new System.Drawing.Point(419, 955);
             this.FlynnCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9767,7 +10044,7 @@
             // LeafBox
             // 
             this.LeafBox.AutoSize = true;
-            this.LeafBox.Location = new System.Drawing.Point(307, 935);
+            this.LeafBox.Location = new System.Drawing.Point(307, 957);
             this.LeafBox.Name = "LeafBox";
             this.LeafBox.Size = new System.Drawing.Size(33, 17);
             this.LeafBox.TabIndex = 319;
@@ -9779,7 +10056,7 @@
             // label232
             // 
             this.label232.AutoSize = true;
-            this.label232.Location = new System.Drawing.Point(212, 937);
+            this.label232.Location = new System.Drawing.Point(212, 959);
             this.label232.Name = "label232";
             this.label232.Size = new System.Drawing.Size(28, 13);
             this.label232.TabIndex = 318;
@@ -9787,7 +10064,7 @@
             // 
             // LeafCount
             // 
-            this.LeafCount.Location = new System.Drawing.Point(242, 933);
+            this.LeafCount.Location = new System.Drawing.Point(242, 955);
             this.LeafCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9800,7 +10077,7 @@
             // SparksBox
             // 
             this.SparksBox.AutoSize = true;
-            this.SparksBox.Location = new System.Drawing.Point(130, 935);
+            this.SparksBox.Location = new System.Drawing.Point(130, 957);
             this.SparksBox.Name = "SparksBox";
             this.SparksBox.Size = new System.Drawing.Size(33, 17);
             this.SparksBox.TabIndex = 317;
@@ -9812,7 +10089,7 @@
             // label233
             // 
             this.label233.AutoSize = true;
-            this.label233.Location = new System.Drawing.Point(22, 937);
+            this.label233.Location = new System.Drawing.Point(22, 959);
             this.label233.Name = "label233";
             this.label233.Size = new System.Drawing.Size(40, 13);
             this.label233.TabIndex = 316;
@@ -9820,7 +10097,7 @@
             // 
             // SparksCount
             // 
-            this.SparksCount.Location = new System.Drawing.Point(65, 933);
+            this.SparksCount.Location = new System.Drawing.Point(65, 955);
             this.SparksCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9832,7 +10109,7 @@
             // 
             // LeprCount
             // 
-            this.LeprCount.Location = new System.Drawing.Point(242, 977);
+            this.LeprCount.Location = new System.Drawing.Point(242, 999);
             this.LeprCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -9845,7 +10122,7 @@
             // label230
             // 
             this.label230.AutoSize = true;
-            this.label230.Location = new System.Drawing.Point(176, 981);
+            this.label230.Location = new System.Drawing.Point(176, 1003);
             this.label230.Name = "label230";
             this.label230.Size = new System.Drawing.Size(64, 13);
             this.label230.TabIndex = 311;
@@ -9854,7 +10131,7 @@
             // LeprBox
             // 
             this.LeprBox.AutoSize = true;
-            this.LeprBox.Location = new System.Drawing.Point(307, 979);
+            this.LeprBox.Location = new System.Drawing.Point(307, 1001);
             this.LeprBox.Name = "LeprBox";
             this.LeprBox.Size = new System.Drawing.Size(33, 17);
             this.LeprBox.TabIndex = 312;
@@ -9866,7 +10143,7 @@
             // aDagdaBox
             // 
             this.aDagdaBox.AutoSize = true;
-            this.aDagdaBox.Location = new System.Drawing.Point(307, 1184);
+            this.aDagdaBox.Location = new System.Drawing.Point(307, 1227);
             this.aDagdaBox.Name = "aDagdaBox";
             this.aDagdaBox.Size = new System.Drawing.Size(33, 17);
             this.aDagdaBox.TabIndex = 309;
@@ -9878,7 +10155,7 @@
             // label229
             // 
             this.label229.AutoSize = true;
-            this.label229.Location = new System.Drawing.Point(177, 1186);
+            this.label229.Location = new System.Drawing.Point(177, 1229);
             this.label229.Name = "label229";
             this.label229.Size = new System.Drawing.Size(63, 13);
             this.label229.TabIndex = 308;
@@ -9886,7 +10163,7 @@
             // 
             // aDagdaCount
             // 
-            this.aDagdaCount.Location = new System.Drawing.Point(242, 1182);
+            this.aDagdaCount.Location = new System.Drawing.Point(242, 1225);
             this.aDagdaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10001,7 +10278,7 @@
             // HattoriBox
             // 
             this.HattoriBox.AutoSize = true;
-            this.HattoriBox.Location = new System.Drawing.Point(307, 709);
+            this.HattoriBox.Location = new System.Drawing.Point(307, 731);
             this.HattoriBox.Name = "HattoriBox";
             this.HattoriBox.Size = new System.Drawing.Size(33, 17);
             this.HattoriBox.TabIndex = 297;
@@ -10013,7 +10290,7 @@
             // label200
             // 
             this.label200.AutoSize = true;
-            this.label200.Location = new System.Drawing.Point(202, 711);
+            this.label200.Location = new System.Drawing.Point(202, 733);
             this.label200.Name = "label200";
             this.label200.Size = new System.Drawing.Size(38, 13);
             this.label200.TabIndex = 296;
@@ -10021,7 +10298,7 @@
             // 
             // HattoriCount
             // 
-            this.HattoriCount.Location = new System.Drawing.Point(242, 707);
+            this.HattoriCount.Location = new System.Drawing.Point(242, 729);
             this.HattoriCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10034,7 +10311,7 @@
             // HirateBox
             // 
             this.HirateBox.AutoSize = true;
-            this.HirateBox.Location = new System.Drawing.Point(130, 709);
+            this.HirateBox.Location = new System.Drawing.Point(130, 731);
             this.HirateBox.Name = "HirateBox";
             this.HirateBox.Size = new System.Drawing.Size(33, 17);
             this.HirateBox.TabIndex = 294;
@@ -10046,7 +10323,7 @@
             // label201
             // 
             this.label201.AutoSize = true;
-            this.label201.Location = new System.Drawing.Point(27, 711);
+            this.label201.Location = new System.Drawing.Point(27, 733);
             this.label201.Name = "label201";
             this.label201.Size = new System.Drawing.Size(35, 13);
             this.label201.TabIndex = 293;
@@ -10054,7 +10331,7 @@
             // 
             // HirateCount
             // 
-            this.HirateCount.Location = new System.Drawing.Point(65, 707);
+            this.HirateCount.Location = new System.Drawing.Point(65, 729);
             this.HirateCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10067,7 +10344,7 @@
             // TakedaBox
             // 
             this.TakedaBox.AutoSize = true;
-            this.TakedaBox.Location = new System.Drawing.Point(484, 687);
+            this.TakedaBox.Location = new System.Drawing.Point(484, 709);
             this.TakedaBox.Name = "TakedaBox";
             this.TakedaBox.Size = new System.Drawing.Size(33, 17);
             this.TakedaBox.TabIndex = 291;
@@ -10079,7 +10356,7 @@
             // label198
             // 
             this.label198.AutoSize = true;
-            this.label198.Location = new System.Drawing.Point(374, 689);
+            this.label198.Location = new System.Drawing.Point(374, 711);
             this.label198.Name = "label198";
             this.label198.Size = new System.Drawing.Size(44, 13);
             this.label198.TabIndex = 290;
@@ -10087,7 +10364,7 @@
             // 
             // TakedaCount
             // 
-            this.TakedaCount.Location = new System.Drawing.Point(419, 685);
+            this.TakedaCount.Location = new System.Drawing.Point(419, 707);
             this.TakedaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10100,7 +10377,7 @@
             // HosokawaBox
             // 
             this.HosokawaBox.AutoSize = true;
-            this.HosokawaBox.Location = new System.Drawing.Point(307, 687);
+            this.HosokawaBox.Location = new System.Drawing.Point(307, 709);
             this.HosokawaBox.Name = "HosokawaBox";
             this.HosokawaBox.Size = new System.Drawing.Size(33, 17);
             this.HosokawaBox.TabIndex = 288;
@@ -10112,7 +10389,7 @@
             // label199
             // 
             this.label199.AutoSize = true;
-            this.label199.Location = new System.Drawing.Point(182, 689);
+            this.label199.Location = new System.Drawing.Point(182, 711);
             this.label199.Name = "label199";
             this.label199.Size = new System.Drawing.Size(58, 13);
             this.label199.TabIndex = 287;
@@ -10120,7 +10397,7 @@
             // 
             // HosokawaCount
             // 
-            this.HosokawaCount.Location = new System.Drawing.Point(242, 685);
+            this.HosokawaCount.Location = new System.Drawing.Point(242, 707);
             this.HosokawaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10133,7 +10410,7 @@
             // aRigrBox
             // 
             this.aRigrBox.AutoSize = true;
-            this.aRigrBox.Location = new System.Drawing.Point(130, 1184);
+            this.aRigrBox.Location = new System.Drawing.Point(130, 1227);
             this.aRigrBox.Name = "aRigrBox";
             this.aRigrBox.Size = new System.Drawing.Size(33, 17);
             this.aRigrBox.TabIndex = 285;
@@ -10145,7 +10422,7 @@
             // label197
             // 
             this.label197.AutoSize = true;
-            this.label197.Location = new System.Drawing.Point(12, 1186);
+            this.label197.Location = new System.Drawing.Point(12, 1229);
             this.label197.Name = "label197";
             this.label197.Size = new System.Drawing.Size(50, 13);
             this.label197.TabIndex = 284;
@@ -10153,7 +10430,7 @@
             // 
             // aRigrCount
             // 
-            this.aRigrCount.Location = new System.Drawing.Point(65, 1182);
+            this.aRigrCount.Location = new System.Drawing.Point(65, 1225);
             this.aRigrCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10166,7 +10443,7 @@
             // DorthBox
             // 
             this.DorthBox.AutoSize = true;
-            this.DorthBox.Location = new System.Drawing.Point(484, 438);
+            this.DorthBox.Location = new System.Drawing.Point(484, 460);
             this.DorthBox.Name = "DorthBox";
             this.DorthBox.Size = new System.Drawing.Size(33, 17);
             this.DorthBox.TabIndex = 282;
@@ -10178,7 +10455,7 @@
             // label194
             // 
             this.label194.AutoSize = true;
-            this.label194.Location = new System.Drawing.Point(385, 440);
+            this.label194.Location = new System.Drawing.Point(385, 462);
             this.label194.Name = "label194";
             this.label194.Size = new System.Drawing.Size(33, 13);
             this.label194.TabIndex = 281;
@@ -10186,7 +10463,7 @@
             // 
             // DorthCount
             // 
-            this.DorthCount.Location = new System.Drawing.Point(419, 436);
+            this.DorthCount.Location = new System.Drawing.Point(419, 458);
             this.DorthCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10199,7 +10476,7 @@
             // RuaBox
             // 
             this.RuaBox.AutoSize = true;
-            this.RuaBox.Location = new System.Drawing.Point(307, 438);
+            this.RuaBox.Location = new System.Drawing.Point(307, 460);
             this.RuaBox.Name = "RuaBox";
             this.RuaBox.Size = new System.Drawing.Size(33, 17);
             this.RuaBox.TabIndex = 279;
@@ -10211,7 +10488,7 @@
             // label195
             // 
             this.label195.AutoSize = true;
-            this.label195.Location = new System.Drawing.Point(213, 440);
+            this.label195.Location = new System.Drawing.Point(213, 462);
             this.label195.Name = "label195";
             this.label195.Size = new System.Drawing.Size(27, 13);
             this.label195.TabIndex = 278;
@@ -10219,7 +10496,7 @@
             // 
             // RuaCount
             // 
-            this.RuaCount.Location = new System.Drawing.Point(242, 436);
+            this.RuaCount.Location = new System.Drawing.Point(242, 458);
             this.RuaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10232,7 +10509,7 @@
             // ArshenBox
             // 
             this.ArshenBox.AutoSize = true;
-            this.ArshenBox.Location = new System.Drawing.Point(130, 438);
+            this.ArshenBox.Location = new System.Drawing.Point(130, 460);
             this.ArshenBox.Name = "ArshenBox";
             this.ArshenBox.Size = new System.Drawing.Size(33, 17);
             this.ArshenBox.TabIndex = 276;
@@ -10244,7 +10521,7 @@
             // label196
             // 
             this.label196.AutoSize = true;
-            this.label196.Location = new System.Drawing.Point(22, 440);
+            this.label196.Location = new System.Drawing.Point(22, 462);
             this.label196.Name = "label196";
             this.label196.Size = new System.Drawing.Size(40, 13);
             this.label196.TabIndex = 275;
@@ -10252,7 +10529,7 @@
             // 
             // ArshenCount
             // 
-            this.ArshenCount.Location = new System.Drawing.Point(65, 436);
+            this.ArshenCount.Location = new System.Drawing.Point(65, 458);
             this.ArshenCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10265,7 +10542,7 @@
             // AAtzarBox
             // 
             this.AAtzarBox.AutoSize = true;
-            this.AAtzarBox.Location = new System.Drawing.Point(484, 1162);
+            this.AAtzarBox.Location = new System.Drawing.Point(484, 1205);
             this.AAtzarBox.Name = "AAtzarBox";
             this.AAtzarBox.Size = new System.Drawing.Size(33, 17);
             this.AAtzarBox.TabIndex = 273;
@@ -10277,7 +10554,7 @@
             // label192
             // 
             this.label192.AutoSize = true;
-            this.label192.Location = new System.Drawing.Point(363, 1164);
+            this.label192.Location = new System.Drawing.Point(363, 1207);
             this.label192.Name = "label192";
             this.label192.Size = new System.Drawing.Size(55, 13);
             this.label192.TabIndex = 272;
@@ -10285,7 +10562,7 @@
             // 
             // AAtzarCount
             // 
-            this.AAtzarCount.Location = new System.Drawing.Point(419, 1160);
+            this.AAtzarCount.Location = new System.Drawing.Point(419, 1203);
             this.AAtzarCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10298,7 +10575,7 @@
             // APontusBox
             // 
             this.APontusBox.AutoSize = true;
-            this.APontusBox.Location = new System.Drawing.Point(307, 1162);
+            this.APontusBox.Location = new System.Drawing.Point(307, 1205);
             this.APontusBox.Name = "APontusBox";
             this.APontusBox.Size = new System.Drawing.Size(33, 17);
             this.APontusBox.TabIndex = 270;
@@ -10310,7 +10587,7 @@
             // label193
             // 
             this.label193.AutoSize = true;
-            this.label193.Location = new System.Drawing.Point(176, 1164);
+            this.label193.Location = new System.Drawing.Point(176, 1207);
             this.label193.Name = "label193";
             this.label193.Size = new System.Drawing.Size(64, 13);
             this.label193.TabIndex = 269;
@@ -10318,7 +10595,7 @@
             // 
             // APontusCount
             // 
-            this.APontusCount.Location = new System.Drawing.Point(242, 1160);
+            this.APontusCount.Location = new System.Drawing.Point(242, 1203);
             this.APontusCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10432,7 +10709,7 @@
             // 
             // BubblesCount
             // 
-            this.BubblesCount.Location = new System.Drawing.Point(419, 1270);
+            this.BubblesCount.Location = new System.Drawing.Point(65, 1335);
             this.BubblesCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10445,7 +10722,7 @@
             // label182
             // 
             this.label182.AutoSize = true;
-            this.label182.Location = new System.Drawing.Point(372, 1274);
+            this.label182.Location = new System.Drawing.Point(18, 1339);
             this.label182.Name = "label182";
             this.label182.Size = new System.Drawing.Size(45, 13);
             this.label182.TabIndex = 257;
@@ -10454,7 +10731,7 @@
             // BubblesBox
             // 
             this.BubblesBox.AutoSize = true;
-            this.BubblesBox.Location = new System.Drawing.Point(484, 1272);
+            this.BubblesBox.Location = new System.Drawing.Point(130, 1337);
             this.BubblesBox.Name = "BubblesBox";
             this.BubblesBox.Size = new System.Drawing.Size(33, 17);
             this.BubblesBox.TabIndex = 258;
@@ -10465,7 +10742,7 @@
             // 
             // maryCount
             // 
-            this.maryCount.Location = new System.Drawing.Point(65, 977);
+            this.maryCount.Location = new System.Drawing.Point(65, 999);
             this.maryCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10478,7 +10755,7 @@
             // AGeumBox
             // 
             this.AGeumBox.AutoSize = true;
-            this.AGeumBox.Location = new System.Drawing.Point(484, 1140);
+            this.AGeumBox.Location = new System.Drawing.Point(484, 1183);
             this.AGeumBox.Name = "AGeumBox";
             this.AGeumBox.Size = new System.Drawing.Size(33, 17);
             this.AGeumBox.TabIndex = 255;
@@ -10490,7 +10767,7 @@
             // label180
             // 
             this.label180.AutoSize = true;
-            this.label180.Location = new System.Drawing.Point(359, 1142);
+            this.label180.Location = new System.Drawing.Point(359, 1185);
             this.label180.Name = "label180";
             this.label180.Size = new System.Drawing.Size(59, 13);
             this.label180.TabIndex = 254;
@@ -10498,7 +10775,7 @@
             // 
             // AGeumCount
             // 
-            this.AGeumCount.Location = new System.Drawing.Point(419, 1138);
+            this.AGeumCount.Location = new System.Drawing.Point(419, 1181);
             this.AGeumCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10511,7 +10788,7 @@
             // AReiBox
             // 
             this.AReiBox.AutoSize = true;
-            this.AReiBox.Location = new System.Drawing.Point(484, 1118);
+            this.AReiBox.Location = new System.Drawing.Point(484, 1161);
             this.AReiBox.Name = "AReiBox";
             this.AReiBox.Size = new System.Drawing.Size(33, 17);
             this.AReiBox.TabIndex = 252;
@@ -10523,7 +10800,7 @@
             // label181
             // 
             this.label181.AutoSize = true;
-            this.label181.Location = new System.Drawing.Point(371, 1120);
+            this.label181.Location = new System.Drawing.Point(371, 1163);
             this.label181.Name = "label181";
             this.label181.Size = new System.Drawing.Size(47, 13);
             this.label181.TabIndex = 251;
@@ -10531,7 +10808,7 @@
             // 
             // AReiCount
             // 
-            this.AReiCount.Location = new System.Drawing.Point(419, 1116);
+            this.AReiCount.Location = new System.Drawing.Point(419, 1159);
             this.AReiCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10544,7 +10821,7 @@
             // ATronixBox
             // 
             this.ATronixBox.AutoSize = true;
-            this.ATronixBox.Location = new System.Drawing.Point(307, 1140);
+            this.ATronixBox.Location = new System.Drawing.Point(307, 1183);
             this.ATronixBox.Name = "ATronixBox";
             this.ATronixBox.Size = new System.Drawing.Size(33, 17);
             this.ATronixBox.TabIndex = 246;
@@ -10556,7 +10833,7 @@
             // label183
             // 
             this.label183.AutoSize = true;
-            this.label183.Location = new System.Drawing.Point(176, 1142);
+            this.label183.Location = new System.Drawing.Point(176, 1185);
             this.label183.Name = "label183";
             this.label183.Size = new System.Drawing.Size(64, 13);
             this.label183.TabIndex = 245;
@@ -10564,7 +10841,7 @@
             // 
             // ATronixCount
             // 
-            this.ATronixCount.Location = new System.Drawing.Point(242, 1138);
+            this.ATronixCount.Location = new System.Drawing.Point(242, 1181);
             this.ATronixCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10577,7 +10854,7 @@
             // AAthosBox
             // 
             this.AAthosBox.AutoSize = true;
-            this.AAthosBox.Location = new System.Drawing.Point(307, 1118);
+            this.AAthosBox.Location = new System.Drawing.Point(307, 1161);
             this.AAthosBox.Name = "AAthosBox";
             this.AAthosBox.Size = new System.Drawing.Size(33, 17);
             this.AAthosBox.TabIndex = 243;
@@ -10589,7 +10866,7 @@
             // label184
             // 
             this.label184.AutoSize = true;
-            this.label184.Location = new System.Drawing.Point(182, 1120);
+            this.label184.Location = new System.Drawing.Point(182, 1163);
             this.label184.Name = "label184";
             this.label184.Size = new System.Drawing.Size(58, 13);
             this.label184.TabIndex = 242;
@@ -10597,7 +10874,7 @@
             // 
             // AAthosCount
             // 
-            this.AAthosCount.Location = new System.Drawing.Point(242, 1116);
+            this.AAthosCount.Location = new System.Drawing.Point(242, 1159);
             this.AAthosCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10610,7 +10887,7 @@
             // AGerorBox
             // 
             this.AGerorBox.AutoSize = true;
-            this.AGerorBox.Location = new System.Drawing.Point(130, 1162);
+            this.AGerorBox.Location = new System.Drawing.Point(130, 1205);
             this.AGerorBox.Name = "AGerorBox";
             this.AGerorBox.Size = new System.Drawing.Size(33, 17);
             this.AGerorBox.TabIndex = 240;
@@ -10622,7 +10899,7 @@
             // label185
             // 
             this.label185.AutoSize = true;
-            this.label185.Location = new System.Drawing.Point(5, 1164);
+            this.label185.Location = new System.Drawing.Point(5, 1207);
             this.label185.Name = "label185";
             this.label185.Size = new System.Drawing.Size(57, 13);
             this.label185.TabIndex = 239;
@@ -10630,7 +10907,7 @@
             // 
             // AGerorCount
             // 
-            this.AGerorCount.Location = new System.Drawing.Point(65, 1160);
+            this.AGerorCount.Location = new System.Drawing.Point(65, 1203);
             this.AGerorCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10643,7 +10920,7 @@
             // AAuriBox
             // 
             this.AAuriBox.AutoSize = true;
-            this.AAuriBox.Location = new System.Drawing.Point(130, 1140);
+            this.AAuriBox.Location = new System.Drawing.Point(130, 1183);
             this.AAuriBox.Name = "AAuriBox";
             this.AAuriBox.Size = new System.Drawing.Size(33, 17);
             this.AAuriBox.TabIndex = 237;
@@ -10655,7 +10932,7 @@
             // label186
             // 
             this.label186.AutoSize = true;
-            this.label186.Location = new System.Drawing.Point(13, 1142);
+            this.label186.Location = new System.Drawing.Point(13, 1185);
             this.label186.Name = "label186";
             this.label186.Size = new System.Drawing.Size(49, 13);
             this.label186.TabIndex = 236;
@@ -10663,7 +10940,7 @@
             // 
             // AAuriCount
             // 
-            this.AAuriCount.Location = new System.Drawing.Point(65, 1138);
+            this.AAuriCount.Location = new System.Drawing.Point(65, 1181);
             this.AAuriCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10676,7 +10953,7 @@
             // AAlphaBox
             // 
             this.AAlphaBox.AutoSize = true;
-            this.AAlphaBox.Location = new System.Drawing.Point(130, 1118);
+            this.AAlphaBox.Location = new System.Drawing.Point(130, 1161);
             this.AAlphaBox.Name = "AAlphaBox";
             this.AAlphaBox.Size = new System.Drawing.Size(33, 17);
             this.AAlphaBox.TabIndex = 234;
@@ -10688,7 +10965,7 @@
             // label187
             // 
             this.label187.AutoSize = true;
-            this.label187.Location = new System.Drawing.Point(4, 1120);
+            this.label187.Location = new System.Drawing.Point(4, 1163);
             this.label187.Name = "label187";
             this.label187.Size = new System.Drawing.Size(58, 13);
             this.label187.TabIndex = 233;
@@ -10696,7 +10973,7 @@
             // 
             // AAlphaCount
             // 
-            this.AAlphaCount.Location = new System.Drawing.Point(65, 1116);
+            this.AAlphaCount.Location = new System.Drawing.Point(65, 1159);
             this.AAlphaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10709,7 +10986,7 @@
             // label188
             // 
             this.label188.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label188.Location = new System.Drawing.Point(8, 1111);
+            this.label188.Location = new System.Drawing.Point(8, 1154);
             this.label188.Name = "label188";
             this.label188.Size = new System.Drawing.Size(505, 2);
             this.label188.TabIndex = 231;
@@ -10717,7 +10994,7 @@
             // maryBox
             // 
             this.maryBox.AutoSize = true;
-            this.maryBox.Location = new System.Drawing.Point(130, 979);
+            this.maryBox.Location = new System.Drawing.Point(130, 1001);
             this.maryBox.Name = "maryBox";
             this.maryBox.Size = new System.Drawing.Size(33, 17);
             this.maryBox.TabIndex = 229;
@@ -10729,7 +11006,7 @@
             // label177
             // 
             this.label177.AutoSize = true;
-            this.label177.Location = new System.Drawing.Point(1, 981);
+            this.label177.Location = new System.Drawing.Point(1, 1003);
             this.label177.Name = "label177";
             this.label177.Size = new System.Drawing.Size(61, 13);
             this.label177.TabIndex = 228;
@@ -10738,7 +11015,7 @@
             // santaBox
             // 
             this.santaBox.AutoSize = true;
-            this.santaBox.Location = new System.Drawing.Point(484, 913);
+            this.santaBox.Location = new System.Drawing.Point(484, 935);
             this.santaBox.Name = "santaBox";
             this.santaBox.Size = new System.Drawing.Size(33, 17);
             this.santaBox.TabIndex = 226;
@@ -10750,7 +11027,7 @@
             // label174
             // 
             this.label174.AutoSize = true;
-            this.label174.Location = new System.Drawing.Point(354, 915);
+            this.label174.Location = new System.Drawing.Point(354, 937);
             this.label174.Name = "label174";
             this.label174.Size = new System.Drawing.Size(64, 13);
             this.label174.TabIndex = 225;
@@ -10758,7 +11035,7 @@
             // 
             // santaCount
             // 
-            this.santaCount.Location = new System.Drawing.Point(419, 911);
+            this.santaCount.Location = new System.Drawing.Point(419, 933);
             this.santaCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10771,7 +11048,7 @@
             // deerBox
             // 
             this.deerBox.AutoSize = true;
-            this.deerBox.Location = new System.Drawing.Point(307, 913);
+            this.deerBox.Location = new System.Drawing.Point(307, 935);
             this.deerBox.Name = "deerBox";
             this.deerBox.Size = new System.Drawing.Size(33, 17);
             this.deerBox.TabIndex = 223;
@@ -10783,7 +11060,7 @@
             // label175
             // 
             this.label175.AutoSize = true;
-            this.label175.Location = new System.Drawing.Point(190, 915);
+            this.label175.Location = new System.Drawing.Point(190, 937);
             this.label175.Name = "label175";
             this.label175.Size = new System.Drawing.Size(50, 13);
             this.label175.TabIndex = 222;
@@ -10791,7 +11068,7 @@
             // 
             // deerCount
             // 
-            this.deerCount.Location = new System.Drawing.Point(242, 911);
+            this.deerCount.Location = new System.Drawing.Point(242, 933);
             this.deerCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -10804,7 +11081,7 @@
             // elfBox
             // 
             this.elfBox.AutoSize = true;
-            this.elfBox.Location = new System.Drawing.Point(130, 913);
+            this.elfBox.Location = new System.Drawing.Point(130, 935);
             this.elfBox.Name = "elfBox";
             this.elfBox.Size = new System.Drawing.Size(33, 17);
             this.elfBox.TabIndex = 220;
@@ -10816,7 +11093,7 @@
             // label176
             // 
             this.label176.AutoSize = true;
-            this.label176.Location = new System.Drawing.Point(43, 915);
+            this.label176.Location = new System.Drawing.Point(43, 937);
             this.label176.Name = "label176";
             this.label176.Size = new System.Drawing.Size(19, 13);
             this.label176.TabIndex = 219;
@@ -10824,7 +11101,7 @@
             // 
             // elfCount
             // 
-            this.elfCount.Location = new System.Drawing.Point(65, 911);
+            this.elfCount.Location = new System.Drawing.Point(65, 933);
             this.elfCount.Maximum = new decimal(new int[] {
             99,
             0,
@@ -22306,6 +22583,16 @@
             this.tabControl1.ResumeLayout(false);
             this.Heroes.ResumeLayout(false);
             this.Heroes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.acreiPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acreiCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetraPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TetraCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.creiPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catzarPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cathosPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.creiCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catzarCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cathosCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.awandererPromo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AWandererCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.anerissaPromo)).EndInit();
@@ -24310,6 +24597,26 @@
         private System.Windows.Forms.CheckBox ANerissaBox;
         private System.Windows.Forms.Label label414;
         private System.Windows.Forms.NumericUpDown ANerissaCount;
+        private System.Windows.Forms.NumericUpDown acreiPromo;
+        private System.Windows.Forms.CheckBox acreiBox;
+        private System.Windows.Forms.Label label420;
+        private System.Windows.Forms.NumericUpDown acreiCount;
+        private System.Windows.Forms.NumericUpDown tetraPromo;
+        private System.Windows.Forms.NumericUpDown TetraCount;
+        private System.Windows.Forms.CheckBox TetraBox;
+        private System.Windows.Forms.Label label419;
+        private System.Windows.Forms.NumericUpDown creiPromo;
+        private System.Windows.Forms.NumericUpDown catzarPromo;
+        private System.Windows.Forms.NumericUpDown cathosPromo;
+        private System.Windows.Forms.CheckBox creiBox;
+        private System.Windows.Forms.Label label416;
+        private System.Windows.Forms.NumericUpDown creiCount;
+        private System.Windows.Forms.CheckBox catzarBox;
+        private System.Windows.Forms.Label label417;
+        private System.Windows.Forms.NumericUpDown catzarCount;
+        private System.Windows.Forms.CheckBox cathosBox;
+        private System.Windows.Forms.Label label418;
+        private System.Windows.Forms.NumericUpDown cathosCount;
         private System.Windows.Forms.LinkLabel linkLabelAutomater;
         private System.Windows.Forms.LinkLabel linkLabelMacroCreator;
     }
