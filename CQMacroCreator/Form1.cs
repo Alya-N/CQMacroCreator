@@ -107,9 +107,12 @@ namespace CQMacroCreator
                                 "guy","adefile","raiderrose","buccaneerbeatrice","corsaircharles","maraudermagnus","frosty","fir","5-12-6","kedari","raze","ruin","seethe","aseethe",
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
+                                "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili",
                                 };
 
-        static string[] servernames = {"acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha","anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day","thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
+        static string[] servernames = {"smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
+                               "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
+                               "thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
                                "doyenne","ahattori","ahirate","atakeda","ahosokawa","aneptunius", "alordkirk", "athert", "ashygu", "dybbuk", "edana", "jade", "mahatma",
                                "neil", "defile", "putrid", "taint", "pokerface", "luxuriusmaximus", "dicemaster", "kryton", "hidoka", "liucheng", "kumusan", "masterlee", "drhawking",
@@ -208,7 +211,10 @@ namespace CQMacroCreator
                                                MotherCount,
                                                ANerissaCount,AgathaCount,OpheliaCount,HelgaCount,
                                                MinervaCount,AWandererCount,
-                                               TetraCount, cathosCount, catzarCount, creiCount, acreiCount
+                                               TetraCount, cathosCount, catzarCount, creiCount, acreiCount,
+                                               SmithCount,
+                                               CottonCount,SharkCount,ChocoCount,aChocoCount,
+                                               LiliCount
 
             };
 
@@ -271,7 +277,10 @@ namespace CQMacroCreator
                                                MotherCount,
                                                ANerissaCount,AgathaCount,OpheliaCount,HelgaCount,
                                                MinervaCount,AWandererCount,
-                                               TetraCount, cathosCount, catzarCount, creiCount, acreiCount
+                                               TetraCount, cathosCount, catzarCount, creiCount, acreiCount,
+                                               SmithCount,
+                                               CottonCount,SharkCount,ChocoCount,aChocoCount,
+                                               LiliCount
 
             };
 
@@ -330,7 +339,10 @@ namespace CQMacroCreator
                                                motherPromo,
                                                anerissaPromo,agathaPromo,opheliaPromo,helgaPromo,
                                                minervaPromo,awandererPromo,
-                                               tetraPromo, cathosPromo, catzarPromo, creiPromo, acreiPromo
+                                               tetraPromo, cathosPromo, catzarPromo, creiPromo, acreiPromo,
+                                               smithPromo,
+                                               cottonPromo,sharkPromo,chocoPromo,achocoPromo,
+                                               liliPromo
 
             };
 
@@ -391,7 +403,10 @@ namespace CQMacroCreator
                                                motherPromo,
                                                anerissaPromo,agathaPromo,opheliaPromo,helgaPromo,
                                                minervaPromo,awandererPromo,
-                                               tetraPromo, cathosPromo, catzarPromo, creiPromo, acreiPromo
+                                               tetraPromo, cathosPromo, catzarPromo, creiPromo, acreiPromo,
+                                               smithPromo,
+                                               cottonPromo,sharkPromo,chocoPromo,achocoPromo,
+                                               liliPromo
 
             };
 
@@ -450,7 +465,10 @@ namespace CQMacroCreator
                                                MotherBox,
                                                ANerissaBox,AgathaBox,OpheliaBox,HelgaBox,
                                                MinervaBox,AWandererBox,
-                                               TetraBox, cathosBox, catzarBox, creiBox, acreiBox
+                                               TetraBox, cathosBox, catzarBox, creiBox, acreiBox,
+                                               SmithBox,
+                                               CottonBox,SharkBox,ChocoBox,aChocoBox,
+                                               LiliBox
 
             };
 
@@ -974,6 +992,9 @@ namespace CQMacroCreator
             new Hero(108,124,12,0,0),new Hero(124,124,12,0,0),                                                  //Minerva, aWanderer
             new Hero(76,50,6,0,0),//Tetra
             new Hero(16,28,1,0,0), new Hero(42,28,2,0,0), new Hero(80,8,6,0,0), new Hero(210,21,12,0,0),//Cube chest heroes
+            new Hero(75,45,6,0,0),//Smith
+            new Hero(32,14,1,0,0), new Hero(54,20,2,0,0), new Hero(50,50,6,0,0), new Hero(124,124,12,0,0),//Candy chest heroes
+            new Hero(92,211,12,0,0),//Lili
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1486,7 +1507,7 @@ namespace CQMacroCreator
             int maxedCommons = 0;
             int maxedRares = 0;
             int maxedLegs = 0;
-            int[] chestRaresID = new int[] { 2, 5, 8, 11, 14, 17, 20, 23, 26, 63, 78, 94, 111, 141, 150, 166, 177 };
+            int[] chestRaresID = new int[] { 2, 5, 8, 11, 14, 17, 20, 23, 26, 63, 78, 94, 111, 141, 150, 166, 177, 182 };
             foreach (int i in chestRaresID)
             {
                 PGrare += (99 - Math.Max(1, (int)heroCounts[i].Value)) * 3;
