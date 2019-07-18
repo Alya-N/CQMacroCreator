@@ -110,7 +110,7 @@ namespace CQMacroCreator
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili",
                                 };
 
-        static string[] servernames = {"smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
+        static string[] servernames = {"lili","achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
                                "thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
