@@ -107,10 +107,10 @@ namespace CQMacroCreator
                                 "guy","adefile","raiderrose","buccaneerbeatrice","corsaircharles","maraudermagnus","frosty","fir","5-12-6","kedari","raze","ruin","seethe","aseethe",
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
-                                "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili",
+                                "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 };
 
-        static string[] servernames = {"lili","achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
+        static string[] servernames = {"higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","lili","achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
                                "thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
@@ -214,7 +214,9 @@ namespace CQMacroCreator
                                                TetraCount, cathosCount, catzarCount, creiCount, acreiCount,
                                                SmithCount,
                                                CottonCount,SharkCount,ChocoCount,aChocoCount,
-                                               LiliCount
+                                               LiliCount,
+                                               ThraceCount,ScindaCount,MyrmilloCount,RetiaCount,
+                                               NewtCount,ElectraCount,BosonCount,HiggsCount
 
             };
 
@@ -280,7 +282,9 @@ namespace CQMacroCreator
                                                TetraCount, cathosCount, catzarCount, creiCount, acreiCount,
                                                SmithCount,
                                                CottonCount,SharkCount,ChocoCount,aChocoCount,
-                                               LiliCount
+                                               LiliCount,
+                                               ThraceCount,ScindaCount,MyrmilloCount,RetiaCount,
+                                               NewtCount,ElectraCount,BosonCount,HiggsCount
 
             };
 
@@ -342,7 +346,9 @@ namespace CQMacroCreator
                                                tetraPromo, cathosPromo, catzarPromo, creiPromo, acreiPromo,
                                                smithPromo,
                                                cottonPromo,sharkPromo,chocoPromo,achocoPromo,
-                                               liliPromo
+                                               liliPromo,
+                                               thracePromo,scindaPromo,myrmilloPromo,retiaPromo,
+                                               newtPromo,electraPromo,bosonPromo,higgsPromo
 
             };
 
@@ -406,7 +412,9 @@ namespace CQMacroCreator
                                                tetraPromo, cathosPromo, catzarPromo, creiPromo, acreiPromo,
                                                smithPromo,
                                                cottonPromo,sharkPromo,chocoPromo,achocoPromo,
-                                               liliPromo
+                                               liliPromo,
+                                               thracePromo,scindaPromo,myrmilloPromo,retiaPromo,
+                                               newtPromo,electraPromo,bosonPromo,higgsPromo
 
             };
 
@@ -468,7 +476,9 @@ namespace CQMacroCreator
                                                TetraBox, cathosBox, catzarBox, creiBox, acreiBox,
                                                SmithBox,
                                                CottonBox,SharkBox,ChocoBox,aChocoBox,
-                                               LiliBox
+                                               LiliBox,
+                                               ThraceBox,ScindaBox,MyrmilloBox,RetiaBox,
+                                               NewtBox,ElectraBox,BosonBox,HiggsBox
 
             };
 
@@ -951,7 +961,7 @@ namespace CQMacroCreator
             new Hero(36,36,2,0,0), new Hero(34,54,6,0,0), new Hero(72,28,6,0,0), new Hero(32,64,6,0,0), new Hero(30,70,6,0,0),  //odel, shygu, thert, kirk, nep
             new Hero(65,12,6,0,0), new Hero(70,14,6,0,0), new Hero(75,16,6,0,0),               // Sigrun, Koldis, Alvitr
             new Hero(30,18,1,0,0), new Hero(34,34,2,0,0), new Hero(60,42,6,0,0),                //Hama, Halli, Rigr
-            new Hero(174,46,12,0,0), new Hero(162,60,12,0,0), new Hero(120,104,12,0,0), new Hero(148,78,12,0,0),new Hero(190,38,12,0,0),new Hero(222,8,12,1,3),new Hero(116,116,12,0,0),
+            new Hero(174,46,12,0,0), new Hero(162,60,12,0,0), new Hero(120,104,12,0,0), new Hero(148,78,12,0,0),new Hero(190,38,12,0,0),new Hero(222,8,12,1,6),new Hero(116,116,12,0,0),
             null,
             new Hero(38,24,1,0,0), new Hero(54,36,2,0,0), new Hero(72,48,6,1,2), new Hero(44,44,2,1,5), //xmas
             new Hero(24,24,1,0,0), new Hero(40,30,2,0,0), new Hero(58,46,6,0,0),             //toth, ganah, dagda
@@ -962,14 +972,14 @@ namespace CQMacroCreator
             new Hero(42,50,6,0,0), new Hero(32,66,6,0,0), new Hero(38,56,6,0,0), new Hero(44,48,6,0,0),
             new Hero(135,107,12,0,0), //adagda
             new Hero(30,20,1,0,0), new Hero(36,36,2,0,0), new Hero(52,52,6,0,0),    //bylar, boor, bavah
-            new Hero(25,75,6,1,2),                                                  //lep
+            new Hero(25,75,6,1,4),                                                  //lep
             new Hero(30,30,2,0,0), new Hero(48,42,4,0,0), new Hero(70,48,12,0,0),   //sparks, leaf, flynn
             new Hero(122,122,12,0,0),new Hero(60,66,6,1,1.3),                       //abavah , hawking
             new Hero(150,90,12,0,200000), new Hero(70,38,6,0,0), new Hero(78,42,6,0,0), new Hero(86,44,6,0,0),   //lee, s5
             null,
-            new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,0,0),    //dice, lux, poker
+            new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,1,2),    //dice, lux, poker
             new Hero(25,25,1,0,0), new Hero(48,50,2,0,0), new Hero(52,48,6,0,100000),    //taint, putrid, defile
-            new Hero(150,15,6,1,5),                                                 //neil
+            new Hero(150,15,6,1,8),                                                 //neil
             new Hero(78,26,6,0,0), new Hero(76,30,6,0,0), new Hero(72,36,6,0,0), new Hero(88,22,6,0,0), //Djinn
             new Hero(85,135,12,0,0), new Hero(180,70,12,0,0), new Hero(80,160,12,0,0), new Hero(75,175,12,0,0), //aQuest
             new Hero(106,124,12,0,0), new Hero(82,164,12,0,0), new Hero(96,144,12,0,0), new Hero(114,126,12,0,0), //aSamurai
@@ -977,24 +987,26 @@ namespace CQMacroCreator
             new Hero(30,40,1,0,100000), new Hero(88,22,2,0,0), new Hero(150,60,6,1,1.5), //2nd Halloween
             new Hero(340,64,12,1,2), new Hero(126,114,12,0,0), //Guy, aDefile
             new Hero(186,62,12,1,1.2), new Hero(96,30,6,1,1.2), new Hero(100,32,6,1,1.2), new Hero(105,34,6,1,1.2),     //S6 Pirates
-            new Hero(46,52,2,1,1.5), new Hero(50,18,1,1,7), new Hero(78,34,2,0,0), new Hero(170,18,6,1,2),        //2nd Christmas
+            new Hero(46,52,2,1,1.5), new Hero(50,18,1,1,8), new Hero(78,34,2,0,0), new Hero(170,18,6,1,2),        //2nd Christmas
             new Hero(18,26,1,0,0), new Hero(44,48,2,0,0), new Hero(48,54,6,0,0), new Hero(117,131,12,0,0),      //Destructor chest heroes
             new Hero(54,54,6,0,0), new Hero(56,56,6,0,0), new Hero(58,58,6,0,0), new Hero(130,130,12,0,0),      //S7 Fairies
-            new Hero(220,20,6,0,0),                                                                             //Cupid
+            new Hero(220,20,6,1,3),                                                                             //Cupid
             new Hero(22,22,1,1,1.2), new Hero(34,34,2,1,1.2), new Hero(50,50,6,1,1.2),                                //Drifter chest heroes
             new Hero(100,40,6,0,0),                                                                             //BDay
-            new Hero(44,22,1,0,0), new Hero(64,32,2,0,0), new Hero(84,42,6,0,0), new Hero(180,90,12,0,0),       //AH Dragons
+            new Hero(44,22,1,0,0), new Hero(64,32,2,0,0), new Hero(84,42,6,1,1.5), new Hero(180,90,12,1,1.5),       //AH Dragons
             new Hero(180,60,12,0,0), new Hero(172,68,12,0,0), new Hero(160,80,12,0,0), new Hero(176,66,12,0,0), //aDjinn
             new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),      //Easter 2
             new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
             new Hero(112,55,6,1,1.5),                                                                           //Mother
-            new Hero(48,164,12,0,0),new Hero(51,59,6,0,0),new Hero(52,60,6,0,0),new Hero(53,61,6,0,0),          //aNerissa, S8 Witches
-            new Hero(108,124,12,0,0),new Hero(124,124,12,0,0),                                                  //Minerva, aWanderer
+            new Hero(48,164,12,1,1.5),new Hero(51,59,6,0,200000),new Hero(52,60,6,0,200000),new Hero(53,61,6,0,200000),          //aNerissa, S8 Witches
+            new Hero(108,124,12,1,1.5),new Hero(124,124,12,0,0),                                                  //Minerva, aWanderer
             new Hero(76,50,6,0,0),//Tetra
-            new Hero(16,28,1,0,0), new Hero(42,28,2,0,0), new Hero(80,8,6,0,0), new Hero(210,21,12,0,0),//Cube chest heroes
-            new Hero(75,45,6,0,0),//Smith
+            new Hero(16,28,1,0,0), new Hero(42,28,2,0,0), new Hero(80,8,6,0,100000), new Hero(210,21,12,0,100000),//Cube chest heroes
+            new Hero(75,45,6,1,2),//Smith
             new Hero(32,14,1,0,0), new Hero(54,20,2,0,0), new Hero(50,50,6,0,0), new Hero(124,124,12,0,0),//Candy chest heroes
             new Hero(92,211,12,0,0),//Lili
+            new Hero(53,61,6,0,0), new Hero(55,63,6,0,0), new Hero(57,65,6,0,0), new Hero(144,126,12,0,0),//S9 Gladiators
+            new Hero(48,4,1,0,0), new Hero(58,6,2,0,0), new Hero(72,3,6,0,0), new Hero(214,7,12,0,0),//Subatomic chest heroes
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1403,7 +1415,7 @@ namespace CQMacroCreator
 
         private void chooseHeroes()
         {
-            int maxChecked = 20; // initially 14
+            int maxChecked = 25; // initially 14
             foreach (CheckBox cb in heroBoxes)
                 if (cb != null)
                     cb.Checked = false;

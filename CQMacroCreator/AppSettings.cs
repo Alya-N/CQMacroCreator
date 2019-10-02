@@ -10,10 +10,10 @@ namespace CQMacroCreator
 {
     public struct AuctionBids
     {
-        bool biddingEnabled;
-        string name;
-        int maxLevel;
-        int maxBid;
+        public bool? biddingEnabled;
+        public string name;
+        public int? maxLevel;
+        public int? maxBid;
     }
     public class AppSettings
     {
