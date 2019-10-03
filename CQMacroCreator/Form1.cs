@@ -107,10 +107,10 @@ namespace CQMacroCreator
                                 "guy","adefile","raiderrose","buccaneerbeatrice","corsaircharles","maraudermagnus","frosty","fir","5-12-6","kedari","raze","ruin","seethe","aseethe",
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
-                                "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
+                                "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 };
 
-        static string[] servernames = {"higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","lili","achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
+        static string[] servernames = {"higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili","achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
                                "thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
@@ -215,6 +215,7 @@ namespace CQMacroCreator
                                                SmithCount,
                                                CottonCount,SharkCount,ChocoCount,aChocoCount,
                                                LiliCount,
+                                               null,
                                                ThraceCount,ScindaCount,MyrmilloCount,RetiaCount,
                                                NewtCount,ElectraCount,BosonCount,HiggsCount
 
@@ -283,6 +284,7 @@ namespace CQMacroCreator
                                                SmithCount,
                                                CottonCount,SharkCount,ChocoCount,aChocoCount,
                                                LiliCount,
+                                               null,
                                                ThraceCount,ScindaCount,MyrmilloCount,RetiaCount,
                                                NewtCount,ElectraCount,BosonCount,HiggsCount
 
@@ -347,6 +349,7 @@ namespace CQMacroCreator
                                                smithPromo,
                                                cottonPromo,sharkPromo,chocoPromo,achocoPromo,
                                                liliPromo,
+                                               null,
                                                thracePromo,scindaPromo,myrmilloPromo,retiaPromo,
                                                newtPromo,electraPromo,bosonPromo,higgsPromo
 
@@ -413,6 +416,7 @@ namespace CQMacroCreator
                                                smithPromo,
                                                cottonPromo,sharkPromo,chocoPromo,achocoPromo,
                                                liliPromo,
+                                               null,
                                                thracePromo,scindaPromo,myrmilloPromo,retiaPromo,
                                                newtPromo,electraPromo,bosonPromo,higgsPromo
 
@@ -477,6 +481,7 @@ namespace CQMacroCreator
                                                SmithBox,
                                                CottonBox,SharkBox,ChocoBox,aChocoBox,
                                                LiliBox,
+                                               null,
                                                ThraceBox,ScindaBox,MyrmilloBox,RetiaBox,
                                                NewtBox,ElectraBox,BosonBox,HiggsBox
 
@@ -1005,6 +1010,7 @@ namespace CQMacroCreator
             new Hero(75,45,6,1,2),//Smith
             new Hero(32,14,1,0,0), new Hero(54,20,2,0,0), new Hero(50,50,6,0,0), new Hero(124,124,12,0,0),//Candy chest heroes
             new Hero(92,211,12,0,0),//Lili
+            null,
             new Hero(53,61,6,0,0), new Hero(55,63,6,0,0), new Hero(57,65,6,0,0), new Hero(144,126,12,0,0),//S9 Gladiators
             new Hero(48,4,1,0,0), new Hero(58,6,2,0,0), new Hero(72,3,6,0,0), new Hero(214,7,12,0,0),//Subatomic chest heroes
         });

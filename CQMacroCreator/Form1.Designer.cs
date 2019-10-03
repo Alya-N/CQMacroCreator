@@ -254,6 +254,38 @@
             this.CSHC = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Heroes = new System.Windows.Forms.TabPage();
+            this.retiaPromo = new System.Windows.Forms.NumericUpDown();
+            this.RetiaBox = new System.Windows.Forms.CheckBox();
+            this.label434 = new System.Windows.Forms.Label();
+            this.RetiaCount = new System.Windows.Forms.NumericUpDown();
+            this.higgsPromo = new System.Windows.Forms.NumericUpDown();
+            this.HiggsBox = new System.Windows.Forms.CheckBox();
+            this.label433 = new System.Windows.Forms.Label();
+            this.HiggsCount = new System.Windows.Forms.NumericUpDown();
+            this.bosonPromo = new System.Windows.Forms.NumericUpDown();
+            this.electraPromo = new System.Windows.Forms.NumericUpDown();
+            this.newtPromo = new System.Windows.Forms.NumericUpDown();
+            this.BosonBox = new System.Windows.Forms.CheckBox();
+            this.label430 = new System.Windows.Forms.Label();
+            this.BosonCount = new System.Windows.Forms.NumericUpDown();
+            this.ElectraBox = new System.Windows.Forms.CheckBox();
+            this.label431 = new System.Windows.Forms.Label();
+            this.ElectraCount = new System.Windows.Forms.NumericUpDown();
+            this.NewtBox = new System.Windows.Forms.CheckBox();
+            this.label432 = new System.Windows.Forms.Label();
+            this.NewtCount = new System.Windows.Forms.NumericUpDown();
+            this.myrmilloPromo = new System.Windows.Forms.NumericUpDown();
+            this.scindaPromo = new System.Windows.Forms.NumericUpDown();
+            this.thracePromo = new System.Windows.Forms.NumericUpDown();
+            this.ThraceCount = new System.Windows.Forms.NumericUpDown();
+            this.label427 = new System.Windows.Forms.Label();
+            this.ThraceBox = new System.Windows.Forms.CheckBox();
+            this.ScindaCount = new System.Windows.Forms.NumericUpDown();
+            this.label428 = new System.Windows.Forms.Label();
+            this.ScindaBox = new System.Windows.Forms.CheckBox();
+            this.MyrmilloCount = new System.Windows.Forms.NumericUpDown();
+            this.label429 = new System.Windows.Forms.Label();
+            this.MyrmilloBox = new System.Windows.Forms.CheckBox();
             this.liliPromo = new System.Windows.Forms.NumericUpDown();
             this.LiliBox = new System.Windows.Forms.CheckBox();
             this.label426 = new System.Windows.Forms.Label();
@@ -1771,48 +1803,14 @@
             this.getQuestsButton = new System.Windows.Forms.Button();
             this.clearLogButton = new System.Windows.Forms.Button();
             this.sendTillNoSolveButton = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button91 = new System.Windows.Forms.Button();
             this.getDungeonButton = new System.Windows.Forms.Button();
             this.timeLimit = new System.Windows.Forms.NumericUpDown();
             this.label314 = new System.Windows.Forms.Label();
             this.clearLineupButton = new System.Windows.Forms.Button();
             this.label356 = new System.Windows.Forms.Label();
-            // matthy
             this.linkLabelMacroCreator = new System.Windows.Forms.LinkLabel();
             this.linkLabelAutomater = new System.Windows.Forms.LinkLabel();
-            this.myrmilloPromo = new System.Windows.Forms.NumericUpDown();
-            this.scindaPromo = new System.Windows.Forms.NumericUpDown();
-            this.thracePromo = new System.Windows.Forms.NumericUpDown();
-            this.ThraceCount = new System.Windows.Forms.NumericUpDown();
-            this.label427 = new System.Windows.Forms.Label();
-            this.ThraceBox = new System.Windows.Forms.CheckBox();
-            this.ScindaCount = new System.Windows.Forms.NumericUpDown();
-            this.label428 = new System.Windows.Forms.Label();
-            this.ScindaBox = new System.Windows.Forms.CheckBox();
-            this.MyrmilloCount = new System.Windows.Forms.NumericUpDown();
-            this.label429 = new System.Windows.Forms.Label();
-            this.MyrmilloBox = new System.Windows.Forms.CheckBox();
-            this.bosonPromo = new System.Windows.Forms.NumericUpDown();
-            this.electraPromo = new System.Windows.Forms.NumericUpDown();
-            this.newtPromo = new System.Windows.Forms.NumericUpDown();
-            this.BosonBox = new System.Windows.Forms.CheckBox();
-            this.label430 = new System.Windows.Forms.Label();
-            this.BosonCount = new System.Windows.Forms.NumericUpDown();
-            this.ElectraBox = new System.Windows.Forms.CheckBox();
-            this.label431 = new System.Windows.Forms.Label();
-            this.ElectraCount = new System.Windows.Forms.NumericUpDown();
-            this.NewtBox = new System.Windows.Forms.CheckBox();
-            this.label432 = new System.Windows.Forms.Label();
-            this.NewtCount = new System.Windows.Forms.NumericUpDown();
-            this.higgsPromo = new System.Windows.Forms.NumericUpDown();
-            this.HiggsBox = new System.Windows.Forms.CheckBox();
-            this.label433 = new System.Windows.Forms.Label();
-            this.HiggsCount = new System.Windows.Forms.NumericUpDown();
-            this.retiaPromo = new System.Windows.Forms.NumericUpDown();
-            this.RetiaBox = new System.Windows.Forms.CheckBox();
-            this.label434 = new System.Windows.Forms.Label();
-            this.RetiaCount = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.JamesCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HunterCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JetCount)).BeginInit();
@@ -1882,6 +1880,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.HamaCount)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Heroes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.retiaPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RetiaCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.higgsPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HiggsCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bosonPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.electraPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newtPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BosonCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ElectraCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NewtCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myrmilloPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scindaPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thracePromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThraceCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScindaCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyrmilloCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.liliPromo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LiliCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.achocoPromo)).BeginInit();
@@ -2191,22 +2205,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeLimit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myrmilloPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scindaPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thracePromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ThraceCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ScindaCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MyrmilloCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bosonPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.electraPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newtPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BosonCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ElectraCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NewtCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.higgsPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HiggsCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.retiaPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RetiaCount)).BeginInit();
             this.SuspendLayout();
             // 
             // JamesCount
@@ -4670,7 +4668,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(550, 626);
+            this.tabControl1.Size = new System.Drawing.Size(550, 635);
             this.tabControl1.TabIndex = 225;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -5445,10 +5443,370 @@
             this.Heroes.Location = new System.Drawing.Point(4, 22);
             this.Heroes.Name = "Heroes";
             this.Heroes.Padding = new System.Windows.Forms.Padding(3);
-            this.Heroes.Size = new System.Drawing.Size(542, 600);
+            this.Heroes.Size = new System.Drawing.Size(542, 609);
             this.Heroes.TabIndex = 0;
             this.Heroes.Text = "Heroes";
             this.Heroes.UseVisualStyleBackColor = true;
+            // 
+            // retiaPromo
+            // 
+            this.retiaPromo.Location = new System.Drawing.Point(454, 1378);
+            this.retiaPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.retiaPromo.Name = "retiaPromo";
+            this.retiaPromo.Size = new System.Drawing.Size(26, 20);
+            this.retiaPromo.TabIndex = 789;
+            // 
+            // RetiaBox
+            // 
+            this.RetiaBox.AutoSize = true;
+            this.RetiaBox.Location = new System.Drawing.Point(484, 1380);
+            this.RetiaBox.Name = "RetiaBox";
+            this.RetiaBox.Size = new System.Drawing.Size(33, 17);
+            this.RetiaBox.TabIndex = 788;
+            this.RetiaBox.TabStop = false;
+            this.RetiaBox.Text = "E";
+            this.RetiaBox.UseVisualStyleBackColor = true;
+            this.RetiaBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label434
+            // 
+            this.label434.AutoSize = true;
+            this.label434.Location = new System.Drawing.Point(384, 1382);
+            this.label434.Name = "label434";
+            this.label434.Size = new System.Drawing.Size(32, 13);
+            this.label434.TabIndex = 787;
+            this.label434.Text = "Retia";
+            // 
+            // RetiaCount
+            // 
+            this.RetiaCount.Location = new System.Drawing.Point(419, 1378);
+            this.RetiaCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.RetiaCount.Name = "RetiaCount";
+            this.RetiaCount.Size = new System.Drawing.Size(33, 20);
+            this.RetiaCount.TabIndex = 786;
+            // 
+            // higgsPromo
+            // 
+            this.higgsPromo.Location = new System.Drawing.Point(100, 1356);
+            this.higgsPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.higgsPromo.Name = "higgsPromo";
+            this.higgsPromo.Size = new System.Drawing.Size(26, 20);
+            this.higgsPromo.TabIndex = 785;
+            // 
+            // HiggsBox
+            // 
+            this.HiggsBox.AutoSize = true;
+            this.HiggsBox.Location = new System.Drawing.Point(130, 1358);
+            this.HiggsBox.Name = "HiggsBox";
+            this.HiggsBox.Size = new System.Drawing.Size(33, 17);
+            this.HiggsBox.TabIndex = 784;
+            this.HiggsBox.TabStop = false;
+            this.HiggsBox.Text = "E";
+            this.HiggsBox.UseVisualStyleBackColor = true;
+            this.HiggsBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label433
+            // 
+            this.label433.AutoSize = true;
+            this.label433.Location = new System.Drawing.Point(28, 1360);
+            this.label433.Name = "label433";
+            this.label433.Size = new System.Drawing.Size(34, 13);
+            this.label433.TabIndex = 783;
+            this.label433.Text = "Higgs";
+            // 
+            // HiggsCount
+            // 
+            this.HiggsCount.Location = new System.Drawing.Point(65, 1356);
+            this.HiggsCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.HiggsCount.Name = "HiggsCount";
+            this.HiggsCount.Size = new System.Drawing.Size(33, 20);
+            this.HiggsCount.TabIndex = 782;
+            // 
+            // bosonPromo
+            // 
+            this.bosonPromo.Location = new System.Drawing.Point(454, 406);
+            this.bosonPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.bosonPromo.Name = "bosonPromo";
+            this.bosonPromo.Size = new System.Drawing.Size(26, 20);
+            this.bosonPromo.TabIndex = 781;
+            // 
+            // electraPromo
+            // 
+            this.electraPromo.Location = new System.Drawing.Point(277, 406);
+            this.electraPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.electraPromo.Name = "electraPromo";
+            this.electraPromo.Size = new System.Drawing.Size(26, 20);
+            this.electraPromo.TabIndex = 780;
+            // 
+            // newtPromo
+            // 
+            this.newtPromo.Location = new System.Drawing.Point(100, 406);
+            this.newtPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.newtPromo.Name = "newtPromo";
+            this.newtPromo.Size = new System.Drawing.Size(26, 20);
+            this.newtPromo.TabIndex = 779;
+            // 
+            // BosonBox
+            // 
+            this.BosonBox.AutoSize = true;
+            this.BosonBox.Location = new System.Drawing.Point(484, 408);
+            this.BosonBox.Name = "BosonBox";
+            this.BosonBox.Size = new System.Drawing.Size(33, 17);
+            this.BosonBox.TabIndex = 778;
+            this.BosonBox.TabStop = false;
+            this.BosonBox.Text = "E";
+            this.BosonBox.UseVisualStyleBackColor = true;
+            this.BosonBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label430
+            // 
+            this.label430.AutoSize = true;
+            this.label430.Location = new System.Drawing.Point(379, 409);
+            this.label430.Name = "label430";
+            this.label430.Size = new System.Drawing.Size(37, 13);
+            this.label430.TabIndex = 777;
+            this.label430.Text = "Boson";
+            // 
+            // BosonCount
+            // 
+            this.BosonCount.Location = new System.Drawing.Point(419, 406);
+            this.BosonCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.BosonCount.Name = "BosonCount";
+            this.BosonCount.Size = new System.Drawing.Size(33, 20);
+            this.BosonCount.TabIndex = 772;
+            // 
+            // ElectraBox
+            // 
+            this.ElectraBox.AutoSize = true;
+            this.ElectraBox.Location = new System.Drawing.Point(307, 409);
+            this.ElectraBox.Name = "ElectraBox";
+            this.ElectraBox.Size = new System.Drawing.Size(33, 17);
+            this.ElectraBox.TabIndex = 776;
+            this.ElectraBox.TabStop = false;
+            this.ElectraBox.Text = "E";
+            this.ElectraBox.UseVisualStyleBackColor = true;
+            this.ElectraBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label431
+            // 
+            this.label431.AutoSize = true;
+            this.label431.Location = new System.Drawing.Point(199, 409);
+            this.label431.Name = "label431";
+            this.label431.Size = new System.Drawing.Size(40, 13);
+            this.label431.TabIndex = 775;
+            this.label431.Text = "Electra";
+            // 
+            // ElectraCount
+            // 
+            this.ElectraCount.Location = new System.Drawing.Point(242, 406);
+            this.ElectraCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.ElectraCount.Name = "ElectraCount";
+            this.ElectraCount.Size = new System.Drawing.Size(33, 20);
+            this.ElectraCount.TabIndex = 771;
+            // 
+            // NewtBox
+            // 
+            this.NewtBox.AutoSize = true;
+            this.NewtBox.Location = new System.Drawing.Point(130, 408);
+            this.NewtBox.Name = "NewtBox";
+            this.NewtBox.Size = new System.Drawing.Size(33, 17);
+            this.NewtBox.TabIndex = 774;
+            this.NewtBox.TabStop = false;
+            this.NewtBox.Text = "E";
+            this.NewtBox.UseVisualStyleBackColor = true;
+            this.NewtBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label432
+            // 
+            this.label432.AutoSize = true;
+            this.label432.Location = new System.Drawing.Point(31, 410);
+            this.label432.Name = "label432";
+            this.label432.Size = new System.Drawing.Size(32, 13);
+            this.label432.TabIndex = 773;
+            this.label432.Text = "Newt";
+            // 
+            // NewtCount
+            // 
+            this.NewtCount.Location = new System.Drawing.Point(65, 406);
+            this.NewtCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.NewtCount.Name = "NewtCount";
+            this.NewtCount.Size = new System.Drawing.Size(33, 20);
+            this.NewtCount.TabIndex = 770;
+            // 
+            // myrmilloPromo
+            // 
+            this.myrmilloPromo.Location = new System.Drawing.Point(454, 610);
+            this.myrmilloPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.myrmilloPromo.Name = "myrmilloPromo";
+            this.myrmilloPromo.Size = new System.Drawing.Size(26, 20);
+            this.myrmilloPromo.TabIndex = 769;
+            // 
+            // scindaPromo
+            // 
+            this.scindaPromo.Location = new System.Drawing.Point(277, 610);
+            this.scindaPromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.scindaPromo.Name = "scindaPromo";
+            this.scindaPromo.Size = new System.Drawing.Size(26, 20);
+            this.scindaPromo.TabIndex = 768;
+            // 
+            // thracePromo
+            // 
+            this.thracePromo.Location = new System.Drawing.Point(100, 610);
+            this.thracePromo.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.thracePromo.Name = "thracePromo";
+            this.thracePromo.Size = new System.Drawing.Size(26, 20);
+            this.thracePromo.TabIndex = 767;
+            // 
+            // ThraceCount
+            // 
+            this.ThraceCount.Location = new System.Drawing.Point(65, 610);
+            this.ThraceCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.ThraceCount.Name = "ThraceCount";
+            this.ThraceCount.Size = new System.Drawing.Size(33, 20);
+            this.ThraceCount.TabIndex = 758;
+            // 
+            // label427
+            // 
+            this.label427.AutoSize = true;
+            this.label427.Location = new System.Drawing.Point(20, 614);
+            this.label427.Name = "label427";
+            this.label427.Size = new System.Drawing.Size(41, 13);
+            this.label427.TabIndex = 761;
+            this.label427.Text = "Thrace";
+            // 
+            // ThraceBox
+            // 
+            this.ThraceBox.AutoSize = true;
+            this.ThraceBox.Location = new System.Drawing.Point(130, 612);
+            this.ThraceBox.Name = "ThraceBox";
+            this.ThraceBox.Size = new System.Drawing.Size(33, 17);
+            this.ThraceBox.TabIndex = 762;
+            this.ThraceBox.TabStop = false;
+            this.ThraceBox.Text = "E";
+            this.ThraceBox.UseVisualStyleBackColor = true;
+            this.ThraceBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // ScindaCount
+            // 
+            this.ScindaCount.Location = new System.Drawing.Point(242, 610);
+            this.ScindaCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.ScindaCount.Name = "ScindaCount";
+            this.ScindaCount.Size = new System.Drawing.Size(33, 20);
+            this.ScindaCount.TabIndex = 759;
+            // 
+            // label428
+            // 
+            this.label428.AutoSize = true;
+            this.label428.Location = new System.Drawing.Point(200, 614);
+            this.label428.Name = "label428";
+            this.label428.Size = new System.Drawing.Size(40, 13);
+            this.label428.TabIndex = 763;
+            this.label428.Text = "Scinda";
+            // 
+            // ScindaBox
+            // 
+            this.ScindaBox.AutoSize = true;
+            this.ScindaBox.Location = new System.Drawing.Point(307, 612);
+            this.ScindaBox.Name = "ScindaBox";
+            this.ScindaBox.Size = new System.Drawing.Size(33, 17);
+            this.ScindaBox.TabIndex = 764;
+            this.ScindaBox.TabStop = false;
+            this.ScindaBox.Text = "E";
+            this.ScindaBox.UseVisualStyleBackColor = true;
+            this.ScindaBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // MyrmilloCount
+            // 
+            this.MyrmilloCount.Location = new System.Drawing.Point(419, 610);
+            this.MyrmilloCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.MyrmilloCount.Name = "MyrmilloCount";
+            this.MyrmilloCount.Size = new System.Drawing.Size(33, 20);
+            this.MyrmilloCount.TabIndex = 760;
+            // 
+            // label429
+            // 
+            this.label429.AutoSize = true;
+            this.label429.Location = new System.Drawing.Point(373, 614);
+            this.label429.Name = "label429";
+            this.label429.Size = new System.Drawing.Size(44, 13);
+            this.label429.TabIndex = 765;
+            this.label429.Text = "Myrmillo";
+            // 
+            // MyrmilloBox
+            // 
+            this.MyrmilloBox.AutoSize = true;
+            this.MyrmilloBox.Location = new System.Drawing.Point(484, 612);
+            this.MyrmilloBox.Name = "MyrmilloBox";
+            this.MyrmilloBox.Size = new System.Drawing.Size(33, 17);
+            this.MyrmilloBox.TabIndex = 766;
+            this.MyrmilloBox.TabStop = false;
+            this.MyrmilloBox.Text = "E";
+            this.MyrmilloBox.UseVisualStyleBackColor = true;
+            this.MyrmilloBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
             // 
             // liliPromo
             // 
@@ -22850,7 +23208,6 @@
             this.clearLineupButton.Text = "X";
             this.clearLineupButton.UseVisualStyleBackColor = true;
             this.clearLineupButton.Click += new System.EventHandler(this.clearLineupButton_click);
-            // matthy
             // 
             // label356
             // 
@@ -22884,372 +23241,11 @@
             this.linkLabelAutomater.Text = "Latest CQAutomater version";
             this.linkLabelAutomater.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelAutomater_LinkClicked);
             // 
-            // myrmilloPromo
-            // 
-            this.myrmilloPromo.Location = new System.Drawing.Point(454, 610);
-            this.myrmilloPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.myrmilloPromo.Name = "myrmilloPromo";
-            this.myrmilloPromo.Size = new System.Drawing.Size(26, 20);
-            this.myrmilloPromo.TabIndex = 769;
-            // 
-            // scindaPromo
-            // 
-            this.scindaPromo.Location = new System.Drawing.Point(277, 610);
-            this.scindaPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.scindaPromo.Name = "scindaPromo";
-            this.scindaPromo.Size = new System.Drawing.Size(26, 20);
-            this.scindaPromo.TabIndex = 768;
-            // 
-            // thracePromo
-            // 
-            this.thracePromo.Location = new System.Drawing.Point(100, 610);
-            this.thracePromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.thracePromo.Name = "thracePromo";
-            this.thracePromo.Size = new System.Drawing.Size(26, 20);
-            this.thracePromo.TabIndex = 767;
-            // 
-            // ThraceCount
-            // 
-            this.ThraceCount.Location = new System.Drawing.Point(65, 610);
-            this.ThraceCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.ThraceCount.Name = "ThraceCount";
-            this.ThraceCount.Size = new System.Drawing.Size(33, 20);
-            this.ThraceCount.TabIndex = 758;
-            // 
-            // label427
-            // 
-            this.label427.AutoSize = true;
-            this.label427.Location = new System.Drawing.Point(20, 614);
-            this.label427.Name = "label427";
-            this.label427.Size = new System.Drawing.Size(41, 13);
-            this.label427.TabIndex = 761;
-            this.label427.Text = "Thrace";
-            // 
-            // ThraceBox
-            // 
-            this.ThraceBox.AutoSize = true;
-            this.ThraceBox.Location = new System.Drawing.Point(130, 612);
-            this.ThraceBox.Name = "ThraceBox";
-            this.ThraceBox.Size = new System.Drawing.Size(33, 17);
-            this.ThraceBox.TabIndex = 762;
-            this.ThraceBox.TabStop = false;
-            this.ThraceBox.Text = "E";
-            this.ThraceBox.UseVisualStyleBackColor = true;
-            this.ThraceBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // ScindaCount
-            // 
-            this.ScindaCount.Location = new System.Drawing.Point(242, 610);
-            this.ScindaCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.ScindaCount.Name = "ScindaCount";
-            this.ScindaCount.Size = new System.Drawing.Size(33, 20);
-            this.ScindaCount.TabIndex = 759;
-            // 
-            // label428
-            // 
-            this.label428.AutoSize = true;
-            this.label428.Location = new System.Drawing.Point(200, 614);
-            this.label428.Name = "label428";
-            this.label428.Size = new System.Drawing.Size(40, 13);
-            this.label428.TabIndex = 763;
-            this.label428.Text = "Scinda";
-            // 
-            // ScindaBox
-            // 
-            this.ScindaBox.AutoSize = true;
-            this.ScindaBox.Location = new System.Drawing.Point(307, 612);
-            this.ScindaBox.Name = "ScindaBox";
-            this.ScindaBox.Size = new System.Drawing.Size(33, 17);
-            this.ScindaBox.TabIndex = 764;
-            this.ScindaBox.TabStop = false;
-            this.ScindaBox.Text = "E";
-            this.ScindaBox.UseVisualStyleBackColor = true;
-            this.ScindaBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // MyrmilloCount
-            // 
-            this.MyrmilloCount.Location = new System.Drawing.Point(419, 610);
-            this.MyrmilloCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.MyrmilloCount.Name = "MyrmilloCount";
-            this.MyrmilloCount.Size = new System.Drawing.Size(33, 20);
-            this.MyrmilloCount.TabIndex = 760;
-            // 
-            // label429
-            // 
-            this.label429.AutoSize = true;
-            this.label429.Location = new System.Drawing.Point(373, 614);
-            this.label429.Name = "label429";
-            this.label429.Size = new System.Drawing.Size(44, 13);
-            this.label429.TabIndex = 765;
-            this.label429.Text = "Myrmillo";
-            // 
-            // MyrmilloBox
-            // 
-            this.MyrmilloBox.AutoSize = true;
-            this.MyrmilloBox.Location = new System.Drawing.Point(484, 612);
-            this.MyrmilloBox.Name = "MyrmilloBox";
-            this.MyrmilloBox.Size = new System.Drawing.Size(33, 17);
-            this.MyrmilloBox.TabIndex = 766;
-            this.MyrmilloBox.TabStop = false;
-            this.MyrmilloBox.Text = "E";
-            this.MyrmilloBox.UseVisualStyleBackColor = true;
-            this.MyrmilloBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // bosonPromo
-            // 
-            this.bosonPromo.Location = new System.Drawing.Point(454, 406);
-            this.bosonPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.bosonPromo.Name = "bosonPromo";
-            this.bosonPromo.Size = new System.Drawing.Size(26, 20);
-            this.bosonPromo.TabIndex = 781;
-            // 
-            // electraPromo
-            // 
-            this.electraPromo.Location = new System.Drawing.Point(277, 406);
-            this.electraPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.electraPromo.Name = "electraPromo";
-            this.electraPromo.Size = new System.Drawing.Size(26, 20);
-            this.electraPromo.TabIndex = 780;
-            // 
-            // newtPromo
-            // 
-            this.newtPromo.Location = new System.Drawing.Point(100, 406);
-            this.newtPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.newtPromo.Name = "newtPromo";
-            this.newtPromo.Size = new System.Drawing.Size(26, 20);
-            this.newtPromo.TabIndex = 779;
-            // 
-            // BosonBox
-            // 
-            this.BosonBox.AutoSize = true;
-            this.BosonBox.Location = new System.Drawing.Point(484, 408);
-            this.BosonBox.Name = "BosonBox";
-            this.BosonBox.Size = new System.Drawing.Size(33, 17);
-            this.BosonBox.TabIndex = 778;
-            this.BosonBox.TabStop = false;
-            this.BosonBox.Text = "E";
-            this.BosonBox.UseVisualStyleBackColor = true;
-            this.BosonBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label430
-            // 
-            this.label430.AutoSize = true;
-            this.label430.Location = new System.Drawing.Point(379, 409);
-            this.label430.Name = "label430";
-            this.label430.Size = new System.Drawing.Size(37, 13);
-            this.label430.TabIndex = 777;
-            this.label430.Text = "Boson";
-            // 
-            // BosonCount
-            // 
-            this.BosonCount.Location = new System.Drawing.Point(419, 406);
-            this.BosonCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.BosonCount.Name = "BosonCount";
-            this.BosonCount.Size = new System.Drawing.Size(33, 20);
-            this.BosonCount.TabIndex = 772;
-            // 
-            // ElectraBox
-            // 
-            this.ElectraBox.AutoSize = true;
-            this.ElectraBox.Location = new System.Drawing.Point(307, 409);
-            this.ElectraBox.Name = "ElectraBox";
-            this.ElectraBox.Size = new System.Drawing.Size(33, 17);
-            this.ElectraBox.TabIndex = 776;
-            this.ElectraBox.TabStop = false;
-            this.ElectraBox.Text = "E";
-            this.ElectraBox.UseVisualStyleBackColor = true;
-            this.ElectraBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label431
-            // 
-            this.label431.AutoSize = true;
-            this.label431.Location = new System.Drawing.Point(199, 409);
-            this.label431.Name = "label431";
-            this.label431.Size = new System.Drawing.Size(40, 13);
-            this.label431.TabIndex = 775;
-            this.label431.Text = "Electra";
-            // 
-            // ElectraCount
-            // 
-            this.ElectraCount.Location = new System.Drawing.Point(242, 406);
-            this.ElectraCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.ElectraCount.Name = "ElectraCount";
-            this.ElectraCount.Size = new System.Drawing.Size(33, 20);
-            this.ElectraCount.TabIndex = 771;
-            // 
-            // NewtBox
-            // 
-            this.NewtBox.AutoSize = true;
-            this.NewtBox.Location = new System.Drawing.Point(130, 408);
-            this.NewtBox.Name = "NewtBox";
-            this.NewtBox.Size = new System.Drawing.Size(33, 17);
-            this.NewtBox.TabIndex = 774;
-            this.NewtBox.TabStop = false;
-            this.NewtBox.Text = "E";
-            this.NewtBox.UseVisualStyleBackColor = true;
-            this.NewtBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label432
-            // 
-            this.label432.AutoSize = true;
-            this.label432.Location = new System.Drawing.Point(31, 410);
-            this.label432.Name = "label432";
-            this.label432.Size = new System.Drawing.Size(32, 13);
-            this.label432.TabIndex = 773;
-            this.label432.Text = "Newt";
-            // 
-            // NewtCount
-            // 
-            this.NewtCount.Location = new System.Drawing.Point(65, 406);
-            this.NewtCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.NewtCount.Name = "NewtCount";
-            this.NewtCount.Size = new System.Drawing.Size(33, 20);
-            this.NewtCount.TabIndex = 770;
-            // 
-            // higgsPromo
-            // 
-            this.higgsPromo.Location = new System.Drawing.Point(100, 1356);
-            this.higgsPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.higgsPromo.Name = "higgsPromo";
-            this.higgsPromo.Size = new System.Drawing.Size(26, 20);
-            this.higgsPromo.TabIndex = 785;
-            // 
-            // HiggsBox
-            // 
-            this.HiggsBox.AutoSize = true;
-            this.HiggsBox.Location = new System.Drawing.Point(130, 1358);
-            this.HiggsBox.Name = "HiggsBox";
-            this.HiggsBox.Size = new System.Drawing.Size(33, 17);
-            this.HiggsBox.TabIndex = 784;
-            this.HiggsBox.TabStop = false;
-            this.HiggsBox.Text = "E";
-            this.HiggsBox.UseVisualStyleBackColor = true;
-            this.HiggsBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label433
-            // 
-            this.label433.AutoSize = true;
-            this.label433.Location = new System.Drawing.Point(28, 1360);
-            this.label433.Name = "label433";
-            this.label433.Size = new System.Drawing.Size(34, 13);
-            this.label433.TabIndex = 783;
-            this.label433.Text = "Higgs";
-            // 
-            // HiggsCount
-            // 
-            this.HiggsCount.Location = new System.Drawing.Point(65, 1356);
-            this.HiggsCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.HiggsCount.Name = "HiggsCount";
-            this.HiggsCount.Size = new System.Drawing.Size(33, 20);
-            this.HiggsCount.TabIndex = 782;
-            // 
-            // retiaPromo
-            // 
-            this.retiaPromo.Location = new System.Drawing.Point(454, 1378);
-            this.retiaPromo.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.retiaPromo.Name = "retiaPromo";
-            this.retiaPromo.Size = new System.Drawing.Size(26, 20);
-            this.retiaPromo.TabIndex = 789;
-            // 
-            // RetiaBox
-            // 
-            this.RetiaBox.AutoSize = true;
-            this.RetiaBox.Location = new System.Drawing.Point(484, 1380);
-            this.RetiaBox.Name = "RetiaBox";
-            this.RetiaBox.Size = new System.Drawing.Size(33, 17);
-            this.RetiaBox.TabIndex = 788;
-            this.RetiaBox.TabStop = false;
-            this.RetiaBox.Text = "E";
-            this.RetiaBox.UseVisualStyleBackColor = true;
-            this.RetiaBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label434
-            // 
-            this.label434.AutoSize = true;
-            this.label434.Location = new System.Drawing.Point(384, 1382);
-            this.label434.Name = "label434";
-            this.label434.Size = new System.Drawing.Size(32, 13);
-            this.label434.TabIndex = 787;
-            this.label434.Text = "Retia";
-            // 
-            // RetiaCount
-            // 
-            this.RetiaCount.Location = new System.Drawing.Point(419, 1378);
-            this.RetiaCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.RetiaCount.Name = "RetiaCount";
-            this.RetiaCount.Size = new System.Drawing.Size(33, 20);
-            this.RetiaCount.TabIndex = 786;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 626);
-            // matthy
+            this.ClientSize = new System.Drawing.Size(836, 635);
             this.Controls.Add(this.linkLabelMacroCreator);
             this.Controls.Add(this.linkLabelAutomater);
             this.Controls.Add(this.label356);
@@ -23258,7 +23254,6 @@
             this.Controls.Add(this.timeLimit);
             this.Controls.Add(this.getDungeonButton);
             this.Controls.Add(this.button91);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.sendTillNoSolveButton);
             this.Controls.Add(this.clearLogButton);
             this.Controls.Add(this.runCalcButton);
@@ -23362,6 +23357,22 @@
             this.tabControl1.ResumeLayout(false);
             this.Heroes.ResumeLayout(false);
             this.Heroes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.retiaPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RetiaCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.higgsPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HiggsCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bosonPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.electraPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newtPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BosonCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ElectraCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NewtCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myrmilloPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scindaPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thracePromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThraceCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScindaCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyrmilloCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.liliPromo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LiliCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.achocoPromo)).EndInit();
@@ -23677,22 +23688,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeLimit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myrmilloPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scindaPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thracePromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ThraceCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ScindaCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MyrmilloCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bosonPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.electraPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newtPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BosonCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ElectraCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NewtCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.higgsPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HiggsCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.retiaPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RetiaCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -24557,7 +24552,6 @@
         private System.Windows.Forms.NumericUpDown LeprCount;
         private System.Windows.Forms.Label label230;
         private System.Windows.Forms.CheckBox LeprBox;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.CheckBox FlynnBox;
         private System.Windows.Forms.Label label231;
         private System.Windows.Forms.NumericUpDown FlynnCount;
