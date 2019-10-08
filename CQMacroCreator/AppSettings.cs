@@ -44,6 +44,7 @@ namespace CQMacroCreator
         public string[] herosToLevel { get; set; }
         public int[] levelLimits { get; set; }
         public bool? instantMaxPriceBid { get; set; }
+        public bool? warnManyHeroes { get; set; }
 
         public static AppSettings loadSettings()
         {        

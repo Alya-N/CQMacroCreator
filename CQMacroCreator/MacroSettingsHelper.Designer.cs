@@ -60,6 +60,7 @@
             this.autoChestBox = new System.Windows.Forms.CheckBox();
             this.autoDQBox = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.warnTMHBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.defaultActionCount)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lowerPercCount)).BeginInit();
@@ -409,11 +410,22 @@
             this.label6.TabIndex = 27;
             this.label6.Text = "Note: \"On Automater startup\" options are used only by CQAutomater";
             // 
+            // warnTMHBox
+            // 
+            this.warnTMHBox.AutoSize = true;
+            this.warnTMHBox.Location = new System.Drawing.Point(330, 130);
+            this.warnTMHBox.Name = "warnTMHBox";
+            this.warnTMHBox.Size = new System.Drawing.Size(169, 17);
+            this.warnTMHBox.TabIndex = 4;
+            this.warnTMHBox.Text = "Warn if using too many heroes";
+            this.warnTMHBox.UseVisualStyleBackColor = true;
+            // 
             // MacroSettingsHelper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 418);
+            this.Controls.Add(this.warnTMHBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button2);
@@ -482,5 +494,6 @@
         private System.Windows.Forms.CheckBox autoChestBox;
         private System.Windows.Forms.CheckBox autoDQBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox warnTMHBox;
     }
 }
