@@ -1048,7 +1048,7 @@ namespace CQMacroCreator
                         heroCounts[i].Value = levels[i];
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 MessageBox.Show("Wrong input file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -1065,7 +1065,7 @@ namespace CQMacroCreator
                         heroPromos[i].Value = promos[i];
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 MessageBox.Show("Wrong input file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

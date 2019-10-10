@@ -25,6 +25,8 @@ namespace CQMacroCreator
         public List<string> LoCLineup { get; set; }
         public List<string> MOAKLineup { get; set; }
         public List<string> KrytonLineup { get; set; }
+        public List<string> DoyLineup { get; set; }
+        public List<string> BorLineup { get; set; }
         public List<string> defaultDQLineup { get; set; }
         public List<string> calcEnabledHeroes { get; set; }
         public bool? DQSoundEnabled { get; set; }
@@ -43,8 +45,11 @@ namespace CQMacroCreator
         public int[] bankedCurrencies { get; set; }
         public string[] herosToLevel { get; set; }
         public int[] levelLimits { get; set; }
+        public bool? waitAutoLevel { get; set; }
         public bool? instantMaxPriceBid { get; set; }
+        public bool? autoEvEnabled { get; set; }
         public bool? warnManyHeroes { get; set; }
+        public bool? usernameActivated { get; set; }
 
         public static AppSettings loadSettings()
         {        
