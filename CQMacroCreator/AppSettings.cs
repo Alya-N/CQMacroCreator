@@ -50,6 +50,13 @@ namespace CQMacroCreator
         public bool? autoEvEnabled { get; set; }
         public bool? warnManyHeroes { get; set; }
         public bool? usernameActivated { get; set; }
+        public bool? doPVPHistory { get; set; }
+        public bool? doAutoLF { get; set; }
+        public bool? doAutoKT { get; set; }
+        public bool? doAutoCC { get; set; }
+        public bool? doAutoPG { get; set; }
+        public bool? doAutoAD { get; set; }
+        public bool? doAutoLO { get; set; }
 
         public static AppSettings loadSettings()
         {        

@@ -109,9 +109,11 @@ namespace CQMacroCreator
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
+                                "casper","adrian","emily","adam",
                                 };
 
-        static string[] servernames = {"higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili","achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
+        static string[] servernames = {"adam","emily","adrian","casper","higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
+                               "achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
                                "thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
                                "maraudermagnus","corsaircharles","buccaneerbeatrice","raiderrose","adefile","guy","cliodhna","sanqueen","billy",
@@ -218,11 +220,10 @@ namespace CQMacroCreator
                                                LiliCount,
                                                null,
                                                ThraceCount,ScindaCount,MyrmilloCount,RetiaCount,
-                                               NewtCount,ElectraCount,BosonCount,HiggsCount
+                                               NewtCount,ElectraCount,BosonCount,HiggsCount,
+                                               CasperCount,AdrianCount,EmilyCount,AdamCount
 
             };
-
-
 
             heroCountsServerOrder = new List<NumericUpDown>() {
                                                LadyCount, TinyCount, NebraCount,
@@ -287,7 +288,8 @@ namespace CQMacroCreator
                                                LiliCount,
                                                null,
                                                ThraceCount,ScindaCount,MyrmilloCount,RetiaCount,
-                                               NewtCount,ElectraCount,BosonCount,HiggsCount
+                                               NewtCount,ElectraCount,BosonCount,HiggsCount,
+                                               CasperCount,AdrianCount,EmilyCount,AdamCount
 
             };
 
@@ -352,7 +354,8 @@ namespace CQMacroCreator
                                                liliPromo,
                                                null,
                                                thracePromo,scindaPromo,myrmilloPromo,retiaPromo,
-                                               newtPromo,electraPromo,bosonPromo,higgsPromo
+                                               newtPromo,electraPromo,bosonPromo,higgsPromo,
+                                               CasperPromo,AdrianPromo,EmilyPromo,AdamPromo
 
             };
 
@@ -419,7 +422,8 @@ namespace CQMacroCreator
                                                liliPromo,
                                                null,
                                                thracePromo,scindaPromo,myrmilloPromo,retiaPromo,
-                                               newtPromo,electraPromo,bosonPromo,higgsPromo
+                                               newtPromo,electraPromo,bosonPromo,higgsPromo,
+                                               CasperPromo,AdrianPromo,EmilyPromo,AdamPromo
 
             };
 
@@ -484,7 +488,8 @@ namespace CQMacroCreator
                                                LiliBox,
                                                null,
                                                ThraceBox,ScindaBox,MyrmilloBox,RetiaBox,
-                                               NewtBox,ElectraBox,BosonBox,HiggsBox
+                                               NewtBox,ElectraBox,BosonBox,HiggsBox,
+                                               CasperBox,AdrianBox,EmilyBox,AdamBox
 
             };
 
@@ -1015,6 +1020,7 @@ namespace CQMacroCreator
             null,
             new Hero(53,61,6,0,0), new Hero(55,63,6,0,0), new Hero(57,65,6,0,0), new Hero(144,126,12,0,0),//S9 Gladiators
             new Hero(48,4,1,0,0), new Hero(58,6,2,0,0), new Hero(72,3,6,0,0), new Hero(214,7,12,0,0),//Subatomic chest heroes
+            new Hero(30,28,1,1,2), new Hero(64,20,2,1,2), new Hero(66,66,6,1,3), new Hero(200,100,12,0,0),//Halloween2019 heroes
         });
 
         private void button1_Click(object sender, EventArgs e)

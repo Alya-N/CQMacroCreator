@@ -11,6 +11,8 @@ Original repo: https://github.com/Diceycle/C-Hero-Calc
 Just place CQMacroCreator.exe in the same folder as CosmosQuest.exe and run it.
 ![screenshot](https://i.imgur.com/MuTsyGA.png)
 # What's new
+v4.6 - Halloween2019 heroes
+
 v4.5a - Subatomic and gladiator heroes
 
 v4.3b - T31+ monsters
