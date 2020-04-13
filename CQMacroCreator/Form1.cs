@@ -107,10 +107,11 @@ namespace CQMacroCreator
                                 "blossom","flint","orin","aurora","cupid","transient","maunder","thewanderer","b-day","cloud","ember","riptide","spike","amahatma","ajade","aedana","adybbuk",
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
-                                "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny",
+                                "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny","egg","babypyros","youngpyros","kingpyros",
                                 };
 
-        static string[] servernames = {"kilkenny","annie","mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper","higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
+        static string[] servernames = {"kingpyros","youngpyros","babypyros","egg","kilkenny","annie","mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
+                               "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
                                "achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
                                "thewanderer","maunder","transient","cupid","aurora","orin","flint","blossom","aseethe","seethe","ruin","raze","kedari","5-12-6","fir","frosty",
@@ -221,7 +222,8 @@ namespace CQMacroCreator
                                                NewtCount,ElectraCount,BosonCount,HiggsCount,
                                                CasperCount,AdrianCount,EmilyCount,AdamCount,
                                                YisusCount,GallaCount,YetiCount,HansCount,MMaryCount,
-                                               AnnieCount,KilkennyCount
+                                               AnnieCount,KilkennyCount,
+                                               EggCount,BabyPCount,YoungPCount,KingPCount
 
             };
 
@@ -291,8 +293,8 @@ namespace CQMacroCreator
                                                NewtCount,ElectraCount,BosonCount,HiggsCount,
                                                CasperCount,AdrianCount,EmilyCount,AdamCount,
                                                YisusCount,GallaCount,YetiCount,HansCount,MMaryCount,
-                                               AnnieCount,KilkennyCount
-
+                                               AnnieCount,KilkennyCount,
+                                               EggCount,BabyPCount,YoungPCount,KingPCount
             };
 
             heroPromos = new List<NumericUpDown>() {jamesPromo,
@@ -359,8 +361,8 @@ namespace CQMacroCreator
                                                newtPromo,electraPromo,bosonPromo,higgsPromo,
                                                CasperPromo,AdrianPromo,EmilyPromo,AdamPromo,
                                                YisusPromo,GallaPromo,YetiPromo,HansPromo,MMaryPromo,
-                                               AnniePromo,KilkennyPromo
-
+                                               AnniePromo,KilkennyPromo,
+                                               EggPromo,BabyPPromo,YoungPPromo,KingPPromo
             };
 
             heroPromosServerOrder = new List<NumericUpDown>() {
@@ -429,8 +431,8 @@ namespace CQMacroCreator
                                                newtPromo,electraPromo,bosonPromo,higgsPromo,
                                                CasperPromo,AdrianPromo,EmilyPromo,AdamPromo,
                                                YisusPromo,GallaPromo,YetiPromo,HansPromo,MMaryPromo,
-                                               AnniePromo,KilkennyPromo
-
+                                               AnniePromo,KilkennyPromo,
+                                               EggPromo,BabyPPromo,YoungPPromo,KingPPromo
             };
 
             heroBoxes = new List<CheckBox>() { JamesBox,
@@ -497,8 +499,8 @@ namespace CQMacroCreator
                                                NewtBox,ElectraBox,BosonBox,HiggsBox,
                                                CasperBox,AdrianBox,EmilyBox,AdamBox,
                                                YisusBox,GallaBox,YetiBox,HansBox,MMaryBox,
-                                               AnnieBox,KilkennyBox
-
+                                               AnnieBox,KilkennyBox,
+                                               EggBox,BabyPBox,YoungPBox,KingPBox
             };
 
             questBoxes = new List<CheckBox>() {
@@ -803,10 +805,7 @@ namespace CQMacroCreator
             lower30.Enabled = false;
             lower60.Enabled = false;
             refreshFollowersButton.Enabled = false;
-
-
         }
-
 
         private string getSetting(string s)
         {
@@ -827,10 +826,6 @@ namespace CQMacroCreator
         private void init()
         {
             string lower = null, upper = null;
-            if (!File.Exists("Newtonsoft.Json.dll"))
-            {
-                MessageBox.Show("Newtonsoft file not found. Please download it from this project's github");
-            }
             previousDQTime = DateTime.UtcNow;
             if (File.Exists(SettingsFilename))
             {
@@ -992,25 +987,25 @@ namespace CQMacroCreator
             new Hero(42,50,6,0,0), new Hero(32,66,6,0,0), new Hero(38,56,6,0,0), new Hero(44,48,6,0,0),
             new Hero(135,107,12,0,0), //adagda
             new Hero(30,20,1,0,0), new Hero(36,36,2,0,0), new Hero(52,52,6,0,0),    //bylar, boor, bavah
-            new Hero(25,75,6,1,4),                                                  //lep
+            new Hero(25,75,6,1,10),                                                  //lep
             new Hero(30,30,2,0,0), new Hero(48,42,4,0,0), new Hero(70,48,12,0,0),   //sparks, leaf, flynn
             new Hero(122,122,12,0,0),new Hero(60,66,6,1,1.3),                       //abavah , hawking
-            new Hero(150,90,12,0,200000), new Hero(70,38,6,0,0), new Hero(78,42,6,0,0), new Hero(86,44,6,0,0),   //lee, s5
+            new Hero(150,90,12,0,200000), new Hero(70,38,6,1,4), new Hero(78,42,6,1,4), new Hero(86,44,6,1,4),   //lee, s5
             null,
-            new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,1,2),    //dice, lux, poker
+            new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,1,3),    //dice, lux, poker
             new Hero(25,25,1,0,0), new Hero(48,50,2,0,0), new Hero(52,48,6,0,100000),    //taint, putrid, defile
-            new Hero(150,15,6,1,8),                                                 //neil
+            new Hero(150,15,6,1,12),                                                 //neil
             new Hero(78,26,6,0,0), new Hero(76,30,6,0,0), new Hero(72,36,6,0,0), new Hero(88,22,6,0,0), //Djinn
             new Hero(85,135,12,0,0), new Hero(180,70,12,0,0), new Hero(80,160,12,0,0), new Hero(75,175,12,0,0), //aQuest
             new Hero(106,124,12,0,0), new Hero(82,164,12,0,0), new Hero(96,144,12,0,0), new Hero(114,126,12,0,0), //aSamurai
             null,
-            new Hero(30,40,1,0,100000), new Hero(88,22,2,0,0), new Hero(150,60,6,1,1.5), //2nd Halloween
-            new Hero(340,64,12,1,2), new Hero(126,114,12,0,0), //Guy, aDefile
-            new Hero(186,62,12,1,1.2), new Hero(96,30,6,1,1.2), new Hero(100,32,6,1,1.2), new Hero(105,34,6,1,1.2),     //S6 Pirates
+            new Hero(30,40,1,1,20), new Hero(88,22,2,0,0), new Hero(150,60,6,1,1.5), //2nd Halloween
+            new Hero(340,64,12,1,3), new Hero(126,114,12,0,0), //Guy, aDefile
+            new Hero(186,62,12,1,1.2), new Hero(96,30,6,1,1.4), new Hero(100,32,6,1,1.6), new Hero(105,34,6,1,2),     //S6 Pirates
             new Hero(46,52,2,1,2), new Hero(50,18,1,1,8), new Hero(78,34,2,0,0), new Hero(170,18,6,1,2),        //2nd Christmas
             new Hero(18,26,1,0,0), new Hero(44,48,2,0,0), new Hero(48,54,6,0,0), new Hero(117,131,12,0,0),      //Destructor chest heroes
-            new Hero(54,54,6,0,60000), new Hero(56,56,6,0,80000), new Hero(58,58,6,0,100000), new Hero(130,130,12,0,150000),      //S7 Fairies
-            new Hero(220,20,6,1,4),                                                                             //Cupid
+            new Hero(54,54,6,0,150000), new Hero(56,56,6,0,220000), new Hero(58,58,6,0,300000), new Hero(130,130,12,0,400000),      //S7 Fairies
+            new Hero(220,20,6,1,5),                                                                             //Cupid
             new Hero(22,22,1,1,1.2), new Hero(34,34,2,1,1.2), new Hero(50,50,6,1,1.2),                                //Drifter chest heroes
             new Hero(100,40,6,0,0),                                                                             //BDay
             new Hero(44,22,1,0,0), new Hero(64,32,2,0,0), new Hero(84,42,6,1,1.5), new Hero(180,90,12,1,1.5),       //AH Dragons
@@ -1018,19 +1013,20 @@ namespace CQMacroCreator
             new Hero(30,38,1,0,0), new Hero(70,40,2,0,0), new Hero(84,50,6,0,0), new Hero(120,200,12,0,0),      //Easter 2
             new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
             new Hero(112,55,6,1,1.5),                                                                           //Mother
-            new Hero(48,164,12,1,1.5),new Hero(51,59,6,0,200000),new Hero(52,60,6,0,200000),new Hero(53,61,6,0,200000),          //aNerissa, S8 Witches
-            new Hero(108,124,12,1,1.5),new Hero(124,124,12,0,0),                                                  //Minerva, aWanderer
-            new Hero(76,50,6,0,0),//Tetra
+            new Hero(48,164,12,1,1.5),new Hero(51,59,6,0,200000),new Hero(52,60,6,0,300000),new Hero(53,61,6,1,4),          //aNerissa, S8 Witches
+            new Hero(108,124,12,1,2),new Hero(124,124,12,1,3),                                                  //Minerva, aWanderer
+            new Hero(76,50,6,1,3),//Tetra
             new Hero(16,28,1,0,0), new Hero(42,28,2,0,0), new Hero(80,8,6,0,150000), new Hero(210,21,12,0,200000),//Cube chest heroes
-            new Hero(75,45,6,1,2),//Smith
+            new Hero(75,45,6,1,2.5),//Smith
             new Hero(32,14,1,0,0), new Hero(54,20,2,0,0), new Hero(50,50,6,0,0), new Hero(124,124,12,0,0),//Candy chest heroes
             new Hero(92,211,12,0,0),//Lili
             null,
             new Hero(53,61,6,0,0), new Hero(55,63,6,0,0), new Hero(57,65,6,0,0), new Hero(144,126,12,0,0),//S9 Gladiators
             new Hero(48,4,1,0,0), new Hero(58,6,2,0,0), new Hero(72,3,6,0,0), new Hero(214,7,12,0,0),//Subatomic chest heroes
             new Hero(30,28,1,1,2), new Hero(64,20,2,1,2), new Hero(66,66,6,1,3), new Hero(200,100,12,0,0),//Halloween2019 heroes
-            new Hero(32,48,2,0,0), new Hero(32,40,1,0,0), new Hero(58,58,2,0,0), new Hero(74,74,6,0,0), new Hero(5,250,12,0,0),//3rd Christmas
+            new Hero(32,48,2,0,0), new Hero(32,40,1,0,0), new Hero(58,58,2,0,0), new Hero(74,74,6,0,0), new Hero(5,250,12,1,4),//3rd Christmas
             new Hero(58,58,6,0,0), new Hero(25,75,6,0,0),//Annie, Kilkenny
+            new Hero(60,12,1,0,500000), new Hero(80,14,2,0,500000), new Hero(110,16,6,0,500000), new Hero(180,20,12,0,500000),//Easter 2020
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1165,7 +1161,7 @@ namespace CQMacroCreator
                 {
                     dr = MessageBox.Show("You haven't enabled any heroes. Are you sure you want to run the calculator without using any heroes?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 }
-                else if (heroChecked > 25 && warnManyHeroes)
+                else if (heroChecked > 30 && warnManyHeroes)
                 {
                     dr = MessageBox.Show("You are using more than 25 heroes, that might considerably slow down the calculations. Are you sure you want to run the calc with so many heroes enabled?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 }
@@ -1452,7 +1448,7 @@ namespace CQMacroCreator
             int index;
             int[] sorted = strength.OrderByDescending(i => i).ToArray();
             int j = 0;
-            while (sorted[j] > (decimal)0.05 * lowerCount.Value && (j < 8 || (j < maxChecked && sorted[j + 1] > sorted[j] * 0.3)))
+            while ((j < 20 || sorted[j] > (decimal)0.02 * lowerCount.Value) && (j < 12 || (j < maxChecked && sorted[j + 1] > sorted[j] * 0.2)))
             {
                 index = Array.IndexOf(strength, sorted[j]);
                 heroBoxes[index].Checked = true;
@@ -1485,8 +1481,6 @@ namespace CQMacroCreator
             }
             return result.Aggregate((current, next) => current + "," + next);
         }
-
-
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -1678,7 +1672,6 @@ namespace CQMacroCreator
             }
         }
 
-
         private void setQuestBoxesFromServer(int index, int questState)
         {
             for (int i = 0; i < 3; i++)
@@ -1705,6 +1698,7 @@ namespace CQMacroCreator
                 }
             }
         }
+
         private void getQuestsButton_Click(object sender, EventArgs e)
         {
             getData(false, false, false, true);
@@ -1733,7 +1727,6 @@ namespace CQMacroCreator
                 lowerCount.Value = (long)(d * Int64.Parse(followerLabel.Text.Replace(" ", "")));
             }
         }
-
 
         private void button92_Click(object sender, EventArgs e)
         {
@@ -2001,11 +1994,6 @@ namespace CQMacroCreator
             Process.Start("https://github.com/MatthieuBonne/CQAutomater");
         }
 
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button91_Click_1(object sender, EventArgs e)
         {
             List<string> enabled = new List<string>();
@@ -2070,7 +2058,7 @@ namespace CQMacroCreator
 
         private void LinkLabelMacroCreator_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/Alya-N/CQMacroCreator");
+            Process.Start("https://github.com/MatthieuBonne/CQMacroCreator");
         }
     }
 }

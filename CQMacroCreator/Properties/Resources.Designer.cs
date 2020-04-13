@@ -59,5 +59,40 @@ namespace CQMacroCreator.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
+        internal static byte[] Newtonsoft_Json {
+            get {
+                object obj = ResourceManager.GetObject("Newtonsoft_Json", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;doc&gt;
+        ///    &lt;assembly&gt;
+        ///        &lt;name&gt;Newtonsoft.Json&lt;/name&gt;
+        ///    &lt;/assembly&gt;
+        ///    &lt;members&gt;
+        ///        &lt;member name=&quot;T:Newtonsoft.Json.Bson.BsonObjectId&quot;&gt;
+        ///            &lt;summary&gt;
+        ///            Represents a BSON Oid (object id).
+        ///            &lt;/summary&gt;
+        ///        &lt;/member&gt;
+        ///        &lt;member name=&quot;P:Newtonsoft.Json.Bson.BsonObjectId.Value&quot;&gt;
+        ///            &lt;summary&gt;
+        ///            Gets or sets the value of the Oid.
+        ///            &lt;/summary&gt;
+        ///            &lt;value&gt;The value of the Oid.&lt;/value&gt;
+        ///        &lt; [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        internal static string Newtonsoft_Json1 {
+            get {
+                return ResourceManager.GetString("Newtonsoft_Json1", resourceCulture);
+            }
+        }
     }
 }
