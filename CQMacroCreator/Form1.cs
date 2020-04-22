@@ -108,9 +108,10 @@ namespace CQMacroCreator
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny","egg","babypyros","youngpyros","kingpyros",
+                                "rob","kirklee","lars","hetfield",
                                 };
 
-        static string[] servernames = {"kingpyros","youngpyros","babypyros","egg","kilkenny","annie","mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
+        static string[] servernames = {"hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie","mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
                                "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
                                "achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
@@ -223,8 +224,8 @@ namespace CQMacroCreator
                                                CasperCount,AdrianCount,EmilyCount,AdamCount,
                                                YisusCount,GallaCount,YetiCount,HansCount,MMaryCount,
                                                AnnieCount,KilkennyCount,
-                                               EggCount,BabyPCount,YoungPCount,KingPCount
-
+                                               EggCount,BabyPCount,YoungPCount,KingPCount,
+                                               RobCount,KyleCount,LarsCount,HetfieldCount
             };
 
             heroCountsServerOrder = new List<NumericUpDown>() {
@@ -294,7 +295,8 @@ namespace CQMacroCreator
                                                CasperCount,AdrianCount,EmilyCount,AdamCount,
                                                YisusCount,GallaCount,YetiCount,HansCount,MMaryCount,
                                                AnnieCount,KilkennyCount,
-                                               EggCount,BabyPCount,YoungPCount,KingPCount
+                                               EggCount,BabyPCount,YoungPCount,KingPCount,
+                                               RobCount,KyleCount,LarsCount,HetfieldCount
             };
 
             heroPromos = new List<NumericUpDown>() {jamesPromo,
@@ -362,7 +364,8 @@ namespace CQMacroCreator
                                                CasperPromo,AdrianPromo,EmilyPromo,AdamPromo,
                                                YisusPromo,GallaPromo,YetiPromo,HansPromo,MMaryPromo,
                                                AnniePromo,KilkennyPromo,
-                                               EggPromo,BabyPPromo,YoungPPromo,KingPPromo
+                                               EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
+                                               RobPromo,KylePromo,LarsPromo,HetfieldPromo
             };
 
             heroPromosServerOrder = new List<NumericUpDown>() {
@@ -432,7 +435,8 @@ namespace CQMacroCreator
                                                CasperPromo,AdrianPromo,EmilyPromo,AdamPromo,
                                                YisusPromo,GallaPromo,YetiPromo,HansPromo,MMaryPromo,
                                                AnniePromo,KilkennyPromo,
-                                               EggPromo,BabyPPromo,YoungPPromo,KingPPromo
+                                               EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
+                                               RobPromo,KylePromo,LarsPromo,HetfieldPromo
             };
 
             heroBoxes = new List<CheckBox>() { JamesBox,
@@ -500,7 +504,8 @@ namespace CQMacroCreator
                                                CasperBox,AdrianBox,EmilyBox,AdamBox,
                                                YisusBox,GallaBox,YetiBox,HansBox,MMaryBox,
                                                AnnieBox,KilkennyBox,
-                                               EggBox,BabyPBox,YoungPBox,KingPBox
+                                               EggBox,BabyPBox,YoungPBox,KingPBox,
+                                               RobBox,KyleBox,LarsBox,HetfieldBox
             };
 
             questBoxes = new List<CheckBox>() {
@@ -990,7 +995,7 @@ namespace CQMacroCreator
             new Hero(25,75,6,1,10),                                                  //lep
             new Hero(30,30,2,0,0), new Hero(48,42,4,0,0), new Hero(70,48,12,0,0),   //sparks, leaf, flynn
             new Hero(122,122,12,0,0),new Hero(60,66,6,1,1.3),                       //abavah , hawking
-            new Hero(150,90,12,0,200000), new Hero(70,38,6,1,4), new Hero(78,42,6,1,4), new Hero(86,44,6,1,4),   //lee, s5
+            new Hero(150,90,12,0,600000), new Hero(70,38,6,1,4), new Hero(78,42,6,1,4), new Hero(86,44,6,1,4),   //lee, s5
             null,
             new Hero(25,26,1,0,0), new Hero(28,60,2,0,0), new Hero(70,70,6,1,3),    //dice, lux, poker
             new Hero(25,25,1,0,0), new Hero(48,50,2,0,0), new Hero(52,48,6,0,100000),    //taint, putrid, defile
@@ -1014,7 +1019,7 @@ namespace CQMacroCreator
             new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
             new Hero(112,55,6,1,1.5),                                                                           //Mother
             new Hero(48,164,12,1,1.5),new Hero(51,59,6,0,200000),new Hero(52,60,6,0,300000),new Hero(53,61,6,1,4),          //aNerissa, S8 Witches
-            new Hero(108,124,12,1,2),new Hero(124,124,12,1,3),                                                  //Minerva, aWanderer
+            new Hero(108,124,12,1,3),new Hero(124,124,12,1,3),                                                  //Minerva, aWanderer
             new Hero(76,50,6,1,3),//Tetra
             new Hero(16,28,1,0,0), new Hero(42,28,2,0,0), new Hero(80,8,6,0,150000), new Hero(210,21,12,0,200000),//Cube chest heroes
             new Hero(75,45,6,1,2.5),//Smith
@@ -1026,7 +1031,8 @@ namespace CQMacroCreator
             new Hero(30,28,1,1,2), new Hero(64,20,2,1,2), new Hero(66,66,6,1,3), new Hero(200,100,12,0,0),//Halloween2019 heroes
             new Hero(32,48,2,0,0), new Hero(32,40,1,0,0), new Hero(58,58,2,0,0), new Hero(74,74,6,0,0), new Hero(5,250,12,1,4),//3rd Christmas
             new Hero(58,58,6,0,0), new Hero(25,75,6,0,0),//Annie, Kilkenny
-            new Hero(60,12,1,0,500000), new Hero(80,14,2,0,500000), new Hero(110,16,6,0,500000), new Hero(180,20,12,0,500000),//Easter 2020
+            new Hero(60,12,1,0,600000), new Hero(80,14,2,0,700000), new Hero(110,16,6,0,800000), new Hero(180,20,12,0,900000),//Easter 2020
+            new Hero(56,56,6,1,2), new Hero(60,60,6,1,2), new Hero(64,64,6,1,2), new Hero(134,134,12,1,2),//S10 Guitar Heroes
         });
 
         private void button1_Click(object sender, EventArgs e)
