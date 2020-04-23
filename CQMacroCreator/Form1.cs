@@ -108,10 +108,11 @@ namespace CQMacroCreator
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny","egg","babypyros","youngpyros","kingpyros",
-                                "rob","kirklee","lars","hetfield",
+                                "rob","kirklee","lars","hetfield","pluvia","silex","caeli","ignis",
                                 };
 
-        static string[] servernames = {"hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie","mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
+        static string[] servernames = {"ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
+                                "mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
                                "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
                                "achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
@@ -225,7 +226,8 @@ namespace CQMacroCreator
                                                YisusCount,GallaCount,YetiCount,HansCount,MMaryCount,
                                                AnnieCount,KilkennyCount,
                                                EggCount,BabyPCount,YoungPCount,KingPCount,
-                                               RobCount,KyleCount,LarsCount,HetfieldCount
+                                               RobCount,KyleCount,LarsCount,HetfieldCount,
+                                               PluviaCount,SilexCount,CaeliCount,IgnisCount
             };
 
             heroCountsServerOrder = new List<NumericUpDown>() {
@@ -296,7 +298,8 @@ namespace CQMacroCreator
                                                YisusCount,GallaCount,YetiCount,HansCount,MMaryCount,
                                                AnnieCount,KilkennyCount,
                                                EggCount,BabyPCount,YoungPCount,KingPCount,
-                                               RobCount,KyleCount,LarsCount,HetfieldCount
+                                               RobCount,KyleCount,LarsCount,HetfieldCount,
+                                               PluviaCount,SilexCount,CaeliCount,IgnisCount
             };
 
             heroPromos = new List<NumericUpDown>() {jamesPromo,
@@ -365,7 +368,8 @@ namespace CQMacroCreator
                                                YisusPromo,GallaPromo,YetiPromo,HansPromo,MMaryPromo,
                                                AnniePromo,KilkennyPromo,
                                                EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
-                                               RobPromo,KylePromo,LarsPromo,HetfieldPromo
+                                               RobPromo,KylePromo,LarsPromo,HetfieldPromo,
+                                               PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo
             };
 
             heroPromosServerOrder = new List<NumericUpDown>() {
@@ -436,7 +440,8 @@ namespace CQMacroCreator
                                                YisusPromo,GallaPromo,YetiPromo,HansPromo,MMaryPromo,
                                                AnniePromo,KilkennyPromo,
                                                EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
-                                               RobPromo,KylePromo,LarsPromo,HetfieldPromo
+                                               RobPromo,KylePromo,LarsPromo,HetfieldPromo,
+                                               PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo
             };
 
             heroBoxes = new List<CheckBox>() { JamesBox,
@@ -505,7 +510,8 @@ namespace CQMacroCreator
                                                YisusBox,GallaBox,YetiBox,HansBox,MMaryBox,
                                                AnnieBox,KilkennyBox,
                                                EggBox,BabyPBox,YoungPBox,KingPBox,
-                                               RobBox,KyleBox,LarsBox,HetfieldBox
+                                               RobBox,KyleBox,LarsBox,HetfieldBox,
+                                               PluviaBox,SilexBox,CaeliBox,IgnisBox
             };
 
             questBoxes = new List<CheckBox>() {
@@ -1033,6 +1039,7 @@ namespace CQMacroCreator
             new Hero(58,58,6,0,0), new Hero(25,75,6,0,0),//Annie, Kilkenny
             new Hero(60,12,1,0,600000), new Hero(80,14,2,0,700000), new Hero(110,16,6,0,800000), new Hero(180,20,12,0,900000),//Easter 2020
             new Hero(56,56,6,1,2), new Hero(60,60,6,1,2), new Hero(64,64,6,1,2), new Hero(134,134,12,1,2),//S10 Guitar Heroes
+            new Hero(28,40,1,1,1.5), new Hero(34,56,2,1,1.5), new Hero(60,140,6,1,1.5), new Hero(100,200,12,1,1.5),//St Georges dragons
         });
 
         private void button1_Click(object sender, EventArgs e)
