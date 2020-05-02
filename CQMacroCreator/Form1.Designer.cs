@@ -4115,7 +4115,7 @@
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(37, 13);
             this.label57.TabIndex = 159;
-            this.label57.Text = "v4.7.3";
+            this.label57.Text = "v4.7.3b";
             // 
             // GurthBox
             // 
@@ -24449,6 +24449,7 @@
             0,
             0,
             -2147483648});
+            this.timeLimit.ValueChanged += new System.EventHandler(this.TimeLimit_ValueChanged);
             // 
             // label314
             // 

@@ -778,7 +778,8 @@ namespace CQMacroCreator
                 if (token != null && KongregateId != null && cmdArguments[1] == "quick")
                 {
                     this.Hide();
-
+                    if (cmdArguments.Length > 2)
+                        timeLimit.Value = int.Parse(cmdArguments[2]);
                     sendTillNoSolveButton_Click(this, EventArgs.Empty);
                     Console.Write(output);
                     Environment.Exit(0);
@@ -787,6 +788,8 @@ namespace CQMacroCreator
                 if (token != null && KongregateId != null && cmdArguments[1] == "quickdung")
                 {
                     this.Hide();
+                    if (cmdArguments.Length > 2)
+                        timeLimit.Value = int.Parse(cmdArguments[2]);
                     getDungeonButton_Click(this, EventArgs.Empty);
                     sendTillNoSolveButton_Click(this, EventArgs.Empty);
                     Console.Write(output);
@@ -847,7 +850,8 @@ namespace CQMacroCreator
                 lower = appSettings.defaultLowerLimit;
                 upper = appSettings.defaultUpperLimit;
                 warnManyHeroes = appSettings.warnManyHeroes ?? true;
-
+                int tmp = appSettings.calcTimeLimit ?? -1;
+                timeLimit.Value = (decimal)tmp;
             }
             else if (File.Exists("MacroSettings.txt"))
             {
@@ -2072,6 +2076,12 @@ namespace CQMacroCreator
         private void LinkLabelMacroCreator_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/MatthieuBonne/CQMacroCreator");
+        }
+
+        private void TimeLimit_ValueChanged(object sender, EventArgs e)
+        {
+            appSettings.calcTimeLimit = (int)timeLimit.Value;
+            appSettings.saveSettings();
         }
     }
 }

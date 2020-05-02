@@ -35,8 +35,8 @@ namespace PlayFab.UUnit
         public static string PlayFabId;
 
         // Performance
-        [ThreadStatic]
-        private static StringBuilder _sb;
+        //[ThreadStatic]
+        //private static StringBuilder _sb;
 
         /// <summary>
         /// PlayFab Title cannot be created from SDK tests, so you must provide your titleId to run unit tests.
