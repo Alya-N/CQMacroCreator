@@ -59,6 +59,7 @@ namespace CQMacroCreator
         public int? optAutoAD { get; set; }
         public bool? doAutoLO { get; set; }
         public int? optAutoLO { get; set; }
+        public string[] heroesToProm6 { get; set; }
         public int? calcTimeLimit { get; set; }
 
         public static AppSettings loadSettings()
