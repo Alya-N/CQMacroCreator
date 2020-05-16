@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PlayFab;
 using PlayFab.ClientModels;
 using System.Threading;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net;
 using System.IO;
-using System.Net.Http;
 
 namespace CQMacroCreator
 {
@@ -22,7 +18,6 @@ namespace CQMacroCreator
 
         static public bool logres;
         static public bool DQResult;
-        //static public bool DungResult;
         static public string DQlvl;
         static bool _running = true;
         string token;
@@ -77,7 +72,6 @@ namespace CQMacroCreator
             logres = false;
             return;
         }
-
 
         public void GetGameData()
         {
@@ -182,7 +176,6 @@ namespace CQMacroCreator
             return;
         }
 
-
         public void sendDungSolution()
         {
             var request = new ExecuteCloudScriptRequest()
@@ -217,7 +210,6 @@ namespace CQMacroCreator
             DQResult = false;
             return;
         }
- 
 
         public void sendQuestSolution()
         {
@@ -319,11 +311,10 @@ namespace CQMacroCreator
                 int[] enemyLevels = getArray(elvl);
                 dungeonLineup.Add(enemyLineup);
                 dungeonLineup.Add(enemyLevels);
-
             }
-            catch (WebException webex)
+            catch (Exception ex)
             {
-                Console.Write(webex.Message);
+                Console.Write(ex.Message);
             }
         }
 

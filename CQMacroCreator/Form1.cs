@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-using System.Collections;
 using System.Threading;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Windows.Threading;
 
 namespace CQMacroCreator
 {
@@ -778,6 +773,7 @@ namespace CQMacroCreator
                 if (token != null && KongregateId != null && cmdArguments[1] == "quick")
                 {
                     this.Hide();
+                    getData(true, true, true, false);
                     if (cmdArguments.Length > 2)
                         timeLimit.Value = int.Parse(cmdArguments[2]);
                     sendTillNoSolveButton_Click(this, EventArgs.Empty);
@@ -788,6 +784,7 @@ namespace CQMacroCreator
                 if (token != null && KongregateId != null && cmdArguments[1] == "quickdung")
                 {
                     this.Hide();
+                    getData(true, true, true, false);
                     if (cmdArguments.Length > 2)
                         timeLimit.Value = int.Parse(cmdArguments[2]);
                     getDungeonButton_Click(this, EventArgs.Empty);
@@ -1328,7 +1325,6 @@ namespace CQMacroCreator
             }
 
         }
-
 
         void RunWithRedirect(string cmdPath)
         {
@@ -2027,20 +2023,24 @@ namespace CQMacroCreator
 
         private void getDungeonButton_Click(object sender, EventArgs e)
         {
-            PFStuff.getDungeonData(KongregateId);
-            string[] enemylist = new string[6];
-            for (int i = 0; i < 5; i++)
+            try
             {
-                enemylist[i] = servernames[PFStuff.dungeonLineup[0][i] + heroesInGame];
-                if (PFStuff.dungeonLineup[0][i] < -1)
+                PFStuff.getDungeonData(KongregateId);
+                string[] enemylist = new string[6];
+                for (int i = 0; i < 5; i++)
                 {
-                    enemylist[i] += ":" + PFStuff.dungeonLineup[1][-PFStuff.dungeonLineup[0][i] - 2].ToString();
+                    enemylist[i] = servernames[PFStuff.dungeonLineup[0][i] + heroesInGame];
+                    if (PFStuff.dungeonLineup[0][i] < -1)
+                    {
+                        enemylist[i] += ":" + PFStuff.dungeonLineup[1][-PFStuff.dungeonLineup[0][i] - 2].ToString();
+                    }
                 }
+                enemylist[5] = "DUNG";
+                enemylist = enemylist.Reverse().ToArray();
+                lineupBox.Text = string.Join(",", enemylist);
+                guiLog.AppendText("Successfully got enemy lineup for Dungeon" + PFStuff.dungeonLvl + " - " + string.Join(",", enemylist) + "\n");
             }
-            enemylist[5] = "DUNG";
-            enemylist = enemylist.Reverse().ToArray();
-            lineupBox.Text = string.Join(",", enemylist);
-            guiLog.AppendText("Successfully got enemy lineup for Dungeon" + PFStuff.dungeonLvl + " - " + string.Join(",", enemylist) + "\n");
+            catch (Exception ex) { }
         }
 
         private void ascendTargetLevel_ValueChanged(object sender, EventArgs e)
