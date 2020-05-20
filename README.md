@@ -9,6 +9,8 @@ Please download it here: https://github.com/Alya-N/C-Hero-Calc
 Just place CQMacroCreator.exe in the same folder as CosmosQuest.exe and run it.
 ![screenshot](https://i.imgur.com/MuTsyGA.png)
 # What's new
+v4.7.4 - Astronauts
+
 v4.7.2 - Easter2020 heroes
 
 v4.6 - Halloween2019 heroes

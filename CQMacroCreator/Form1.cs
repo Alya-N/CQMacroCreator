@@ -103,11 +103,11 @@ namespace CQMacroCreator
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny","egg","babypyros","youngpyros","kingpyros",
-                                "rob","kirklee","lars","hetfield","pluvia","silex","caeli","ignis",
+                                "rob","kirklee","lars","hetfield","pluvia","silex","caeli","ignis","yuri","alan","valentina","john",
                                 };
 
-        static string[] servernames = {"ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
-                                "mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
+        static string[] servernames = {"john","valentina","alan","yuri","ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
+                               "mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
                                "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
                                "achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
                                "anerissa","mother","nerissa","murphy","bortles","thumper","daisy","gizmo","willow","adybbuk","aedana","ajade","amahatma","spike","riptide","ember","cloud","b-day",
@@ -222,7 +222,8 @@ namespace CQMacroCreator
                                                AnnieCount,KilkennyCount,
                                                EggCount,BabyPCount,YoungPCount,KingPCount,
                                                RobCount,KyleCount,LarsCount,HetfieldCount,
-                                               PluviaCount,SilexCount,CaeliCount,IgnisCount
+                                               PluviaCount,SilexCount,CaeliCount,IgnisCount,
+                                               YuriCount,AlanCount,ValentinaCount,JohnCount
             };
 
             heroCountsServerOrder = new List<NumericUpDown>() {
@@ -294,7 +295,8 @@ namespace CQMacroCreator
                                                AnnieCount,KilkennyCount,
                                                EggCount,BabyPCount,YoungPCount,KingPCount,
                                                RobCount,KyleCount,LarsCount,HetfieldCount,
-                                               PluviaCount,SilexCount,CaeliCount,IgnisCount
+                                               PluviaCount,SilexCount,CaeliCount,IgnisCount,
+                                               YuriCount,AlanCount,ValentinaCount,JohnCount
             };
 
             heroPromos = new List<NumericUpDown>() {jamesPromo,
@@ -364,7 +366,8 @@ namespace CQMacroCreator
                                                AnniePromo,KilkennyPromo,
                                                EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
                                                RobPromo,KylePromo,LarsPromo,HetfieldPromo,
-                                               PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo
+                                               PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo,
+                                               YuriPromo,AlanPromo,ValentinaPromo,JohnPromo
             };
 
             heroPromosServerOrder = new List<NumericUpDown>() {
@@ -436,7 +439,8 @@ namespace CQMacroCreator
                                                AnniePromo,KilkennyPromo,
                                                EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
                                                RobPromo,KylePromo,LarsPromo,HetfieldPromo,
-                                               PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo
+                                               PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo,
+                                               YuriPromo,AlanPromo,ValentinaPromo,JohnPromo
             };
 
             heroBoxes = new List<CheckBox>() { JamesBox,
@@ -506,7 +510,8 @@ namespace CQMacroCreator
                                                AnnieBox,KilkennyBox,
                                                EggBox,BabyPBox,YoungPBox,KingPBox,
                                                RobBox,KyleBox,LarsBox,HetfieldBox,
-                                               PluviaBox,SilexBox,CaeliBox,IgnisBox
+                                               PluviaBox,SilexBox,CaeliBox,IgnisBox,
+                                               YuriBox,AlanBox,ValentinaBox,JohnBox
             };
 
             questBoxes = new List<CheckBox>() {
@@ -1042,6 +1047,7 @@ namespace CQMacroCreator
             new Hero(60,12,1,0,600000), new Hero(80,14,2,0,800000), new Hero(110,16,6,0,1000000), new Hero(180,20,12,0,1200000),//Easter 2020
             new Hero(56,56,6,0,600000), new Hero(60,60,6,0,600000), new Hero(64,64,6,0,600000), new Hero(134,134,12,0,1500000),//S10 Guitar Heroes
             new Hero(28,40,1,1,2.5), new Hero(34,56,2,1,2.5), new Hero(60,140,6,1,2.5), new Hero(100,200,12,1,2.5),//St Georges dragons
+            new Hero(38,34,1,0,0), new Hero(54,48,2,0,0), new Hero(78,64,6,0,0), new Hero(148,132,12,0,0),//Astronauts
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1423,7 +1429,7 @@ namespace CQMacroCreator
                 if (cb != null && cb.Checked)
                     counter++;
             }
-            if (counter > heroBoxes.Count / 2)
+            if (counter > 0)
             {
                 foreach (CheckBox cb in heroBoxes)
                     if (cb != null)
@@ -1589,17 +1595,24 @@ namespace CQMacroCreator
         private void setDQData()
         {
             string[] enemylist = new string[5];
-            for (int i = 0; i < 5; i++)
+            try
             {
-                enemylist[i] = servernames[PFStuff.getResult[1][i] + heroesInGame];
-                if (PFStuff.getResult[1][i] < -1)
+                for (int i = 0; i < 5; i++)
                 {
-                    enemylist[i] += ":" + PFStuff.getResult[2][-PFStuff.getResult[1][i] - 2].ToString();
+                    enemylist[i] = servernames[PFStuff.getResult[1][i] + heroesInGame];
+                    if (PFStuff.getResult[1][i] < -1)
+                    {
+                        enemylist[i] += ":" + PFStuff.getResult[2][-PFStuff.getResult[1][i] - 2].ToString();
+                    }
                 }
+                enemylist = enemylist.Reverse().ToArray();
+                lineupBox.Text = string.Join(",", enemylist);
+                guiLog.AppendText("Successfully got enemy lineup for DQ" + PFStuff.DQlvl + " - " + string.Join(",", enemylist) + "\n");
             }
-            enemylist = enemylist.Reverse().ToArray();
-            lineupBox.Text = string.Join(",", enemylist);
-            guiLog.AppendText("Successfully got enemy lineup for DQ" + PFStuff.DQlvl + " - " + string.Join(",", enemylist) + "\n");
+            catch (Exception ex)
+            {
+                guiLog.AppendText("Error while getting DQ : " + ex.Message + "\n");
+            }
         }
 
         private void getDQButton_Click(object sender, EventArgs e)
@@ -2040,7 +2053,7 @@ namespace CQMacroCreator
                 lineupBox.Text = string.Join(",", enemylist);
                 guiLog.AppendText("Successfully got enemy lineup for Dungeon" + PFStuff.dungeonLvl + " - " + string.Join(",", enemylist) + "\n");
             }
-            catch (Exception ex) { }
+            catch (Exception) { }
         }
 
         private void ascendTargetLevel_ValueChanged(object sender, EventArgs e)
