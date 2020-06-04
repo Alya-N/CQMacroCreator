@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using PlayFab;
 using PlayFab.ClientModels;
 using System.Threading;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net;
 using System.IO;
+using System.Net.Http;
 
 namespace CQMacroCreator
 {
@@ -22,6 +25,8 @@ namespace CQMacroCreator
         static bool _running = true;
         string token;
         string kongID;
+        static public string username;
+        static public int userID = 0;
         public static int questID;
         public static List<int[]> getResult;
         public static long followers;
@@ -30,11 +35,11 @@ namespace CQMacroCreator
         public static int dungeonLvl;
         public static List<int[]> dungeonLineup;
 
-
         public PFStuff(string t, string kid)
         {
             token = t;
             kongID = kid;
+            this.getUsername(kongID);
         }
 
         public void LoginKong()
@@ -127,53 +132,62 @@ namespace CQMacroCreator
 
         public void sendDQSolution()
         {
-            var request = new ExecuteCloudScriptRequest()
+            try
             {
-                RevisionSelection = CloudScriptRevisionOption.Live,
-                FunctionName = "pved",
-                FunctionParameter = new { setup = lineup, kid = kongID, max = true }
-            };
-            var statusTask = PlayFabClientAPI.ExecuteCloudScriptAsync(request);
-            bool _running = true;
-            while (_running)
-            {
-                if (statusTask.IsCompleted)
+                var request = new ExecuteCloudScriptRequest()
                 {
-                    var apiError = statusTask.Result.Error;
-                    var apiResult = statusTask.Result.Result;
-
-                    if (apiError != null)
+                    RevisionSelection = CloudScriptRevisionOption.Live,
+                    FunctionName = "pved",
+                    FunctionParameter = new { setup = lineup, kid = kongID, max = true }
+                };
+                var statusTask = PlayFabClientAPI.ExecuteCloudScriptAsync(request);
+                bool _running = true;
+                while (_running)
+                {
+                    if (statusTask.IsCompleted)
                     {
-                        DQResult = false;
-                        return;
-                    }
-                    else if (apiResult.FunctionResult.ToString().Contains("true"))
-                    {
-                        getResult = new List<int[]>();
-                        JObject json = JObject.Parse(apiResult.FunctionResult.ToString());
-                        string el = json["data"]["city"]["daily"]["setup"].ToString();
-                        string elvl = json["data"]["city"]["daily"]["hero"].ToString();
-                        string levels = json["data"]["city"]["hero"].ToString();
-                        string promos = json["data"]["city"]["promo"].ToString();
-                        DQlvl = json["data"]["city"]["daily"]["lvl"].ToString();
-                        int[] heroLevels = getArray(levels);
-                        int[] enemyLineup = getArray(el);
-                        int[] enemyLevels = getArray(elvl);
-                        int[] heroPromos = getArray(promos);
-                        getResult.Add(heroLevels);
-                        getResult.Add(enemyLineup);
-                        getResult.Add(enemyLevels);
-                        getResult.Add(heroPromos);
+                        var apiError = statusTask.Result.Error;
+                        var apiResult = statusTask.Result.Result;
 
-                        DQResult = true;
-                        return;
+                        if (apiError != null)
+                        {
+                            DQResult = false;
+                            return;
+                        }
+                        else if (apiResult.FunctionResult.ToString().Contains("true"))
+                        {
+                            getResult = new List<int[]>();
+                            JObject json = JObject.Parse(apiResult.FunctionResult.ToString());
+                            string el = json["data"]["city"]["daily"]["setup"].ToString();
+                            string elvl = json["data"]["city"]["daily"]["hero"].ToString();
+                            string levels = json["data"]["city"]["hero"].ToString();
+                            string promos = json["data"]["city"]["promo"].ToString();
+                            DQlvl = json["data"]["city"]["daily"]["lvl"].ToString();
+                            int[] heroLevels = getArray(levels);
+                            int[] enemyLineup = getArray(el);
+                            int[] enemyLevels = getArray(elvl);
+                            int[] heroPromos = getArray(promos);
+                            getResult.Add(heroLevels);
+                            getResult.Add(enemyLineup);
+                            getResult.Add(enemyLevels);
+                            getResult.Add(heroPromos);
+
+                            DQResult = true;
+                            return;
+                        }
+                        _running = false;
                     }
-                    _running = false;
+                    Thread.Sleep(1);
                 }
-                Thread.Sleep(1);
+                DQResult = false;
+                return;
             }
-            DQResult = false;
-            return;
+            catch (Exception ex)
+            {
+                Task.Run(() => sendLog("CQMC " + ex.Message));
+                DQResult = false;
+                return;
+            }
         }
 
         public void sendDungSolution()
@@ -318,5 +332,50 @@ namespace CQMacroCreator
             }
         }
 
+        public async void getUsername(string id)
+        {
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(@"http://api.kongregate.com/api/user_info.json?user_id=" + id);
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                string content = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                JObject json = JObject.Parse(content);
+                username = json["username"].ToString();
+
+                using (var client = new HttpClient())
+                {
+                    var values = new Dictionary<string, string> { { "uget", username } };
+                    var cont = new FormUrlEncodedContent(values);
+                    var resp = await client.PostAsync("http://dcouv.fr/cq.php", cont);
+                    var respString = await resp.Content.ReadAsStringAsync();
+                    userID = int.Parse(respString);
+                }
+            }
+            catch (Exception)
+            {
+                username = null;
+            }
+        }
+        public async Task<bool> sendLog(string e)
+        {
+            try
+            {
+                var d = new Dictionary<string, string>();
+                d["p"] = userID.ToString();
+                d["e"] = e;
+                using (var client = new HttpClient())
+                {
+                    var values = new Dictionary<string, string> { { "ierr", JsonConvert.SerializeObject(d) } };
+                    var content = new FormUrlEncodedContent(values);
+                    var response = await client.PostAsync("http://dcouv.fr/cq.php", content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+                }
+            }
+            catch (Exception)
+            {
+            }
+            return true;
+        }
     }
 }
