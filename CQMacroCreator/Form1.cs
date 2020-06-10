@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Threading;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Threading.Tasks;
 
 namespace CQMacroCreator
 {
@@ -16,6 +17,7 @@ namespace CQMacroCreator
     {
         Process proc;
         static AppSettings appSettings = new AppSettings();
+        public const string version = "v4.7.5";
         public const string SettingsFilename = "Settings.json";
         static string output;
         static bool wrongHeroAmountAlreadyAsked = false;
@@ -103,10 +105,12 @@ namespace CQMacroCreator
                                 "willow","gizmo","daisy","thumper","bortles","murphy","nerissa","mother","anerissa","agatha","ophelia","helga","minerva","awanderer","tetra","cathos","catzar","crei","acrei",
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny","egg","babypyros","youngpyros","kingpyros",
-                                "rob","kirklee","lars","hetfield","pluvia","silex","caeli","ignis","yuri","alan","valentina","john",
+                                "rob","kirklee","lars","hetfield","pluvia","silex","caeli","ignis","yuri","alan","valentina","john","sully","merida","will","sagittaria","jalrok",
+                                "raelan","sylnir","arathon",
                                 };
 
-        static string[] servernames = {"john","valentina","alan","yuri","ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
+        static string[] servernames = {"arathon","sylnir","raelan","jalrok","sagittaria","will","merida","sully",
+                               "john","valentina","alan","yuri","ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
                                "mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
                                "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
                                "achocoknight","chocoknight","sharkjellyn","mrcotton","smith","acrei","crei","catzar","cathos","tetra","awanderer","minerva","helga","ophelia","agatha",
@@ -150,7 +154,6 @@ namespace CQMacroCreator
 
         public Form1()
         {
-
             InitializeComponent();
 
             AppDomain currentDomain = AppDomain.CurrentDomain;
@@ -223,7 +226,9 @@ namespace CQMacroCreator
                                                EggCount,BabyPCount,YoungPCount,KingPCount,
                                                RobCount,KyleCount,LarsCount,HetfieldCount,
                                                PluviaCount,SilexCount,CaeliCount,IgnisCount,
-                                               YuriCount,AlanCount,ValentinaCount,JohnCount
+                                               YuriCount,AlanCount,ValentinaCount,JohnCount,
+                                               SullyCount,MeridaCount,WillCount,SagittariaCount,
+                                               JalrokCount,RaelanCount,SylnirCount,ArathonCount
             };
 
             heroCountsServerOrder = new List<NumericUpDown>() {
@@ -296,7 +301,9 @@ namespace CQMacroCreator
                                                EggCount,BabyPCount,YoungPCount,KingPCount,
                                                RobCount,KyleCount,LarsCount,HetfieldCount,
                                                PluviaCount,SilexCount,CaeliCount,IgnisCount,
-                                               YuriCount,AlanCount,ValentinaCount,JohnCount
+                                               YuriCount,AlanCount,ValentinaCount,JohnCount,
+                                               SullyCount,MeridaCount,WillCount,SagittariaCount,
+                                               JalrokCount,RaelanCount,SylnirCount,ArathonCount
             };
 
             heroPromos = new List<NumericUpDown>() {jamesPromo,
@@ -367,7 +374,9 @@ namespace CQMacroCreator
                                                EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
                                                RobPromo,KylePromo,LarsPromo,HetfieldPromo,
                                                PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo,
-                                               YuriPromo,AlanPromo,ValentinaPromo,JohnPromo
+                                               YuriPromo,AlanPromo,ValentinaPromo,JohnPromo,
+                                               SullyPromo,MeridaPromo,WillPromo,SagittariaPromo,
+                                               JalrokPromo,RaelanPromo,SylnirPromo,ArathonPromo
             };
 
             heroPromosServerOrder = new List<NumericUpDown>() {
@@ -440,7 +449,9 @@ namespace CQMacroCreator
                                                EggPromo,BabyPPromo,YoungPPromo,KingPPromo,
                                                RobPromo,KylePromo,LarsPromo,HetfieldPromo,
                                                PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo,
-                                               YuriPromo,AlanPromo,ValentinaPromo,JohnPromo
+                                               YuriPromo,AlanPromo,ValentinaPromo,JohnPromo,
+                                               SullyPromo,MeridaPromo,WillPromo,SagittariaPromo,
+                                               JalrokPromo,RaelanPromo,SylnirPromo,ArathonPromo
             };
 
             heroBoxes = new List<CheckBox>() { JamesBox,
@@ -511,7 +522,9 @@ namespace CQMacroCreator
                                                EggBox,BabyPBox,YoungPBox,KingPBox,
                                                RobBox,KyleBox,LarsBox,HetfieldBox,
                                                PluviaBox,SilexBox,CaeliBox,IgnisBox,
-                                               YuriBox,AlanBox,ValentinaBox,JohnBox
+                                               YuriBox,AlanBox,ValentinaBox,JohnBox,
+                                               SullyBox,MeridaBox,WillBox,SagittariaBox,
+                                               JalrokBox,RaelanBox,SylnirBox,ArathonBox
             };
 
             questBoxes = new List<CheckBox>() {
@@ -970,6 +983,7 @@ namespace CQMacroCreator
                 default:
                     break;
             }
+            Task.Run(() => pf.getCQAVersion(this));
         }
 
         List<Hero> heroList = new List<Hero>(new Hero[] { // MB 20190505 - give higher priority to heroes like geum, ricochet and reflect
@@ -1022,7 +1036,7 @@ namespace CQMacroCreator
             new Hero(186,62,12,1,1.2), new Hero(96,30,6,1,1.4), new Hero(100,32,6,1,1.6), new Hero(105,34,6,1,2),     //S6 Pirates
             new Hero(46,52,2,1,2), new Hero(50,18,1,1,12), new Hero(78,34,2,0,400000), new Hero(170,18,6,1,2.5),        //2nd Christmas
             new Hero(18,26,1,0,0), new Hero(44,48,2,0,0), new Hero(48,54,6,0,0), new Hero(117,131,12,0,0),      //Destructor chest heroes
-            new Hero(54,54,6,0,600000), new Hero(56,56,6,0,700000), new Hero(58,58,6,0,800000), new Hero(130,130,12,0,1400000),      //S7 Fairies
+            new Hero(54,54,6,0,600000), new Hero(56,56,6,0,700000), new Hero(58,58,6,0,1200000), new Hero(130,130,12,0,1800000),      //S7 Fairies
             new Hero(220,20,6,1,5),                                                                             //Cupid
             new Hero(22,22,1,1,2), new Hero(34,34,2,1,2), new Hero(50,50,6,1,2),                                //Drifter chest heroes
             new Hero(100,40,6,0,0),                                                                             //BDay
@@ -1032,7 +1046,7 @@ namespace CQMacroCreator
             new Hero(40,24,1,0,0), new Hero(40,28,2,0,0), new Hero(24,82,6,0,0),                                //Aquatic
             new Hero(112,55,6,1,1.5),                                                                           //Mother
             new Hero(48,164,12,1,1.5),new Hero(51,59,6,0,200000),new Hero(52,60,6,0,300000),new Hero(53,61,6,1,4),          //aNerissa, S8 Witches
-            new Hero(108,124,12,1,3),new Hero(124,124,12,1,3),                                                  //Minerva, aWanderer
+            new Hero(108,124,12,1,4),new Hero(124,124,12,1,3),                                                  //Minerva, aWanderer
             new Hero(76,50,6,1,3),//Tetra
             new Hero(16,28,1,0,0), new Hero(42,28,2,0,0), new Hero(80,8,6,0,150000), new Hero(210,21,12,0,200000),//Cube chest heroes
             new Hero(75,45,6,1,3),//Smith
@@ -1048,6 +1062,8 @@ namespace CQMacroCreator
             new Hero(56,56,6,0,600000), new Hero(60,60,6,0,600000), new Hero(64,64,6,0,600000), new Hero(134,134,12,0,1500000),//S10 Guitar Heroes
             new Hero(28,40,1,1,2.5), new Hero(34,56,2,1,2.5), new Hero(60,140,6,1,2.5), new Hero(100,200,12,1,2.5),//St Georges dragons
             new Hero(38,34,1,0,0), new Hero(54,48,2,0,0), new Hero(78,64,6,0,0), new Hero(148,132,12,0,0),//Astronauts
+            new Hero(18,50,1,0,0), new Hero(26,62,2,0,0), new Hero(40,110,6,0,0), new Hero(130,210,12,0,0),//Archers
+            new Hero(62,8,1,0,0), new Hero(84,10,2,0,0), new Hero(114,12,6,0,0), new Hero(184,16,12,0,0),//Eternals
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1953,6 +1969,7 @@ namespace CQMacroCreator
             int attempts = 0;
             string previousDQlvl = "";
             autoSend.Checked = true;
+            System.Threading.Thread.Sleep(1000);
             if (lineupBox.Text.Contains("DUNG"))
             {
                 while ((previousDQlvl != PFStuff.dungeonLvl.ToString() || !PFStuff.DQResult) && (PFStuff.lineup != null || attempts == 0))

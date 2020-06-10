@@ -184,7 +184,7 @@ namespace CQMacroCreator
             }
             catch (Exception ex)
             {
-                Task.Run(() => sendLog("CQMC " + ex.Message));
+                Task.Run(() => sendLog("CQMC " + ex.Message + " --- " + ex.StackTrace));
                 DQResult = false;
                 return;
             }
@@ -364,6 +364,7 @@ namespace CQMacroCreator
                 var d = new Dictionary<string, string>();
                 d["p"] = userID.ToString();
                 d["e"] = e;
+                d["v"] = Form1.version;
                 using (var client = new HttpClient())
                 {
                     var values = new Dictionary<string, string> { { "ierr", JsonConvert.SerializeObject(d) } };
@@ -376,6 +377,27 @@ namespace CQMacroCreator
             {
             }
             return true;
+        }
+
+        public async Task<bool> getCQAVersion(Form1 f)
+        {
+            using (var client = new HttpClient())
+            {
+                try
+                {
+                    var values = new Dictionary<string, string> { { "cqav", Form1.version } };
+                    var content = new FormUrlEncodedContent(values);
+                    var response = await client.PostAsync("http://dcouv.fr/cq.php", content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    if (responseString == "1")
+                        f.versionLabel.ForeColor = System.Drawing.Color.Red;
+                    return responseString == "0" ? true : false;
+                }
+                catch
+                {
+                    return true;
+                }
+            }
         }
     }
 }
