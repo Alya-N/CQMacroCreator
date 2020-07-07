@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.IO;
+
 namespace CQMacroCreator
 {
     public struct AuctionBids
@@ -63,12 +60,15 @@ namespace CQMacroCreator
         public int? optAutoLO { get; set; }
         public string[] heroesToProm6 { get; set; }
         public int? calcTimeLimit { get; set; }
+        public bool? autoWEvEnabled { get; set; }
+        public int? sjUpgrade { get; set; }
+        public string adminPassword { get; set; }
 
         public static AppSettings loadSettings()
         {        
             if (File.Exists(Form1.SettingsFilename))
             {
-                System.IO.StreamReader sr = new System.IO.StreamReader(Form1.SettingsFilename);
+                StreamReader sr = new StreamReader(Form1.SettingsFilename);
                 AppSettings a = JsonConvert.DeserializeObject<AppSettings>(sr.ReadToEnd());
                 sr.Close();
                 return a;
@@ -81,10 +81,15 @@ namespace CQMacroCreator
 
         public void saveSettings()
         {
-            string json = JsonConvert.SerializeObject(this, Formatting.Indented);
-            System.IO.StreamWriter sw = new System.IO.StreamWriter(Form1.SettingsFilename);
-            sw.Write(json);
-            sw.Close();
+            try
+            {
+                string json = JsonConvert.SerializeObject(this, Formatting.Indented);
+                StreamWriter sw = new StreamWriter(Form1.SettingsFilename);
+                sw.Write(json);
+                sw.Close();
+            }
+            catch (Exception)
+            { }
         }
     }
 }

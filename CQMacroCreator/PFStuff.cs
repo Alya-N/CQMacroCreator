@@ -357,6 +357,7 @@ namespace CQMacroCreator
                 username = null;
             }
         }
+
         public async Task<bool> sendLog(string e)
         {
             try
@@ -391,7 +392,7 @@ namespace CQMacroCreator
                     var responseString = await response.Content.ReadAsStringAsync();
                     if (responseString == "1")
                         f.versionLabel.ForeColor = System.Drawing.Color.Red;
-                    return responseString == "0" ? true : false;
+                    return responseString == "0";
                 }
                 catch
                 {

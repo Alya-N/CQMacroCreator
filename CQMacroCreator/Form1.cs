@@ -17,7 +17,7 @@ namespace CQMacroCreator
     {
         Process proc;
         static AppSettings appSettings = new AppSettings();
-        public const string version = "v4.7.5";
+        public const string version = "v4.8.1";
         public const string SettingsFilename = "Settings.json";
         static string output;
         static bool wrongHeroAmountAlreadyAsked = false;
@@ -32,7 +32,7 @@ namespace CQMacroCreator
         List<CheckBox> heroBoxes;
         double lowerFollowerPerc = 0.0;
         double upperFollowerPerc = 0.0;
-        ToolTip tp = new ToolTip();
+        //ToolTip tp = new ToolTip();
         PFStuff pf;
         Dictionary<string, string> aliases = new Dictionary<string, string>
         {
@@ -147,7 +147,6 @@ namespace CQMacroCreator
                                54483043000,81014620000,77526752000,80314766000,78534090000,112958766000,105898763000,112748588000,109829937000,151864280000,144647311000,147088733000,
                                148792746000,197143156000,186239297000,202365391000,191758841000,
                                 };
-
 
         int heroesInGame = Array.IndexOf(servernames, "ladyoftwilight") + 2;
 
@@ -797,7 +796,6 @@ namespace CQMacroCreator
                     sendTillNoSolveButton_Click(this, EventArgs.Empty);
                     Console.Write(output);
                     Environment.Exit(0);
-                    //Application.Exit();
                 }
                 if (token != null && KongregateId != null && cmdArguments[1] == "quickdung")
                 {
@@ -809,10 +807,10 @@ namespace CQMacroCreator
                     sendTillNoSolveButton_Click(this, EventArgs.Empty);
                     Console.Write(output);
                     Environment.Exit(0);
-                    //Application.Exit();
                 }
             }
         }
+
         void currentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             Exception ue = (Exception)e.ExceptionObject;
@@ -1084,7 +1082,6 @@ namespace CQMacroCreator
                 sr.Close();
             }
         }
-
 
         private void ReadLevels(string s)
         {
@@ -1646,7 +1643,6 @@ namespace CQMacroCreator
             CSHC.Text = temp.ToString();
         }
 
-
         private void questButtonClick(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -1969,7 +1965,7 @@ namespace CQMacroCreator
             int attempts = 0;
             string previousDQlvl = "";
             autoSend.Checked = true;
-            System.Threading.Thread.Sleep(1000);
+            Thread.Sleep(1000);
             if (lineupBox.Text.Contains("DUNG"))
             {
                 while ((previousDQlvl != PFStuff.dungeonLvl.ToString() || !PFStuff.DQResult) && (PFStuff.lineup != null || attempts == 0))
@@ -1986,7 +1982,7 @@ namespace CQMacroCreator
                         {
                             attempts++;
                             guiLog.AppendText("Attempt no. " + attempts + " in 5 seconds\n");
-                            System.Threading.Thread.Sleep(5000);
+                            Thread.Sleep(5000);
                             runCalcButton_Click(this, EventArgs.Empty);
                         }
                         else
