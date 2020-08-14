@@ -17,7 +17,7 @@ namespace CQMacroCreator
     {
         Process proc;
         static AppSettings appSettings = new AppSettings();
-        public const string version = "v4.8.1";
+        public const string version = "v4.8.2";
         public const string SettingsFilename = "Settings.json";
         static string output;
         static bool wrongHeroAmountAlreadyAsked = false;

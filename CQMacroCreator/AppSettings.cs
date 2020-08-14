@@ -48,6 +48,8 @@ namespace CQMacroCreator
         public bool? warnManyHeroes { get; set; }
         public bool? usernameActivated { get; set; }
         public bool? doPVPHistory { get; set; }
+        public bool? autoT1Enabled { get; set; }
+        public bool? autoT2Enabled { get; set; }
         public bool? doAutoFT { get; set; }
         public bool? doAutoDG { get; set; }
         public bool? doAutoLF { get; set; }
@@ -62,6 +64,7 @@ namespace CQMacroCreator
         public int? calcTimeLimit { get; set; }
         public bool? autoWEvEnabled { get; set; }
         public int? sjUpgrade { get; set; }
+        public int? ggUpgrade { get; set; }
         public string adminPassword { get; set; }
 
         public static AppSettings loadSettings()
