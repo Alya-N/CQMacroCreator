@@ -17,7 +17,7 @@ namespace CQMacroCreator
     {
         Process proc;
         static AppSettings appSettings = new AppSettings();
-        public const string version = "v4.8.2";
+        public const string version = "v4.9.0b";
         public const string SettingsFilename = "Settings.json";
         static string output;
         static bool wrongHeroAmountAlreadyAsked = false;
@@ -106,10 +106,10 @@ namespace CQMacroCreator
                                 "smith","mrcotton","sharkjellyn","chocoknight","achocoknight","lili","bornag","thrace","scinda","myrmillo","retia","newt","electra","boson","higgs",
                                 "casper","adrian","emily","adam","yisus","galla","yetithepostman","hans","mechamary","annie","kilkenny","egg","babypyros","youngpyros","kingpyros",
                                 "rob","kirklee","lars","hetfield","pluvia","silex","caeli","ignis","yuri","alan","valentina","john","sully","merida","will","sagittaria","jalrok",
-                                "raelan","sylnir","arathon",
+                                "raelan","sylnir","arathon","stench","rumble","vermin","reaper","esmeralda","marionette","antoinette","ladymaligryn",
                                 };
 
-        static string[] servernames = {"arathon","sylnir","raelan","jalrok","sagittaria","will","merida","sully",
+        static string[] servernames = {"ladymaligryn","antoinette","marionette","esmeralda","reaper","vermin","rumble","stench","arathon","sylnir","raelan","jalrok","sagittaria","will","merida","sully",
                                "john","valentina","alan","yuri","ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
                                "mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
                                "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
@@ -227,7 +227,9 @@ namespace CQMacroCreator
                                                PluviaCount,SilexCount,CaeliCount,IgnisCount,
                                                YuriCount,AlanCount,ValentinaCount,JohnCount,
                                                SullyCount,MeridaCount,WillCount,SagittariaCount,
-                                               JalrokCount,RaelanCount,SylnirCount,ArathonCount
+                                               JalrokCount,RaelanCount,SylnirCount,ArathonCount,
+                                               StenchCount,RumbleCount,VerminCount,ReaperCount,
+                                               EsmeraldaCount,MarionetteCount,AntoinetteCount,LadyMaligrynCount
             };
 
             heroCountsServerOrder = new List<NumericUpDown>() {
@@ -302,7 +304,9 @@ namespace CQMacroCreator
                                                PluviaCount,SilexCount,CaeliCount,IgnisCount,
                                                YuriCount,AlanCount,ValentinaCount,JohnCount,
                                                SullyCount,MeridaCount,WillCount,SagittariaCount,
-                                               JalrokCount,RaelanCount,SylnirCount,ArathonCount
+                                               JalrokCount,RaelanCount,SylnirCount,ArathonCount,
+                                               StenchCount,RumbleCount,VerminCount,ReaperCount,
+                                               EsmeraldaCount,MarionetteCount,AntoinetteCount,LadyMaligrynCount
             };
 
             heroPromos = new List<NumericUpDown>() {jamesPromo,
@@ -375,7 +379,9 @@ namespace CQMacroCreator
                                                PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo,
                                                YuriPromo,AlanPromo,ValentinaPromo,JohnPromo,
                                                SullyPromo,MeridaPromo,WillPromo,SagittariaPromo,
-                                               JalrokPromo,RaelanPromo,SylnirPromo,ArathonPromo
+                                               JalrokPromo,RaelanPromo,SylnirPromo,ArathonPromo,
+                                               StenchPromo,RumblePromo,VerminPromo,ReaperPromo,
+                                               EsmeraldaPromo,MarionettePromo,AntoinettePromo,LadyMaligrynPromo
             };
 
             heroPromosServerOrder = new List<NumericUpDown>() {
@@ -450,7 +456,9 @@ namespace CQMacroCreator
                                                PluviaPromo,SilexPromo,CaeliPromo,IgnisPromo,
                                                YuriPromo,AlanPromo,ValentinaPromo,JohnPromo,
                                                SullyPromo,MeridaPromo,WillPromo,SagittariaPromo,
-                                               JalrokPromo,RaelanPromo,SylnirPromo,ArathonPromo
+                                               JalrokPromo,RaelanPromo,SylnirPromo,ArathonPromo,
+                                               StenchPromo,RumblePromo,VerminPromo,ReaperPromo,
+                                               EsmeraldaPromo,MarionettePromo,AntoinettePromo,LadyMaligrynPromo
             };
 
             heroBoxes = new List<CheckBox>() { JamesBox,
@@ -523,7 +531,9 @@ namespace CQMacroCreator
                                                PluviaBox,SilexBox,CaeliBox,IgnisBox,
                                                YuriBox,AlanBox,ValentinaBox,JohnBox,
                                                SullyBox,MeridaBox,WillBox,SagittariaBox,
-                                               JalrokBox,RaelanBox,SylnirBox,ArathonBox
+                                               JalrokBox,RaelanBox,SylnirBox,ArathonBox,
+                                               StenchBox,RumbleBox,VerminBox,ReaperBox,
+                                               EsmeraldaBox,MarionetteBox,AntoinetteBox,LadyMaligrynBox
             };
 
             questBoxes = new List<CheckBox>() {
@@ -787,25 +797,32 @@ namespace CQMacroCreator
             String[] cmdArguments = Environment.GetCommandLineArgs();
             if (cmdArguments.Length > 1)
             {
-                if (token != null && KongregateId != null && cmdArguments[1] == "quick")
+                try
                 {
-                    this.Hide();
-                    getData(true, true, true, false);
-                    if (cmdArguments.Length > 2)
-                        timeLimit.Value = int.Parse(cmdArguments[2]);
-                    sendTillNoSolveButton_Click(this, EventArgs.Empty);
-                    Console.Write(output);
-                    Environment.Exit(0);
+                    if (token != null && KongregateId != null && cmdArguments[1] == "quick")
+                    {
+                        this.Hide();
+                        getData(true, true, true, false);
+                        if (cmdArguments.Length > 2)
+                            timeLimit.Value = int.Parse(cmdArguments[2]);
+                        sendTillNoSolveButton_Click(this, EventArgs.Empty);
+                        Console.Write(output);
+                        Environment.Exit(0);
+                    }
+                    if (token != null && KongregateId != null && cmdArguments[1] == "quickdung")
+                    {
+                        this.Hide();
+                        getData(true, true, true, false);
+                        if (cmdArguments.Length > 2)
+                            timeLimit.Value = int.Parse(cmdArguments[2]);
+                        getDungeonButton_Click(this, EventArgs.Empty);
+                        sendTillNoSolveButton_Click(this, EventArgs.Empty);
+                        Console.Write(output);
+                        Environment.Exit(0);
+                    }
                 }
-                if (token != null && KongregateId != null && cmdArguments[1] == "quickdung")
-                {
-                    this.Hide();
-                    getData(true, true, true, false);
-                    if (cmdArguments.Length > 2)
-                        timeLimit.Value = int.Parse(cmdArguments[2]);
-                    getDungeonButton_Click(this, EventArgs.Empty);
-                    sendTillNoSolveButton_Click(this, EventArgs.Empty);
-                    Console.Write(output);
+                catch (Exception)
+                { // prevent crashes
                     Environment.Exit(0);
                 }
             }
@@ -1062,6 +1079,8 @@ namespace CQMacroCreator
             new Hero(38,34,1,0,0), new Hero(54,48,2,0,0), new Hero(78,64,6,0,0), new Hero(148,132,12,0,0),//Astronauts
             new Hero(18,50,1,0,0), new Hero(26,62,2,0,0), new Hero(40,110,6,0,0), new Hero(130,210,12,0,0),//Archers
             new Hero(62,8,1,0,0), new Hero(84,10,2,0,0), new Hero(114,12,6,0,0), new Hero(184,16,12,0,0),//Eternals
+            new Hero(58,64,6,0,0), new Hero(59,65,6,0,0), new Hero(60,66,6,0,0), new Hero(110,120,12,0,0),//Horsemen (S11)
+            new Hero(41,27,1,0,0), new Hero(72,30,2,0,0), new Hero(38,128,6,0,0), new Hero(164,98,12,0,0),//Halloween2020
         });
 
         private void button1_Click(object sender, EventArgs e)
@@ -1197,7 +1216,7 @@ namespace CQMacroCreator
                 }
                 else if (heroChecked > 30 && warnManyHeroes)
                 {
-                    dr = MessageBox.Show("You are using more than 25 heroes, that might considerably slow down the calculations. Are you sure you want to run the calc with so many heroes enabled?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    dr = MessageBox.Show("You are using more than 30 heroes, that might considerably slow down the calculations. Are you sure you want to run the calc with so many heroes enabled?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 }
                 if (lowerCount.Value != -1 && monstersCosts.Count(x => x > lowerCount.Value && x < upperCount.Value) > 50)
                 {

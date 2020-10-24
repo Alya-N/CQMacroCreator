@@ -366,13 +366,11 @@ namespace CQMacroCreator
                 d["p"] = userID.ToString();
                 d["e"] = e;
                 d["v"] = Form1.version;
-                using (var client = new HttpClient())
-                {
-                    var values = new Dictionary<string, string> { { "ierr", JsonConvert.SerializeObject(d) } };
-                    var content = new FormUrlEncodedContent(values);
-                    var response = await client.PostAsync("http://dcouv.fr/cq.php", content);
-                    var responseString = await response.Content.ReadAsStringAsync();
-                }
+                using HttpClient client = new HttpClient();
+                var values = new Dictionary<string, string> { { "ierr", JsonConvert.SerializeObject(d) } };
+                var content = new FormUrlEncodedContent(values);
+                var response = await client.PostAsync("http://dcouv.fr/cq.php", content);
+                var responseString = await response.Content.ReadAsStringAsync();
             }
             catch (Exception)
             {
