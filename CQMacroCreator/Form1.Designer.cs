@@ -253,6 +253,38 @@
             this.CSHC = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Heroes = new System.Windows.Forms.TabPage();
+            this.LadyMaligrynPromo = new System.Windows.Forms.NumericUpDown();
+            this.LadyMaligrynBox = new System.Windows.Forms.CheckBox();
+            this.label475 = new System.Windows.Forms.Label();
+            this.LadyMaligrynCount = new System.Windows.Forms.NumericUpDown();
+            this.ReaperPromo = new System.Windows.Forms.NumericUpDown();
+            this.ReaperBox = new System.Windows.Forms.CheckBox();
+            this.label474 = new System.Windows.Forms.Label();
+            this.ReaperCount = new System.Windows.Forms.NumericUpDown();
+            this.AntoinettePromo = new System.Windows.Forms.NumericUpDown();
+            this.AntoinetteBox = new System.Windows.Forms.CheckBox();
+            this.label471 = new System.Windows.Forms.Label();
+            this.AntoinetteCount = new System.Windows.Forms.NumericUpDown();
+            this.MarionettePromo = new System.Windows.Forms.NumericUpDown();
+            this.MarionetteCount = new System.Windows.Forms.NumericUpDown();
+            this.label472 = new System.Windows.Forms.Label();
+            this.MarionetteBox = new System.Windows.Forms.CheckBox();
+            this.EsmeraldaPromo = new System.Windows.Forms.NumericUpDown();
+            this.EsmeraldaCount = new System.Windows.Forms.NumericUpDown();
+            this.EsmeraldaBox = new System.Windows.Forms.CheckBox();
+            this.label473 = new System.Windows.Forms.Label();
+            this.VerminPromo = new System.Windows.Forms.NumericUpDown();
+            this.RumblePromo = new System.Windows.Forms.NumericUpDown();
+            this.StenchPromo = new System.Windows.Forms.NumericUpDown();
+            this.StenchCount = new System.Windows.Forms.NumericUpDown();
+            this.label468 = new System.Windows.Forms.Label();
+            this.StenchBox = new System.Windows.Forms.CheckBox();
+            this.RumbleCount = new System.Windows.Forms.NumericUpDown();
+            this.label469 = new System.Windows.Forms.Label();
+            this.RumbleBox = new System.Windows.Forms.CheckBox();
+            this.VerminCount = new System.Windows.Forms.NumericUpDown();
+            this.label470 = new System.Windows.Forms.Label();
+            this.VerminBox = new System.Windows.Forms.CheckBox();
             this.SagittariaPromo = new System.Windows.Forms.NumericUpDown();
             this.SagittariaCount = new System.Windows.Forms.NumericUpDown();
             this.label466 = new System.Windows.Forms.Label();
@@ -1950,38 +1982,8 @@
             this.label356 = new System.Windows.Forms.Label();
             this.linkLabelMacroCreator = new System.Windows.Forms.LinkLabel();
             this.linkLabelAutomater = new System.Windows.Forms.LinkLabel();
-            this.VerminPromo = new System.Windows.Forms.NumericUpDown();
-            this.RumblePromo = new System.Windows.Forms.NumericUpDown();
-            this.StenchPromo = new System.Windows.Forms.NumericUpDown();
-            this.StenchCount = new System.Windows.Forms.NumericUpDown();
-            this.label468 = new System.Windows.Forms.Label();
-            this.StenchBox = new System.Windows.Forms.CheckBox();
-            this.RumbleCount = new System.Windows.Forms.NumericUpDown();
-            this.label469 = new System.Windows.Forms.Label();
-            this.RumbleBox = new System.Windows.Forms.CheckBox();
-            this.VerminCount = new System.Windows.Forms.NumericUpDown();
-            this.label470 = new System.Windows.Forms.Label();
-            this.VerminBox = new System.Windows.Forms.CheckBox();
-            this.AntoinettePromo = new System.Windows.Forms.NumericUpDown();
-            this.AntoinetteBox = new System.Windows.Forms.CheckBox();
-            this.label471 = new System.Windows.Forms.Label();
-            this.AntoinetteCount = new System.Windows.Forms.NumericUpDown();
-            this.MarionettePromo = new System.Windows.Forms.NumericUpDown();
-            this.MarionetteCount = new System.Windows.Forms.NumericUpDown();
-            this.label472 = new System.Windows.Forms.Label();
-            this.MarionetteBox = new System.Windows.Forms.CheckBox();
-            this.EsmeraldaPromo = new System.Windows.Forms.NumericUpDown();
-            this.EsmeraldaCount = new System.Windows.Forms.NumericUpDown();
-            this.EsmeraldaBox = new System.Windows.Forms.CheckBox();
-            this.label473 = new System.Windows.Forms.Label();
-            this.ReaperPromo = new System.Windows.Forms.NumericUpDown();
-            this.ReaperBox = new System.Windows.Forms.CheckBox();
-            this.label474 = new System.Windows.Forms.Label();
-            this.ReaperCount = new System.Windows.Forms.NumericUpDown();
-            this.LadyMaligrynPromo = new System.Windows.Forms.NumericUpDown();
-            this.LadyMaligrynBox = new System.Windows.Forms.CheckBox();
-            this.label475 = new System.Windows.Forms.Label();
-            this.LadyMaligrynCount = new System.Windows.Forms.NumericUpDown();
+            this.HalloweenHeroes = new System.Windows.Forms.Button();
+            this.getHalloweenButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.JamesCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HunterCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JetCount)).BeginInit();
@@ -2051,6 +2053,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.HamaCount)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Heroes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReaperPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReaperCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AntoinettePromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AntoinetteCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarionettePromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarionetteCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VerminPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RumblePromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StenchPromo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StenchCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RumbleCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VerminCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SagittariaPromo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SagittariaCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ArathonPromo)).BeginInit();
@@ -2446,22 +2464,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeLimit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerminPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RumblePromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StenchPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StenchCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RumbleCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerminCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AntoinettePromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AntoinetteCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MarionettePromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MarionetteCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReaperPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReaperCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynPromo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynCount)).BeginInit();
             this.SuspendLayout();
             // 
             // JamesCount
@@ -4223,7 +4225,7 @@
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(70, 13);
             this.versionLabel.TabIndex = 159;
-            this.versionLabel.Text = Form1.version;
+            this.versionLabel.Text = "v...";
             this.versionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // GurthBox
@@ -5866,6 +5868,365 @@
             this.Heroes.TabIndex = 0;
             this.Heroes.Text = "Heroes";
             this.Heroes.UseVisualStyleBackColor = true;
+            // 
+            // LadyMaligrynPromo
+            // 
+            this.LadyMaligrynPromo.Location = new System.Drawing.Point(454, 1707);
+            this.LadyMaligrynPromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.LadyMaligrynPromo.Name = "LadyMaligrynPromo";
+            this.LadyMaligrynPromo.Size = new System.Drawing.Size(26, 20);
+            this.LadyMaligrynPromo.TabIndex = 961;
+            // 
+            // LadyMaligrynBox
+            // 
+            this.LadyMaligrynBox.AutoSize = true;
+            this.LadyMaligrynBox.Location = new System.Drawing.Point(484, 1709);
+            this.LadyMaligrynBox.Name = "LadyMaligrynBox";
+            this.LadyMaligrynBox.Size = new System.Drawing.Size(33, 17);
+            this.LadyMaligrynBox.TabIndex = 960;
+            this.LadyMaligrynBox.TabStop = false;
+            this.LadyMaligrynBox.Text = "E";
+            this.LadyMaligrynBox.UseVisualStyleBackColor = true;
+            this.LadyMaligrynBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label475
+            // 
+            this.label475.AutoSize = true;
+            this.label475.Location = new System.Drawing.Point(346, 1710);
+            this.label475.Name = "label475";
+            this.label475.Size = new System.Drawing.Size(72, 13);
+            this.label475.TabIndex = 959;
+            this.label475.Text = "Lady Maligryn";
+            // 
+            // LadyMaligrynCount
+            // 
+            this.LadyMaligrynCount.Location = new System.Drawing.Point(419, 1707);
+            this.LadyMaligrynCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.LadyMaligrynCount.Name = "LadyMaligrynCount";
+            this.LadyMaligrynCount.Size = new System.Drawing.Size(33, 20);
+            this.LadyMaligrynCount.TabIndex = 958;
+            // 
+            // ReaperPromo
+            // 
+            this.ReaperPromo.Location = new System.Drawing.Point(277, 1641);
+            this.ReaperPromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.ReaperPromo.Name = "ReaperPromo";
+            this.ReaperPromo.Size = new System.Drawing.Size(26, 20);
+            this.ReaperPromo.TabIndex = 957;
+            // 
+            // ReaperBox
+            // 
+            this.ReaperBox.AutoSize = true;
+            this.ReaperBox.Location = new System.Drawing.Point(307, 1643);
+            this.ReaperBox.Name = "ReaperBox";
+            this.ReaperBox.Size = new System.Drawing.Size(33, 17);
+            this.ReaperBox.TabIndex = 956;
+            this.ReaperBox.TabStop = false;
+            this.ReaperBox.Text = "E";
+            this.ReaperBox.UseVisualStyleBackColor = true;
+            // 
+            // label474
+            // 
+            this.label474.AutoSize = true;
+            this.label474.Location = new System.Drawing.Point(198, 1644);
+            this.label474.Name = "label474";
+            this.label474.Size = new System.Drawing.Size(42, 13);
+            this.label474.TabIndex = 955;
+            this.label474.Text = "Reaper";
+            // 
+            // ReaperCount
+            // 
+            this.ReaperCount.Location = new System.Drawing.Point(242, 1641);
+            this.ReaperCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.ReaperCount.Name = "ReaperCount";
+            this.ReaperCount.Size = new System.Drawing.Size(33, 20);
+            this.ReaperCount.TabIndex = 954;
+            // 
+            // AntoinettePromo
+            // 
+            this.AntoinettePromo.Location = new System.Drawing.Point(454, 1437);
+            this.AntoinettePromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.AntoinettePromo.Name = "AntoinettePromo";
+            this.AntoinettePromo.Size = new System.Drawing.Size(26, 20);
+            this.AntoinettePromo.TabIndex = 953;
+            // 
+            // AntoinetteBox
+            // 
+            this.AntoinetteBox.AutoSize = true;
+            this.AntoinetteBox.Location = new System.Drawing.Point(484, 1439);
+            this.AntoinetteBox.Name = "AntoinetteBox";
+            this.AntoinetteBox.Size = new System.Drawing.Size(33, 17);
+            this.AntoinetteBox.TabIndex = 952;
+            this.AntoinetteBox.TabStop = false;
+            this.AntoinetteBox.Text = "E";
+            this.AntoinetteBox.UseVisualStyleBackColor = true;
+            this.AntoinetteBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label471
+            // 
+            this.label471.AutoSize = true;
+            this.label471.Location = new System.Drawing.Point(361, 1441);
+            this.label471.Name = "label471";
+            this.label471.Size = new System.Drawing.Size(55, 13);
+            this.label471.TabIndex = 951;
+            this.label471.Text = "Antoinette";
+            // 
+            // AntoinetteCount
+            // 
+            this.AntoinetteCount.Location = new System.Drawing.Point(419, 1437);
+            this.AntoinetteCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.AntoinetteCount.Name = "AntoinetteCount";
+            this.AntoinetteCount.Size = new System.Drawing.Size(33, 20);
+            this.AntoinetteCount.TabIndex = 950;
+            // 
+            // MarionettePromo
+            // 
+            this.MarionettePromo.Location = new System.Drawing.Point(277, 1437);
+            this.MarionettePromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MarionettePromo.Name = "MarionettePromo";
+            this.MarionettePromo.Size = new System.Drawing.Size(26, 20);
+            this.MarionettePromo.TabIndex = 949;
+            // 
+            // MarionetteCount
+            // 
+            this.MarionetteCount.Location = new System.Drawing.Point(242, 1437);
+            this.MarionetteCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.MarionetteCount.Name = "MarionetteCount";
+            this.MarionetteCount.Size = new System.Drawing.Size(33, 20);
+            this.MarionetteCount.TabIndex = 946;
+            // 
+            // label472
+            // 
+            this.label472.AutoSize = true;
+            this.label472.Location = new System.Drawing.Point(182, 1441);
+            this.label472.Name = "label472";
+            this.label472.Size = new System.Drawing.Size(57, 13);
+            this.label472.TabIndex = 947;
+            this.label472.Text = "Marionette";
+            // 
+            // MarionetteBox
+            // 
+            this.MarionetteBox.AutoSize = true;
+            this.MarionetteBox.Location = new System.Drawing.Point(307, 1439);
+            this.MarionetteBox.Name = "MarionetteBox";
+            this.MarionetteBox.Size = new System.Drawing.Size(33, 17);
+            this.MarionetteBox.TabIndex = 948;
+            this.MarionetteBox.TabStop = false;
+            this.MarionetteBox.Text = "E";
+            this.MarionetteBox.UseVisualStyleBackColor = true;
+            this.MarionetteBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // EsmeraldaPromo
+            // 
+            this.EsmeraldaPromo.Location = new System.Drawing.Point(100, 1437);
+            this.EsmeraldaPromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.EsmeraldaPromo.Name = "EsmeraldaPromo";
+            this.EsmeraldaPromo.Size = new System.Drawing.Size(26, 20);
+            this.EsmeraldaPromo.TabIndex = 945;
+            // 
+            // EsmeraldaCount
+            // 
+            this.EsmeraldaCount.Location = new System.Drawing.Point(65, 1437);
+            this.EsmeraldaCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.EsmeraldaCount.Name = "EsmeraldaCount";
+            this.EsmeraldaCount.Size = new System.Drawing.Size(33, 20);
+            this.EsmeraldaCount.TabIndex = 942;
+            // 
+            // EsmeraldaBox
+            // 
+            this.EsmeraldaBox.AutoSize = true;
+            this.EsmeraldaBox.Location = new System.Drawing.Point(130, 1439);
+            this.EsmeraldaBox.Name = "EsmeraldaBox";
+            this.EsmeraldaBox.Size = new System.Drawing.Size(33, 17);
+            this.EsmeraldaBox.TabIndex = 944;
+            this.EsmeraldaBox.TabStop = false;
+            this.EsmeraldaBox.Text = "E";
+            this.EsmeraldaBox.UseVisualStyleBackColor = true;
+            this.EsmeraldaBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // label473
+            // 
+            this.label473.AutoSize = true;
+            this.label473.Location = new System.Drawing.Point(4, 1441);
+            this.label473.Name = "label473";
+            this.label473.Size = new System.Drawing.Size(56, 13);
+            this.label473.TabIndex = 943;
+            this.label473.Text = "Esmeralda";
+            // 
+            // VerminPromo
+            // 
+            this.VerminPromo.Location = new System.Drawing.Point(454, 654);
+            this.VerminPromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.VerminPromo.Name = "VerminPromo";
+            this.VerminPromo.Size = new System.Drawing.Size(26, 20);
+            this.VerminPromo.TabIndex = 941;
+            // 
+            // RumblePromo
+            // 
+            this.RumblePromo.Location = new System.Drawing.Point(277, 654);
+            this.RumblePromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.RumblePromo.Name = "RumblePromo";
+            this.RumblePromo.Size = new System.Drawing.Size(26, 20);
+            this.RumblePromo.TabIndex = 940;
+            // 
+            // StenchPromo
+            // 
+            this.StenchPromo.Location = new System.Drawing.Point(100, 654);
+            this.StenchPromo.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.StenchPromo.Name = "StenchPromo";
+            this.StenchPromo.Size = new System.Drawing.Size(26, 20);
+            this.StenchPromo.TabIndex = 939;
+            // 
+            // StenchCount
+            // 
+            this.StenchCount.Location = new System.Drawing.Point(65, 654);
+            this.StenchCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.StenchCount.Name = "StenchCount";
+            this.StenchCount.Size = new System.Drawing.Size(33, 20);
+            this.StenchCount.TabIndex = 930;
+            // 
+            // label468
+            // 
+            this.label468.AutoSize = true;
+            this.label468.Location = new System.Drawing.Point(24, 658);
+            this.label468.Name = "label468";
+            this.label468.Size = new System.Drawing.Size(41, 13);
+            this.label468.TabIndex = 933;
+            this.label468.Text = "Stench";
+            // 
+            // StenchBox
+            // 
+            this.StenchBox.AutoSize = true;
+            this.StenchBox.Location = new System.Drawing.Point(130, 656);
+            this.StenchBox.Name = "StenchBox";
+            this.StenchBox.Size = new System.Drawing.Size(33, 17);
+            this.StenchBox.TabIndex = 934;
+            this.StenchBox.TabStop = false;
+            this.StenchBox.Text = "E";
+            this.StenchBox.UseVisualStyleBackColor = true;
+            this.StenchBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // RumbleCount
+            // 
+            this.RumbleCount.Location = new System.Drawing.Point(242, 654);
+            this.RumbleCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.RumbleCount.Name = "RumbleCount";
+            this.RumbleCount.Size = new System.Drawing.Size(33, 20);
+            this.RumbleCount.TabIndex = 931;
+            // 
+            // label469
+            // 
+            this.label469.AutoSize = true;
+            this.label469.Location = new System.Drawing.Point(197, 658);
+            this.label469.Name = "label469";
+            this.label469.Size = new System.Drawing.Size(43, 13);
+            this.label469.TabIndex = 935;
+            this.label469.Text = "Rumble";
+            // 
+            // RumbleBox
+            // 
+            this.RumbleBox.AutoSize = true;
+            this.RumbleBox.Location = new System.Drawing.Point(307, 656);
+            this.RumbleBox.Name = "RumbleBox";
+            this.RumbleBox.Size = new System.Drawing.Size(33, 17);
+            this.RumbleBox.TabIndex = 936;
+            this.RumbleBox.TabStop = false;
+            this.RumbleBox.Text = "E";
+            this.RumbleBox.UseVisualStyleBackColor = true;
+            this.RumbleBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
+            // 
+            // VerminCount
+            // 
+            this.VerminCount.Location = new System.Drawing.Point(419, 654);
+            this.VerminCount.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.VerminCount.Name = "VerminCount";
+            this.VerminCount.Size = new System.Drawing.Size(33, 20);
+            this.VerminCount.TabIndex = 932;
+            // 
+            // label470
+            // 
+            this.label470.AutoSize = true;
+            this.label470.Location = new System.Drawing.Point(380, 658);
+            this.label470.Name = "label470";
+            this.label470.Size = new System.Drawing.Size(39, 13);
+            this.label470.TabIndex = 937;
+            this.label470.Text = "Vermin";
+            // 
+            // VerminBox
+            // 
+            this.VerminBox.AutoSize = true;
+            this.VerminBox.Location = new System.Drawing.Point(484, 656);
+            this.VerminBox.Name = "VerminBox";
+            this.VerminBox.Size = new System.Drawing.Size(33, 17);
+            this.VerminBox.TabIndex = 938;
+            this.VerminBox.TabStop = false;
+            this.VerminBox.Text = "E";
+            this.VerminBox.UseVisualStyleBackColor = true;
+            this.VerminBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
             // 
             // SagittariaPromo
             // 
@@ -25235,370 +25596,35 @@
             this.linkLabelAutomater.Text = "Latest CQAutomater version";
             this.linkLabelAutomater.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelAutomater_LinkClicked);
             // 
-            // VerminPromo
+            // HalloweenHeroes
             // 
-            this.VerminPromo.Location = new System.Drawing.Point(454, 654);
-            this.VerminPromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.VerminPromo.Name = "VerminPromo";
-            this.VerminPromo.Size = new System.Drawing.Size(26, 20);
-            this.VerminPromo.TabIndex = 941;
+            this.HalloweenHeroes.Location = new System.Drawing.Point(559, 32);
+            this.HalloweenHeroes.Name = "HalloweenHeroes";
+            this.HalloweenHeroes.Size = new System.Drawing.Size(74, 23);
+            this.HalloweenHeroes.TabIndex = 389;
+            this.HalloweenHeroes.Text = "Get Hlwn H";
+            this.HalloweenHeroes.UseVisualStyleBackColor = true;
+            this.HalloweenHeroes.Visible = false;
+            this.HalloweenHeroes.Click += new System.EventHandler(this.HalloweenHeroes_Click);
             // 
-            // RumblePromo
+            // getHalloweenButton
             // 
-            this.RumblePromo.Location = new System.Drawing.Point(277, 654);
-            this.RumblePromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.RumblePromo.Name = "RumblePromo";
-            this.RumblePromo.Size = new System.Drawing.Size(26, 20);
-            this.RumblePromo.TabIndex = 940;
-            // 
-            // StenchPromo
-            // 
-            this.StenchPromo.Location = new System.Drawing.Point(100, 654);
-            this.StenchPromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.StenchPromo.Name = "StenchPromo";
-            this.StenchPromo.Size = new System.Drawing.Size(26, 20);
-            this.StenchPromo.TabIndex = 939;
-            // 
-            // StenchCount
-            // 
-            this.StenchCount.Location = new System.Drawing.Point(65, 654);
-            this.StenchCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.StenchCount.Name = "StenchCount";
-            this.StenchCount.Size = new System.Drawing.Size(33, 20);
-            this.StenchCount.TabIndex = 930;
-            // 
-            // label468
-            // 
-            this.label468.AutoSize = true;
-            this.label468.Location = new System.Drawing.Point(24, 658);
-            this.label468.Name = "label468";
-            this.label468.Size = new System.Drawing.Size(41, 13);
-            this.label468.TabIndex = 933;
-            this.label468.Text = "Stench";
-            // 
-            // StenchBox
-            // 
-            this.StenchBox.AutoSize = true;
-            this.StenchBox.Location = new System.Drawing.Point(130, 656);
-            this.StenchBox.Name = "StenchBox";
-            this.StenchBox.Size = new System.Drawing.Size(33, 17);
-            this.StenchBox.TabIndex = 934;
-            this.StenchBox.TabStop = false;
-            this.StenchBox.Text = "E";
-            this.StenchBox.UseVisualStyleBackColor = true;
-            this.StenchBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // RumbleCount
-            // 
-            this.RumbleCount.Location = new System.Drawing.Point(242, 654);
-            this.RumbleCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.RumbleCount.Name = "RumbleCount";
-            this.RumbleCount.Size = new System.Drawing.Size(33, 20);
-            this.RumbleCount.TabIndex = 931;
-            // 
-            // label469
-            // 
-            this.label469.AutoSize = true;
-            this.label469.Location = new System.Drawing.Point(197, 658);
-            this.label469.Name = "label469";
-            this.label469.Size = new System.Drawing.Size(43, 13);
-            this.label469.TabIndex = 935;
-            this.label469.Text = "Rumble";
-            // 
-            // RumbleBox
-            // 
-            this.RumbleBox.AutoSize = true;
-            this.RumbleBox.Location = new System.Drawing.Point(307, 656);
-            this.RumbleBox.Name = "RumbleBox";
-            this.RumbleBox.Size = new System.Drawing.Size(33, 17);
-            this.RumbleBox.TabIndex = 936;
-            this.RumbleBox.TabStop = false;
-            this.RumbleBox.Text = "E";
-            this.RumbleBox.UseVisualStyleBackColor = true;
-            this.RumbleBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // VerminCount
-            // 
-            this.VerminCount.Location = new System.Drawing.Point(419, 654);
-            this.VerminCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.VerminCount.Name = "VerminCount";
-            this.VerminCount.Size = new System.Drawing.Size(33, 20);
-            this.VerminCount.TabIndex = 932;
-            // 
-            // label470
-            // 
-            this.label470.AutoSize = true;
-            this.label470.Location = new System.Drawing.Point(380, 658);
-            this.label470.Name = "label470";
-            this.label470.Size = new System.Drawing.Size(39, 13);
-            this.label470.TabIndex = 937;
-            this.label470.Text = "Vermin";
-            // 
-            // VerminBox
-            // 
-            this.VerminBox.AutoSize = true;
-            this.VerminBox.Location = new System.Drawing.Point(484, 656);
-            this.VerminBox.Name = "VerminBox";
-            this.VerminBox.Size = new System.Drawing.Size(33, 17);
-            this.VerminBox.TabIndex = 938;
-            this.VerminBox.TabStop = false;
-            this.VerminBox.Text = "E";
-            this.VerminBox.UseVisualStyleBackColor = true;
-            this.VerminBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // AntoinettePromo
-            // 
-            this.AntoinettePromo.Location = new System.Drawing.Point(454, 1437);
-            this.AntoinettePromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.AntoinettePromo.Name = "AntoinettePromo";
-            this.AntoinettePromo.Size = new System.Drawing.Size(26, 20);
-            this.AntoinettePromo.TabIndex = 953;
-            // 
-            // AntoinetteBox
-            // 
-            this.AntoinetteBox.AutoSize = true;
-            this.AntoinetteBox.Location = new System.Drawing.Point(484, 1439);
-            this.AntoinetteBox.Name = "AntoinetteBox";
-            this.AntoinetteBox.Size = new System.Drawing.Size(33, 17);
-            this.AntoinetteBox.TabIndex = 952;
-            this.AntoinetteBox.TabStop = false;
-            this.AntoinetteBox.Text = "E";
-            this.AntoinetteBox.UseVisualStyleBackColor = true;
-            this.AntoinetteBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label471
-            // 
-            this.label471.AutoSize = true;
-            this.label471.Location = new System.Drawing.Point(361, 1441);
-            this.label471.Name = "label471";
-            this.label471.Size = new System.Drawing.Size(55, 13);
-            this.label471.TabIndex = 951;
-            this.label471.Text = "Antoinette";
-            // 
-            // AntoinetteCount
-            // 
-            this.AntoinetteCount.Location = new System.Drawing.Point(419, 1437);
-            this.AntoinetteCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.AntoinetteCount.Name = "AntoinetteCount";
-            this.AntoinetteCount.Size = new System.Drawing.Size(33, 20);
-            this.AntoinetteCount.TabIndex = 950;
-            // 
-            // MarionettePromo
-            // 
-            this.MarionettePromo.Location = new System.Drawing.Point(277, 1437);
-            this.MarionettePromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.MarionettePromo.Name = "MarionettePromo";
-            this.MarionettePromo.Size = new System.Drawing.Size(26, 20);
-            this.MarionettePromo.TabIndex = 949;
-            // 
-            // MarionetteCount
-            // 
-            this.MarionetteCount.Location = new System.Drawing.Point(242, 1437);
-            this.MarionetteCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.MarionetteCount.Name = "MarionetteCount";
-            this.MarionetteCount.Size = new System.Drawing.Size(33, 20);
-            this.MarionetteCount.TabIndex = 946;
-            // 
-            // label472
-            // 
-            this.label472.AutoSize = true;
-            this.label472.Location = new System.Drawing.Point(182, 1441);
-            this.label472.Name = "label472";
-            this.label472.Size = new System.Drawing.Size(57, 13);
-            this.label472.TabIndex = 947;
-            this.label472.Text = "Marionette";
-            // 
-            // MarionetteBox
-            // 
-            this.MarionetteBox.AutoSize = true;
-            this.MarionetteBox.Location = new System.Drawing.Point(307, 1439);
-            this.MarionetteBox.Name = "MarionetteBox";
-            this.MarionetteBox.Size = new System.Drawing.Size(33, 17);
-            this.MarionetteBox.TabIndex = 948;
-            this.MarionetteBox.TabStop = false;
-            this.MarionetteBox.Text = "E";
-            this.MarionetteBox.UseVisualStyleBackColor = true;
-            this.MarionetteBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // EsmeraldaPromo
-            // 
-            this.EsmeraldaPromo.Location = new System.Drawing.Point(100, 1437);
-            this.EsmeraldaPromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.EsmeraldaPromo.Name = "EsmeraldaPromo";
-            this.EsmeraldaPromo.Size = new System.Drawing.Size(26, 20);
-            this.EsmeraldaPromo.TabIndex = 945;
-            // 
-            // EsmeraldaCount
-            // 
-            this.EsmeraldaCount.Location = new System.Drawing.Point(65, 1437);
-            this.EsmeraldaCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.EsmeraldaCount.Name = "EsmeraldaCount";
-            this.EsmeraldaCount.Size = new System.Drawing.Size(33, 20);
-            this.EsmeraldaCount.TabIndex = 942;
-            // 
-            // EsmeraldaBox
-            // 
-            this.EsmeraldaBox.AutoSize = true;
-            this.EsmeraldaBox.Location = new System.Drawing.Point(130, 1439);
-            this.EsmeraldaBox.Name = "EsmeraldaBox";
-            this.EsmeraldaBox.Size = new System.Drawing.Size(33, 17);
-            this.EsmeraldaBox.TabIndex = 944;
-            this.EsmeraldaBox.TabStop = false;
-            this.EsmeraldaBox.Text = "E";
-            this.EsmeraldaBox.UseVisualStyleBackColor = true;
-            this.EsmeraldaBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label473
-            // 
-            this.label473.AutoSize = true;
-            this.label473.Location = new System.Drawing.Point(4, 1441);
-            this.label473.Name = "label473";
-            this.label473.Size = new System.Drawing.Size(56, 13);
-            this.label473.TabIndex = 943;
-            this.label473.Text = "Esmeralda";
-            // 
-            // ReaperPromo
-            // 
-            this.ReaperPromo.Location = new System.Drawing.Point(277, 1641);
-            this.ReaperPromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.ReaperPromo.Name = "ReaperPromo";
-            this.ReaperPromo.Size = new System.Drawing.Size(26, 20);
-            this.ReaperPromo.TabIndex = 957;
-            // 
-            // ReaperBox
-            // 
-            this.ReaperBox.AutoSize = true;
-            this.ReaperBox.Location = new System.Drawing.Point(307, 1643);
-            this.ReaperBox.Name = "ReaperBox";
-            this.ReaperBox.Size = new System.Drawing.Size(33, 17);
-            this.ReaperBox.TabIndex = 956;
-            this.ReaperBox.TabStop = false;
-            this.ReaperBox.Text = "E";
-            this.ReaperBox.UseVisualStyleBackColor = true;
-            // 
-            // label474
-            // 
-            this.label474.AutoSize = true;
-            this.label474.Location = new System.Drawing.Point(198, 1644);
-            this.label474.Name = "label474";
-            this.label474.Size = new System.Drawing.Size(42, 13);
-            this.label474.TabIndex = 955;
-            this.label474.Text = "Reaper";
-            // 
-            // ReaperCount
-            // 
-            this.ReaperCount.Location = new System.Drawing.Point(242, 1641);
-            this.ReaperCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.ReaperCount.Name = "ReaperCount";
-            this.ReaperCount.Size = new System.Drawing.Size(33, 20);
-            this.ReaperCount.TabIndex = 954;
-            // 
-            // LadyMaligrynPromo
-            // 
-            this.LadyMaligrynPromo.Location = new System.Drawing.Point(454, 1707);
-            this.LadyMaligrynPromo.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.LadyMaligrynPromo.Name = "LadyMaligrynPromo";
-            this.LadyMaligrynPromo.Size = new System.Drawing.Size(26, 20);
-            this.LadyMaligrynPromo.TabIndex = 961;
-            // 
-            // LadyMaligrynBox
-            // 
-            this.LadyMaligrynBox.AutoSize = true;
-            this.LadyMaligrynBox.Location = new System.Drawing.Point(484, 1709);
-            this.LadyMaligrynBox.Name = "LadyMaligrynBox";
-            this.LadyMaligrynBox.Size = new System.Drawing.Size(33, 17);
-            this.LadyMaligrynBox.TabIndex = 960;
-            this.LadyMaligrynBox.TabStop = false;
-            this.LadyMaligrynBox.Text = "E";
-            this.LadyMaligrynBox.UseVisualStyleBackColor = true;
-            this.LadyMaligrynBox.CheckedChanged += new System.EventHandler(this.RigrBox_CheckedChanged);
-            // 
-            // label475
-            // 
-            this.label475.AutoSize = true;
-            this.label475.Location = new System.Drawing.Point(346, 1710);
-            this.label475.Name = "label475";
-            this.label475.Size = new System.Drawing.Size(72, 13);
-            this.label475.TabIndex = 959;
-            this.label475.Text = "Lady Maligryn";
-            // 
-            // LadyMaligrynCount
-            // 
-            this.LadyMaligrynCount.Location = new System.Drawing.Point(419, 1707);
-            this.LadyMaligrynCount.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.LadyMaligrynCount.Name = "LadyMaligrynCount";
-            this.LadyMaligrynCount.Size = new System.Drawing.Size(33, 20);
-            this.LadyMaligrynCount.TabIndex = 958;
+            this.getHalloweenButton.Location = new System.Drawing.Point(633, 32);
+            this.getHalloweenButton.Name = "getHalloweenButton";
+            this.getHalloweenButton.Size = new System.Drawing.Size(74, 23);
+            this.getHalloweenButton.TabIndex = 390;
+            this.getHalloweenButton.Text = "Get Hlwn L";
+            this.getHalloweenButton.UseVisualStyleBackColor = true;
+            this.getHalloweenButton.Visible = false;
+            this.getHalloweenButton.Click += new System.EventHandler(this.getHalloweenButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 635);
+            this.Controls.Add(this.getHalloweenButton);
+            this.Controls.Add(this.HalloweenHeroes);
             this.Controls.Add(this.linkLabelMacroCreator);
             this.Controls.Add(this.linkLabelAutomater);
             this.Controls.Add(this.label356);
@@ -25709,6 +25735,22 @@
             this.tabControl1.ResumeLayout(false);
             this.Heroes.ResumeLayout(false);
             this.Heroes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReaperPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReaperCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AntoinettePromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AntoinetteCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarionettePromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarionetteCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VerminPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RumblePromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StenchPromo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StenchCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RumbleCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VerminCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SagittariaPromo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SagittariaCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ArathonPromo)).EndInit();
@@ -26110,22 +26152,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeLimit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerminPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RumblePromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StenchPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StenchCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RumbleCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerminCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AntoinettePromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AntoinetteCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MarionettePromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MarionetteCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EsmeraldaCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReaperPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReaperCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynPromo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LadyMaligrynCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -28087,6 +28113,8 @@
         private System.Windows.Forms.CheckBox ReaperBox;
         private System.Windows.Forms.Label label474;
         private System.Windows.Forms.NumericUpDown ReaperCount;
+        private System.Windows.Forms.Button HalloweenHeroes;
+        private System.Windows.Forms.Button getHalloweenButton;
     }
 }
 

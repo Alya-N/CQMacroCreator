@@ -23,8 +23,8 @@ namespace CQMacroCreator
         static public bool DQResult;
         static public string DQlvl;
         static bool _running = true;
-        string token;
-        string kongID;
+        readonly string token;
+        readonly string kongID;
         static public string username;
         static public int userID = 0;
         public static int questID;
@@ -34,6 +34,9 @@ namespace CQMacroCreator
         public static List<int> questList;
         public static int dungeonLvl;
         public static List<int[]> dungeonLineup;
+        public static List<int[]> getHalloween;
+        public static int halloweenLvl;
+        public static List<int[]> halloweenLineup;
 
         public PFStuff(string t, string kid)
         {
@@ -86,7 +89,7 @@ namespace CQMacroCreator
             {
                 RevisionSelection = CloudScriptRevisionOption.Live,
                 FunctionName = "status",
-                FunctionParameter = new { token = token, kid = kongID }
+                FunctionParameter = new { token, kid = kongID }
             };
             var statusTask = PlayFabClientAPI.ExecuteCloudScriptAsync(request);
             bool _running = true;
@@ -343,14 +346,12 @@ namespace CQMacroCreator
                 JObject json = JObject.Parse(content);
                 username = json["username"].ToString();
 
-                using (var client = new HttpClient())
-                {
-                    var values = new Dictionary<string, string> { { "uget", username } };
-                    var cont = new FormUrlEncodedContent(values);
-                    var resp = await client.PostAsync("http://dcouv.fr/cq.php", cont);
-                    var respString = await resp.Content.ReadAsStringAsync();
-                    userID = int.Parse(respString);
-                }
+                using var client = new HttpClient();
+                var values = new Dictionary<string, string> { { "uget", username } };
+                var cont = new FormUrlEncodedContent(values);
+                var resp = await client.PostAsync("http://dcouv.fr/cq.php", cont);
+                var respString = await resp.Content.ReadAsStringAsync();
+                userID = int.Parse(respString);
             }
             catch (Exception)
             {
@@ -362,10 +363,12 @@ namespace CQMacroCreator
         {
             try
             {
-                var d = new Dictionary<string, string>();
-                d["p"] = userID.ToString();
-                d["e"] = e;
-                d["v"] = Form1.version;
+                Dictionary<string, string> d = new Dictionary<string, string>
+                {
+                    { "p", userID.ToString() },
+                    { "e", e },
+                    { "v", Form1.version }
+                };
                 using HttpClient client = new HttpClient();
                 var values = new Dictionary<string, string> { { "ierr", JsonConvert.SerializeObject(d) } };
                 var content = new FormUrlEncodedContent(values);
@@ -380,23 +383,121 @@ namespace CQMacroCreator
 
         public async Task<bool> getCQAVersion(Form1 f)
         {
-            using (var client = new HttpClient())
+            f.versionLabel.Text = Form1.version;
+            using var client = new HttpClient();
+            try
             {
-                try
-                {
-                    var values = new Dictionary<string, string> { { "cqav", Form1.version } };
-                    var content = new FormUrlEncodedContent(values);
-                    var response = await client.PostAsync("http://dcouv.fr/cq.php", content);
-                    var responseString = await response.Content.ReadAsStringAsync();
-                    if (responseString == "1")
-                        f.versionLabel.ForeColor = System.Drawing.Color.Red;
-                    return responseString == "0";
-                }
-                catch
-                {
-                    return true;
-                }
+                var values = new Dictionary<string, string> { { "cqav", Form1.version } };
+                var content = new FormUrlEncodedContent(values);
+                var response = await client.PostAsync("http://dcouv.fr/cq.php", content);
+                var responseString = await response.Content.ReadAsStringAsync();
+                if (responseString == "1")
+                    f.versionLabel.ForeColor = System.Drawing.Color.Red;
+                return responseString == "0";
             }
+            catch
+            {
+                return true;
+            }
+        }
+
+        public void sendHalloweenSolution()
+        {
+            var request = new ExecuteCloudScriptRequest()
+            {
+                RevisionSelection = CloudScriptRevisionOption.Live,
+                FunctionName = "fightH",
+                FunctionParameter = new { kid = kongID, setup = lineup }
+            };
+            var statusTask = PlayFabClientAPI.ExecuteCloudScriptAsync(request);
+            Task.Run(() => sendLog("CQMC sendHalloweenSolution " + JsonConvert.SerializeObject(statusTask)));
+            bool _running = true;
+            while (_running)
+            {
+                if (statusTask.IsCompleted)
+                {
+                    var apiError = statusTask.Result.Error;
+                    var apiResult = statusTask.Result.Result;
+
+                    if (apiError != null)
+                    {
+                        DQResult = false;
+                        return;
+                    }
+                    else if (apiResult.FunctionResult != null && apiResult.FunctionResult.ToString().Contains("true"))
+                    {
+                        DQResult = true;
+                        return;
+                    }
+                    _running = false;
+                }
+                Thread.Sleep(1);
+            }
+            DQResult = false;
+            return;
+        }
+
+        internal static void getHalloweenData(string id)
+        {
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(@"https://cosmosquest.net/public.php?kid=" + id);
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                string content = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+                JObject json = JObject.Parse(content);
+                var halloweenData = json["halloween"];
+                halloweenLineup = new List<int[]>();
+                halloweenLvl = int.Parse(halloweenData["level"].ToString());
+
+                string el = halloweenData["setup"].ToString();
+
+                int[] enemyLineup = getArray(el);
+                halloweenLineup.Add(enemyLineup);
+
+            }
+            catch (WebException webex)
+            {
+                Console.Write(webex.Message);
+            }
+        }
+
+        public void GetHalloweenLevels()
+        {
+            getHalloween = new List<int[]>();
+            var request = new ExecuteCloudScriptRequest()
+            {
+                RevisionSelection = CloudScriptRevisionOption.Live,
+                FunctionName = "status",
+                FunctionParameter = new { token, kid = kongID }
+            };
+            var statusTask = PlayFabClientAPI.ExecuteCloudScriptAsync(request);
+            bool _running = true;
+            while (_running)
+            {
+                if (statusTask.IsCompleted)
+                {
+                    var apiError = statusTask.Result.Error;
+                    var apiResult = statusTask.Result.Result;
+
+                    if (apiError != null)
+                    {
+                        return;
+                    }
+                    else if (apiResult.FunctionResult != null)
+                    {
+                        JObject json = JObject.Parse(apiResult.FunctionResult.ToString());
+                        string levels = json["data"]["city"]["halloween"]["hero"].ToString();
+                        int[] heroLevels = getArray(levels);
+                        getHalloween.Add(heroLevels);
+                        return;
+                    }
+                    _running = false;
+                }
+                Thread.Sleep(1);
+            }
+            return;
         }
     }
 }

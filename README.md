@@ -1,11 +1,13 @@
 # CQMacroCreator
 
-CQMacroCreator is a "GUI' for Alya's Cosmos Quest PvE Instance Solver. Please download it here: https://github.com/Alya-N/C-Hero-Calc
+CQMacroCreator is a "GUI' for Alya's Cosmos Quest PvE Instance Solver. Please download it here: https://github.com/MatthieuBonne/C-Hero-Calc
 
 Just place CQMacroCreator.exe in the same folder as CosmosQuest.exe and run it.
 ![screenshot](http://dcouv.fr/cqmc202006.png)
 
 # What's new
+v4.9 - Horsemen & Halloween2020 heroes
+
 v4.7.5 - Archers & Eternals
 
 v4.7.4 - Astronauts
@@ -53,6 +55,3 @@ On the right side you should see "Request Payload" section if you are using Chro
 * cqdata.txt - included with calc, lists all available heroes
 * CQMacroCreator.exe
 * Settings.json - created by CQMC and shared with CQAutomater
-
-
-

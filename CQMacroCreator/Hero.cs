@@ -4,11 +4,11 @@ namespace CQMacroCreator
 {
     class Hero
     {
-        int hp;
-        int damage;
-        int SPperLevel;
-        int valueModifierType;
-        double valueModifierAmount;
+        readonly int hp;
+        readonly int damage;
+        readonly int SPperLevel;
+        readonly int valueModifierType;
+        readonly double valueModifierAmount;
 
         public Hero(int h, int d, int s, int mod, double v)
         {

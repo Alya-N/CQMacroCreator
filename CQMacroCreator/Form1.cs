@@ -17,24 +17,24 @@ namespace CQMacroCreator
     {
         Process proc;
         static AppSettings appSettings = new AppSettings();
-        public const string version = "v4.9.0b";
+        public const string version = "v4.9.0f";
         public const string SettingsFilename = "Settings.json";
         static string output;
         static bool wrongHeroAmountAlreadyAsked = false;
         static DateTime previousDQTime;
         static string calcOut;
-        List<NumericUpDown> heroCounts;
-        List<NumericUpDown> heroPromos;
-        List<NumericUpDown> heroCountsServerOrder;
-        List<NumericUpDown> heroPromosServerOrder;
-        List<CheckBox> questBoxes;
-        List<Button> questButtons;
-        List<CheckBox> heroBoxes;
+        readonly List<NumericUpDown> heroCounts;
+        readonly List<NumericUpDown> heroPromos;
+        readonly List<NumericUpDown> heroCountsServerOrder;
+        readonly List<NumericUpDown> heroPromosServerOrder;
+        readonly List<CheckBox> questBoxes;
+        readonly List<Button> questButtons;
+        readonly List<CheckBox> heroBoxes;
         double lowerFollowerPerc = 0.0;
         double upperFollowerPerc = 0.0;
         //ToolTip tp = new ToolTip();
         PFStuff pf;
-        Dictionary<string, string> aliases = new Dictionary<string, string>
+        readonly Dictionary<string, string> aliases = new Dictionary<string, string>
         {
             {"LADY", "ladyoftwilight"},
             {"LOT", "ladyoftwilight"},
@@ -82,16 +82,15 @@ namespace CQMacroCreator
             {"LUX", "luxuriusmaximus"},
             {"LUXURIOUS", "luxuriusmaximus"},
             {"AKIRK", "alordkirk"},
-            {"ANEP", "aneptunius"}
-
-
+            {"ANEP", "aneptunius"},
+            {"ANTY", "antoinette"}
         };
         string token;
         string KongregateId;
         int defaultActionOnOpen = 0;
         bool warnManyHeroes = true;
 
-        static string[] names = {"james", "hunter", "shaman", "alpha", "carl", "nimue", "athos", "jet", "geron", "rei", "ailen", "faefyr", "auri", "k41ry", "t4urus", "tr0n1x",
+        readonly static string[] names = {"james", "hunter", "shaman", "alpha", "carl", "nimue", "athos", "jet", "geron", "rei", "ailen", "faefyr", "auri", "k41ry", "t4urus", "tr0n1x",
                                 "aquortis", "aeris", "geum", "rudean", "aural", "geror", "ourea", "erebus", "pontus", "oymos", "xarth", "atzar", "ladyoftwilight", "tiny", "nebra",
                                 "veildur", "brynhildr", "groth", "zeth", "koth", "gurth", "spyke", "aoyuki", "gaiabyte", "valor", "rokka", "pyromancer", "bewat", "nicte", "forestdruid",
                                 "ignitor", "undine", "chroma", "petry", "zaytus", "werewolf", "jackoknight", "dullahan", "ladyodelith", "shygu", "thert", "lordkirk", "neptunius",
@@ -109,7 +108,7 @@ namespace CQMacroCreator
                                 "raelan","sylnir","arathon","stench","rumble","vermin","reaper","esmeralda","marionette","antoinette","ladymaligryn",
                                 };
 
-        static string[] servernames = {"ladymaligryn","antoinette","marionette","esmeralda","reaper","vermin","rumble","stench","arathon","sylnir","raelan","jalrok","sagittaria","will","merida","sully",
+        readonly static string[] servernames = {"ladymaligryn","antoinette","marionette","esmeralda","reaper","vermin","rumble","stench","arathon","sylnir","raelan","jalrok","sagittaria","will","merida","sully",
                                "john","valentina","alan","yuri","ignis","caeli","silex","pluvia","hetfield","lars","kirklee","rob","kingpyros","youngpyros","babypyros","egg","kilkenny","annie",
                                "mechamary","hans","yetithepostman","galla","yisus","adam","emily","adrian","casper",
                                "higgs","boson","electra","newt","retia","myrmillo","scinda","thrace","bornag","lili",
@@ -135,7 +134,7 @@ namespace CQMacroCreator
                                "A34","E34","F34","W34","A35","E35","F35","W35","A36","E36","F36","W36","A37","E37","F37","W37","A38","E38","F38","W38","A39","E39","F39","W39",
                                "A40","E40","F40","W40","A41","E41","F41","W41","A42","E42","F42","W42","A43","E43","F43","W43","A44","E44","F44","W44","A45","E45","F45","W45",};
 
-        static long[] monstersCosts = {500,650,500,700,1950,1350,1950,1950,4000,3750,4000,4000,7500,9000,11500,9000,20500,27000,15500,26000,48000,35500,47000,42000,72000,57500,57500,
+        readonly static long[] monstersCosts = {500,650,500,700,1950,1350,1950,1950,4000,3750,4000,4000,7500,9000,11500,9000,20500,27000,15500,26000,48000,35500,47000,42000,72000,57500,57500,
                                79500,128500,107500,160500,120500,247500,218000,227000,209000,392500,344500,393500,337500,701500,565000,614500,657500,866500,951500,859000,887500,1386000,
                                1985500,1584500,1199000,2392500,3022000,2370500,2079500,4448500,3586500,2838000,3879000,6427500,6267000,6500500,6737500,8382500,8265500,9045000,8786500,10975500,
                                11283500,10975500,10454500,13644000,13553500,12585000,12539500,16121000,16012500,16577800,17091000,21413000,21126000,21399000,20950500,27686500,27835500,27791000,
@@ -148,7 +147,7 @@ namespace CQMacroCreator
                                148792746000,197143156000,186239297000,202365391000,191758841000,
                                 };
 
-        int heroesInGame = Array.IndexOf(servernames, "ladyoftwilight") + 2;
+        readonly int heroesInGame = Array.IndexOf(servernames, "ladyoftwilight") + 2;
 
 
         public Form1()
@@ -831,11 +830,9 @@ namespace CQMacroCreator
         void currentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             Exception ue = (Exception)e.ExceptionObject;
-            using (StreamWriter sw = new StreamWriter("ExceptionLog.txt", true))
-            {
-                sw.WriteLine(DateTime.Now);
-                sw.WriteLine(ue);
-            }
+            using StreamWriter sw = new StreamWriter("ExceptionLog.txt", true);
+            sw.WriteLine(DateTime.Now);
+            sw.WriteLine(ue);
         }
 
         private void hideButtons()
@@ -886,7 +883,7 @@ namespace CQMacroCreator
             }
             else if (File.Exists("MacroSettings.txt"))
             {
-                System.IO.StreamReader sr = new System.IO.StreamReader("MacroSettings.txt");
+                StreamReader sr = new StreamReader("MacroSettings.txt");
                 appSettings.actionOnStart = defaultActionOnOpen = int.Parse(getSetting(sr.ReadLine()));
                 token = appSettings.token = getSetting(sr.ReadLine());
                 KongregateId = appSettings.KongregateId = getSetting(sr.ReadLine());
@@ -988,11 +985,15 @@ namespace CQMacroCreator
                     if (token != null)
                     {
                         getData(true, true, true, true);
-                        for (int i = 0; i < appSettings.calcEnabledHeroes.Count; i++)
+                        try
                         {
-                            int index = Array.FindIndex(names, w => w == appSettings.calcEnabledHeroes[i]);
-                            heroBoxes[index].Checked = true;
+                            for (int i = 0; i < appSettings.calcEnabledHeroes.Count; i++)
+                            {
+                                int index = Array.FindIndex(names, w => w == appSettings.calcEnabledHeroes[i]);
+                                heroBoxes[index].Checked = true;
+                            }
                         }
+                        catch (Exception) { }
                     }
                     break;
                 default:
@@ -1001,7 +1002,7 @@ namespace CQMacroCreator
             Task.Run(() => pf.getCQAVersion(this));
         }
 
-        List<Hero> heroList = new List<Hero>(new Hero[] { // MB 20190505 - give higher priority to heroes like geum, ricochet and reflect
+        readonly List<Hero> heroList = new List<Hero>(new Hero[] { // MB 20190505 - give higher priority to heroes like geum, ricochet and reflect
             new Hero(50,12,6,1,1.2),
             new Hero(22,14,1,0,0), new Hero(40,20,2,0,0), new Hero(82,22,6,0,10000),            //hunter, shaman, alpha
             new Hero(28,12,1,0,0), new Hero(38,22,2,0,0), new Hero(70,26,6,0,2000),             //carl, nimue, athos
@@ -1243,7 +1244,10 @@ namespace CQMacroCreator
                             }
                             else
                             {
-                                createMacroFile(lp);
+                                if (lp.Contains("EVENT"))
+                                    createMacroFile(lp.Substring(6));
+                                else
+                                    createMacroFile(lp);
                             }
                             RunWithRedirect("CosmosQuest.exe");
                             //calcOut = calcOut.Substring(0, calcOut.Length - 24);
@@ -1271,7 +1275,7 @@ namespace CQMacroCreator
                                         {
                                             guiLog.AppendText("Waiting " + (waitTime / 1000.0).ToString("G3") + " s to send solution\n");
                                             guiLog.Refresh();
-                                            System.Threading.Thread.Sleep(waitTime);
+                                            Thread.Sleep(waitTime);
                                         }
                                         Thread mt;
                                         if (lp.Contains("quest"))
@@ -1280,24 +1284,40 @@ namespace CQMacroCreator
                                             string s = lp.Substring(5, a - 5);
                                             Console.Write("\n" + s);
                                             PFStuff.questID = Int32.Parse(s) - 1;
-                                            mt = new Thread(pf.sendQuestSolution);
-                                            mt.IsBackground = true;
+                                            mt = new Thread(pf.sendQuestSolution)
+                                            {
+                                                IsBackground = true
+                                            };
                                             mt.Start();
                                             mt.Join();
                                             previousDQTime = DateTime.UtcNow;
                                         }
                                         else if (lp.Contains("DUNG"))
                                         {
-                                            mt = new Thread(pf.sendDungSolution);
-                                            mt.IsBackground = true;
+                                            mt = new Thread(pf.sendDungSolution)
+                                            {
+                                                IsBackground = true
+                                            };
+                                            mt.Start();
+                                            mt.Join();
+                                            previousDQTime = DateTime.UtcNow;
+                                        }
+                                        else if (lp.Contains("EVENT"))
+                                        {
+                                            mt = new Thread(pf.sendHalloweenSolution)
+                                            {
+                                                IsBackground = true
+                                            };
                                             mt.Start();
                                             mt.Join();
                                             previousDQTime = DateTime.UtcNow;
                                         }
                                         else
                                         {
-                                            mt = new Thread(pf.sendDQSolution);
-                                            mt.IsBackground = true;
+                                            mt = new Thread(pf.sendDQSolution)
+                                            {
+                                                IsBackground = true
+                                            };
                                             mt.Start();
                                             mt.Join();
                                             previousDQTime = DateTime.UtcNow;
@@ -1312,6 +1332,11 @@ namespace CQMacroCreator
                                             {
                                                 guiLog.AppendText("Dungeon " + PFStuff.dungeonLvl + " solution accepted by server\n");
                                                 getDungeonButton_Click(this, EventArgs.Empty);
+                                            }
+                                            else if (lp.Contains("EVENT"))
+                                            {
+                                                guiLog.AppendText("Halloween " + PFStuff.halloweenLvl + " solution accepted by server\n");
+                                                getHalloweenButton_Click(this, EventArgs.Empty);
                                             }
                                             else
                                             {
@@ -1340,7 +1365,7 @@ namespace CQMacroCreator
                     }
                     else
                     {
-                        createMacroFile(lineupBox.Text.Replace("DUNG,", ""));
+                        createMacroFile(lineupBox.Text.Replace("DUNG,", "").Replace("EVENT,", ""));
                         if (File.Exists("default.cqconfig"))
                         {
                             generateConfigFile();
@@ -1410,7 +1435,7 @@ namespace CQMacroCreator
 
         private void createMacroFile(string lineup)
         {
-            System.IO.StreamWriter sw = new System.IO.StreamWriter("gen.cqinput");
+            StreamWriter sw = new StreamWriter("gen.cqinput");
             List<string> l = new List<string>();
             for (int i = 0; i < heroCounts.Count; i++)
             {
@@ -1665,7 +1690,7 @@ namespace CQMacroCreator
         private void questButtonClick(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            Predicate<Button> pre = delegate (Button a) { return a.Name == b.Name; };
+            bool pre(Button a) { return a.Name == b.Name; }
             int index = questButtons.FindIndex(pre);
             lineupBox.Text += getQuestString(index);
         }
@@ -1701,11 +1726,11 @@ namespace CQMacroCreator
         private void questCheckboxChanged(object sender, EventArgs e)
         {
             CheckBox b = (CheckBox)sender;
-            Predicate<CheckBox> pre = delegate (CheckBox a) { return a.Name == b.Name; };
+            bool pre(CheckBox a) { return a.Name == b.Name; }
             setQuestBoxes(questBoxes.FindIndex(pre), b.Checked);
         }
 
-        private void setQuestBoxes(int boxID, bool checkState)
+        private void setQuestBoxes(int boxID, bool _checkState)
         {
             if (boxID % 3 < 2)
             {
@@ -1738,7 +1763,7 @@ namespace CQMacroCreator
                 {
                     questBoxes[3 * index + i].Checked = true;
                 }
-                questState = questState / 2;
+                questState /= 2;
             }
         }
 
@@ -2012,6 +2037,33 @@ namespace CQMacroCreator
                     }
                 }
             }
+            else if (lineupBox.Text.Contains("EVENT"))
+            {
+                while ((previousDQlvl != PFStuff.halloweenLvl.ToString() || !PFStuff.DQResult) && (PFStuff.lineup != null || attempts == 0))
+                {
+                    if (PFStuff.DQResult || attempts == 0)
+                    {
+                        attempts = 1;
+                        previousDQlvl = PFStuff.halloweenLvl.ToString();
+                        runCalcButton_Click(this, EventArgs.Empty);
+                    }
+                    else
+                    {
+                        if (attempts < 3)
+                        {
+                            attempts++;
+                            guiLog.AppendText("Attempt no. " + attempts + " in 5 seconds\n");
+                            System.Threading.Thread.Sleep(5000);
+                            runCalcButton_Click(this, EventArgs.Empty);
+                        }
+                        else
+                        {
+                            guiLog.AppendText("Solution invalid, solving was stopped\n");
+                            break;
+                        }
+                    }
+                }
+            }
             else
             {
                 while ((previousDQlvl != PFStuff.DQlvl || !PFStuff.DQResult) && (PFStuff.lineup != null || attempts == 0))
@@ -2132,6 +2184,74 @@ namespace CQMacroCreator
                 appSettings.calcTimeLimit = (int)timeLimit.Value;
                 appSettings.saveSettings();
             }
+        }
+
+        private void HalloweenHeroes_Click(object sender, EventArgs e)
+        {
+            getHalloweenHeroes();
+        }
+
+        private void getHalloweenHeroes()
+        {
+            try
+            {
+                Thread mt;
+                if (!PlayFab.PlayFabClientAPI.IsClientLoggedIn())
+                {
+                    login();
+                }
+
+                mt = new Thread(pf.GetHalloweenLevels);
+                mt.Start();
+                mt.Join();
+                if (PFStuff.getHalloween.Count > 0)
+                {
+                    followerLabel.Text = PFStuff.followers.ToString("### ### ###");
+                    upperCount.Value = 0;
+                    lowerCount.Value = 0;
+                    guiLog.AppendText("Successfully got Halloween heroes from server\n");
+                    for (int i = 0; i < heroCountsServerOrder.Count; i++)
+                    {
+                        if (heroCountsServerOrder[i] != null)
+                        {
+                            heroCountsServerOrder[i].Value = PFStuff.getHalloween[0][i];
+                            heroPromosServerOrder[i].Value = 0;
+                        }
+                    }
+                }
+                else
+                {
+                    guiLog.AppendText("Failed to obtain game data\n");
+                }
+            }
+            catch (InvalidOperationException)
+            {
+                guiLog.AppendText("Failed to log in - your Auth Ticket: " + token + ", your KongID: " + KongregateId);
+            }
+            catch (IndexOutOfRangeException)
+            {
+                guiLog.AppendText("Unknown unit");
+            }
+            catch (Exception dataException)
+            {
+                guiLog.AppendText("Error: " + dataException.Message);
+            }
+        }
+
+        private void getHalloweenButton_Click(object sender, EventArgs e) //TODO: Check how many enemies in the lineup
+        {
+            PFStuff.getHalloweenData(KongregateId);
+            int j = 0;
+            for (int i = 0; i < 6; i++)
+                if (PFStuff.halloweenLineup[0][i] != -1)
+                    j++;
+            string[] enemylist = new string[j + 1];
+            for (int i = 0; i < j; i++)
+                enemylist[i] = servernames[PFStuff.halloweenLineup[0][i] + heroesInGame];
+            enemylist[j] = "EVENT";
+            enemylist = enemylist.Reverse().ToArray();
+            lineupBox.Text = string.Join(",", enemylist);
+            guiLog.AppendText("Successfully got enemy lineup for Halloween" + PFStuff.halloweenLvl + " - " + string.Join(",", enemylist) + "\n");
         }
     }
 }
